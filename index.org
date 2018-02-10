@@ -1,0 +1,10 @@
+#+SETUPFILE: org-theme/setup/short.setup
+
+#+AUTHOR: Manoel Vilela
+#+DATE: <2018-02-10 Sat>
+#+TITLE: Common Lisp Brasil
+
+
+Grupo oficial do telegram: [[https://telegram.me/commonlispbr][Common Lisp Brasil]]
+
+Mais informações serão oferecidas em breve. Entre e dê uma olhada.

@@ -1,0 +1,24 @@
+ -*- mode: org; -*-
+#
+# This setup stack represents the following configuration:
+#
+#{
+#  "table-of-contents": true,
+#  "section-numbers": true,
+#  "postamble": true,
+#  "fancy-lists": true,
+#  "fancy-icons": true,
+#  "back-to-top": true,
+#  "collection": {
+#    "enabled": true,
+#    "avatar": "https://secure.gravatar.com/avatar/efc333fae054c5c97c1a37bfffdb17ae",
+#    "title": "Lerax",
+#    "url": "/"
+#  }
+#}
+#
+# I recommend you to generate your own css/js files by forking, cloning and customizing the file
+# theme.json before building it.
+#
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="/org-theme/dist/long/bundle.min.css"/>
+#+HTML_HEAD: <script src="/org-theme/dist/long/bundle.min.js" type="text/javascript" ></script>

@@ -1,0 +1,910 @@
+/* Media queries */
+/* stylelint-disable max-line-length */
+/*
+ ==============================================================================
+ Media queries
+ ==============================================================================
+*/
+/* Small screens */
+/* Medium screens */
+/* Large screens */
+/* Extra large screens */
+/* Super large screens */
+/* stylelint-enable */
+/* Custom normalize */
+/* stylelint-disable property-no-vendor-prefix,selector-root-no-composition,root-no-standard-properties,max-line-length */
+/*
+ ==============================================================================
+ Normalize
+ ==============================================================================
+*/
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+/*
+ HTML5 display definitions
+ ==============================================================================
+*/
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+/*
+ Links
+ ==============================================================================
+*/
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+/*
+ Text-level semantics
+ ==============================================================================
+*/
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2rem;
+  margin: 0.67rem 0;
+}
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5rem;
+}
+sub {
+  bottom: -0.25rem;
+}
+/*
+ Embedded content
+ ==============================================================================
+*/
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0;
+}
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/*
+ Grouping content
+ ==============================================================================
+*/
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
+}
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1rem;
+}
+/* stylelint-enable */
+/* Variables and base styling */
+/* stylelint-disable max-line-length */
+/*
+ ==============================================================================
+ Project variables
+ ==============================================================================
+*/
+:root {
+  /* Global */
+  --font-size-base: 18px;
+  --font-size: 1.25rem;
+  --line-height: 1.5;
+
+  /* Colors */
+  --color: #3A3A3A;
+  --color-bg: #FFF;
+  --color-gray: rgba(0, 0, 0, .45);
+  --color-light-gray: rgba(0, 0, 0, .045);
+  --color-lighter-gray: rgba(0, 0, 0, .05);
+  --color-light-green: #8CFFBB;
+  --color-lighter-green: #EDFEF2;
+
+  /* Typography scale */
+  --h1: 2.9rem;
+  --h2: 2rem;
+  --h3: 1.75rem;
+  --h4: 1.4rem;
+  --h5: 1.3rem;
+  --h6: 1.15rem;
+
+  /* Fonts */
+  --font-family-sans-serif: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-family-serif: 'PT Serif', Georgia, Cambria, 'Times New Roman', Times, serif;
+  --font-family-monospace: Menlo, Monaco, 'Courier New', Courier, monospace;
+
+  /* Weight */
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+
+  /* Headings */
+  --heading-font-family: var(--font-family-sans-serif);
+  --heading-font-weight: var(--font-weight-bold);
+  --heading-line-height: 1.15;
+  --heading-color: var(--color);
+  --heading-margin-top: 2.5rem;
+  --heading-margin-bottom: 1.5rem;
+
+  /* Content */
+  --content-margin-top: 2rem;
+  --content-margin-bottom: 5rem;
+
+  /* Container */
+  --container-max-width: 700px;
+  --container-padding-horizontal: 1.5rem;
+
+  /* Paragraphs */
+  --paragraph-margin-bottom: 2.5rem;
+
+  /* Lists */
+  --list-item-font-size: 1.05rem;
+  --list-margin-bottom: var(--font-size);
+  --list-symbol-level1: '●';
+  --list-symbol-level2: '◯';
+  --list-symbol-level3: '◼';
+  --list-symbol-level4: '◻';
+  --list-symbol-level5: '»';
+
+  /* Ordered lists */
+  --ordered-list-level1: decimal;
+  --ordered-list-level2: lower-roman;
+  --ordered-list-level3: lower-latin;
+  --ordered-list-level4: upper-roman;
+  --ordered-list-level5: upper-latin;
+
+  /* Quotes */
+  --quote-margin-bottom: var(--font-size);
+  --quote-divisor-color: var(--color);
+  --quote-divisor-size: 3px;
+  --quote-divisor-left: -20px;
+  --quote-citation-symbol: '─';
+  --quote-citation-symbol-color: var(--color-gray);
+  --quote-citation-margin-right: 0.5rem;
+
+  /* Code */
+  --code-font-size: var(--font-size-base);
+  --code-vertical-align: middle;
+  --code-color: var(--color);
+  --code-margin-bottom: var(--font-size);
+  --code-border-radius: 3px;
+  --code-padding-vertical: 0.2rem;
+  --code-padding-horizontal: 0;
+  --code-border: 1px solid var(--color-light-gray);
+
+  /* Underline */
+  --underline-border-offset-x: 2px;
+  --underline-border-offset-y: 3px;
+  --underline-color: var(--color);
+
+  /* Tables */
+  --table-border: 1px solid var(--color-light-gray);
+  --table-bg: var(--color-lighter-gray);
+  --table-heading-text-align: left;
+  --table-heading-border: 3px solid var(--color-light-gray);
+
+  /* Links */
+  --link-color: var(--color);
+
+  /* Checklists */
+  --checklist-margin-right: 0.5rem;
+
+  /* Highlight */
+  --highlight-color: var(--color);
+  --highlight-bg: var(--color-lighter-green);
+  --highlight-bg-hover: var(--color-light-green);
+
+  /* Postamble */
+  --postamble-font-size: 0.95rem;
+  --postamble-color: var(--color);
+  --postamble-font-family: var(--font-family-serif);
+  --postamble-item-margin-bottom: 0.25rem;
+  --postamble-item-padding-left: 1.35rem;
+  --postamble-padding-top: 2rem;
+  --postamble-padding-bottom: 2rem;
+  --postamble-icon-size: 1rem;
+  --postamble-icon-position: 0% 40%;
+  --postamble-border: 2px solid var(--color-light-gray);
+
+  /* Back to top */
+  --back-to-top-visibility: visible;
+  --back-to-top-padding: 1rem;
+  --back-to-top-font-size: 0.9rem;
+  --back-to-top-bleed: 0.25;
+}
+/* stylelint-enable */
+/*
+ ==============================================================================
+ Base
+ ==============================================================================
+*/
+/**
+ * Base styling for "root" elements.
+ *
+ * 1. `border-box` please
+ * 2. Set default font size (in pixels)
+ * 3. Set base typography properties and colors
+ */
+html {
+  box-sizing: border-box; /* [1] */
+  font-size: 14px;
+
+  /**
+   * We start with visibility hidden so we can
+   * toggle it after webfont is loaded to prevet
+   * FOUT
+   **/
+  visibility: hidden
+}
+@media screen and (min-width: 40em) {
+  html {
+    font-size: var(--font-size-base);/* [2] */
+  }
+  }
+html.show { visibility: visible !important; }
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* [1] */
+}
+body { /* [3] */
+  font-family: var(--font-family-serif);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  color: var(--color);
+  background-color: var(--color-bg);
+}
+/**
+ * Make sure checkboxes are vertically aligned with their labels.
+ */
+input[type=checkbox] {
+  vertical-align: middle;
+}
+/**
+ * Fix <sub> visually
+ */
+sub:before {
+  content: "_";
+}
+sub {
+  bottom: 0;
+  font-size: 100%;
+}
+/* Components */
+/*
+ Checklist
+ ==============================================================================
+*/
+/**
+ * Checklist is just a convenient way to display a list of tasks.
+ *
+ * 1. Reset default padding
+ * 2. Remove list bullet by adding a valid empty character
+ * 3. Add a little spacing between the checkbox and the label
+ * 4. Adjust checkbox y position because ¯\_(webfonts)_/¯
+ */
+.checklist {
+  padding: 0; /* [1] */
+}
+.checklist li::before {
+  content: '\00a0'; /* [2] */
+}
+.checklist li input[type=checkbox] {
+  margin-right: var(--checklist-margin-right); /* [3] */
+  transform: translateY(-2px); /* [4] */
+}
+/**
+ * Make sure the default check items never display.
+ */
+li[class^=o] code {
+  display: none;
+}
+/*
+ ==============================================================================
+ Code
+ ==============================================================================
+*/
+pre,
+.tag,
+code {
+  color: var(--code-color);
+  font-family: var(--font-family-monospace);
+  background-color: var(--color-lighter-gray);
+  border: var(--code-border);
+  border-radius: var(--code-border-radius);
+  font-size: var(--code-font-size);
+}
+/*
+ Code » Multi line code snippet
+ ==============================================================================
+*/
+pre {
+  margin-top: 0;
+  padding: 0.5rem;
+  margin-bottom: var(--code-margin-bottom);
+}
+/*
+ Code » Inline code snippet
+ ==============================================================================
+*/
+/**
+ * 1. Add an empty character to both pseudo selectors to achieve nice padding
+ * 2. Adjust letter spacing for better readability
+ */
+.tag,
+code {
+  vertical-align: var(--code-vertical-align);
+  padding-top: var(--code-padding-vertical);
+  padding-bottom: var(--code-padding-vertical);
+  padding-left: var(--code-padding-horizontal);
+  padding-right: var(--code-padding-horizontal);
+}
+.tag::before,
+.tag::after,
+code::before,
+code::after {
+  content: '\00a0'; /* [1] */
+  letter-spacing: -0.2rem; /* [2] */
+}
+/*
+ ==============================================================================
+ Collection
+ ==============================================================================
+*/
+.collection {
+  border-bottom: 1px solid var(--color-lighter-gray);
+  padding-bottom: 2rem;
+}
+.collection-avatar {
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: var(--color-lighter-gray);
+  border-radius: 35px;
+  border: 1px solid var(--color-light-gray);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+.collection-url {
+  color: var(--color-gray);
+  text-decoration: none;
+  font-family: var(--font-family-sans-serif);
+  font-size: 0.85rem;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+}
+.collection-url:hover {
+  color: var(--color);
+}
+/*
+ ==============================================================================
+ Content
+ ==============================================================================
+*/
+/**
+ * Content wrapper.
+ */
+#content {
+  margin-top: var(--content-margin-top);
+  margin-bottom: var(--content-margin-bottom);
+}
+/*
+ ==============================================================================
+ Heading
+ ==============================================================================
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+  line-height: 1;
+  color: var(--heading-color);
+  margin-top: var(--heading-margin-top);
+  margin-bottom: var(--heading-margin-bottom)
+}
+@media screen and (min-width: 40em) {
+  h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: var(--heading-line-height);
+  }
+  }
+/*
+ Heading » Master headings
+ ==============================================================================
+*/
+h1,
+h2 {
+  font-weight: var(--heading-font-weight);
+}
+/*
+ Heading » Secondary headings
+ ==============================================================================
+*/
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  color: var(--color-gray);
+}
+h1 { font-size: var(--h1); }
+h2 { font-size: var(--h2); }
+h3 { font-size: var(--h3); }
+h4 { font-size: var(--h4); }
+h5 { font-size: var(--h5); }
+h6 { font-size: var(--h6); }
+/*
+ ==============================================================================
+ Highlight
+ ==============================================================================
+*/
+.highlight {
+  text-decoration: none;
+  color: var(--highlight-color);
+  background-color: var(--highlight-bg);
+}
+.highlight:hover {
+  background-color: var(--highlight-bg-hover);
+}
+/*
+ ==============================================================================
+ Links
+ ==============================================================================
+*/
+a {
+  color: var(--link-color);
+}
+/*
+ Links » Back to top
+ ==============================================================================
+*/
+.back-to-top {
+  visibility: var(--back-to-top-visibility);
+  position: fixed;
+  right: var(--back-to-top-padding);
+  bottom: var(--back-to-top-padding);
+  font-size: var(--back-to-top-font-size);
+}
+.back-to-top i {
+  display: inline-block;
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%221792%22%20height%3D%221792%22%20viewBox%3D%220%200%201792%201792%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M1683%201331l-166%20165q-19%2019-45%2019t-45-19L896%20965l-531%20531q-19%2019-45%2019t-45-19l-166-165q-19-19-19-45.5t19-45.5l742-741q19-19%2045-19t45%2019l742%20741q19%2019%2019%2045.5t-19%2045.5z%22%2F%3E%3C%2Fsvg%3E);
+  background-repeat: no-repeat;
+  background-size: var(--back-to-top-font-size);
+  width: calc(var(--back-to-top-font-size) + var(--back-to-top-bleed));
+  height: var(--back-to-top-font-size);
+}
+/*
+ ==============================================================================
+ Lists
+ ==============================================================================
+*/
+li p {
+  font-size: var(--list-item-font-size);
+}
+/**
+ * 1. Remove bottom margin of children lists
+ */
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: var(--list-margin-bottom);
+}
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0; /* [1] */
+}
+/*
+ List » Unordered List
+ ==============================================================================
+*/
+/**
+ * To make custom bullets and unique bullets per level we use hand picked
+ * unicode characters.
+ *
+ * Unordered lists supported until level 5.
+ */
+ul {
+  list-style: none;
+}
+ul li {
+  position: relative;
+}
+/**
+ * Make sure that check list items will never display a bullet
+ */
+ul li[class^=o]::before {
+  content: '';
+}
+/*
+ List » Unordered List » Level 1
+ ==============================================================================
+*/
+ul li::before {
+  content: var(--list-symbol-level1);
+  position: absolute;
+  left: -25px;
+}
+/*
+ List » Unordered List » Level 2
+ ==============================================================================
+*/
+ul li > ul li::before {
+  content: var(--list-symbol-level2);
+  font-size: 11px;
+  top: 10px;
+}
+/*
+ List » Unordered List » Level 3
+ ==============================================================================
+*/
+ul li > ul li > ul li::before {
+  content: var(--list-symbol-level3);
+  font-size: 15px;
+  top: 7px;
+}
+/*
+ List » Unordered List » Level 4
+ ==============================================================================
+*/
+ul li > ul li > ul li > ul li::before {
+  content: var(--list-symbol-level4);
+}
+/*
+ List » Unordered List » Level 5
+ ==============================================================================
+*/
+ul li > ul li > ul li > ul li > ul li::before {
+  content: var(--list-symbol-level5);
+  font-size: 1rem;
+  top: 2.5px;
+}
+/*
+ List » Ordered List
+ ==============================================================================
+*/
+ol {
+  list-style: var(--ordered-list-level1);
+}
+ol ol {
+  list-style: var(--ordered-list-level2);
+}
+ol ol ol {
+  list-style: var(--ordered-list-level3);
+}
+ol ol ol ol {
+  list-style: var(--ordered-list-level4);
+}
+ol ol ol ol ol {
+  list-style: var(--ordered-list-level5);
+}
+/*
+ ==============================================================================
+ Paragraph
+ ==============================================================================
+*/
+/**
+ * 1. Remove top margin
+ * 2. Add bottom margin for better content readability
+ * 3. Set default font size (in rem)
+ */
+p {
+  margin-top: 0; /* [1] */
+  margin-bottom: var(--paragraph-margin-bottom); /* [2] */
+  font-size: var(--font-size); /* [3] */
+}
+/*
+ ==============================================================================
+ Postamble
+ ==============================================================================
+*/
+#postamble {
+  font-family: var(--postamble-font-family);
+  color: var(--postamble-color);
+  padding-top: var(--postamble-padding-top);
+  padding-bottom: var(--postamble-padding-bottom);
+  border-top: var(--postamble-border);
+}
+#postamble p {
+  font-size: var(--postamble-font-size);
+  padding-left: var(--postamble-item-padding-left);
+  margin-bottom: var(--postamble-item-margin-bottom);
+}
+/**
+ * Fix link color for validation elements.
+ */
+#postamble .validation a {
+  color: var(--postamble-color);
+}
+/*
+ Postamble » Icons
+ ==============================================================================
+*/
+/* stylelint-disable max-line-length */
+/* stylelint-enable */
+#postamble .author,
+#postamble .date,
+#postamble .validation {
+  background-size: var(--postamble-icon-size);
+  background-repeat: no-repeat;
+  background-position: var(--postamble-icon-position);
+}
+#postamble .author {
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%221792%22%20height%3D%221792%22%20viewBox%3D%220%200%201792%201792%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M491%201536l91-91-235-235-91%2091v107h128v128h107zm523-928q0-22-22-22-10%200-17%207l-542%20542q-7%207-7%2017%200%2022%2022%2022%2010%200%2017-7l542-542q7-7%207-17zm-54-192l416%20416-832%20832H128v-416zm683%2096q0%2053-37%2090l-166%20166-416-416%20166-165q36-38%2090-38%2053%200%2091%2038l235%20234q37%2039%2037%2091z%22%2F%3E%3C%2Fsvg%3E);
+}
+#postamble .date {
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%221792%22%20height%3D%221792%22%20viewBox%3D%220%200%201792%201792%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M1024%20544v448q0%2014-9%2023t-23%209H672q-14%200-23-9t-9-23v-64q0-14%209-23t23-9h224V544q0-14%209-23t23-9h64q14%200%2023%209t9%2023zm416%20352q0-148-73-273t-198-198-273-73-273%2073-198%20198-73%20273%2073%20273%20198%20198%20273%2073%20273-73%20198-198%2073-273zm224%200q0%20209-103%20385.5T1281.5%201561%20896%201664t-385.5-103T231%201281.5%20128%20896t103-385.5T510.5%20231%20896%20128t385.5%20103T1561%20510.5%201664%20896z%22%2F%3E%3C%2Fsvg%3E);
+}
+#postamble .validation {
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%221792%22%20height%3D%221792%22%20viewBox%3D%220%200%201792%201792%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M1671%20566q0%2040-28%2068l-724%20724-136%20136q-28%2028-68%2028t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28%2068-28t68%2028l294%20295%20656-657q28-28%2068-28t68%2028l136%20136q28%2028%2028%2068z%22%2F%3E%3C%2Fsvg%3E);
+}
+/*
+ ==============================================================================
+ Quotes
+ ==============================================================================
+*/
+/**
+ * 1. Quotes should be in italic
+ * 2. Add some bottom margin for better content readability
+ * 3. Add a left vertical divisor that bleeds out of the text container
+ * 4. Support citation through a `<footer>` element
+ */
+blockquote {
+  margin: 0 0 var(--quote-margin-bottom); /* [2] */
+  position: relative;
+}
+blockquote::before { /* [3] */
+  content: '';
+  position: absolute;
+  left: var(--quote-divisor-left);
+  top: -7.5%;
+  width: var(--quote-divisor-size);
+  height: 115%;
+  background: var(--quote-divisor-color);
+}
+blockquote p {
+  font-style: italic; /* [1] */
+  margin-bottom: 0;
+}
+blockquote footer::before { /* [4] */
+  content: var(--quote-citation-symbol);
+  color: var(--quote-citation-symbol-color);
+  margin-right: var(--quote-citation-margin-right);
+}
+/*
+ ==============================================================================
+ Selection
+ ==============================================================================
+*/
+/**
+ * Apply the same configuration from `highlight` to cursor selection.
+ */
+::selection {
+  background-color: var(--highlight-bg-hover);
+  color: var(--color);
+  text-shadow: none;
+}
+/*
+ ==============================================================================
+ Strike
+ ==============================================================================
+*/
+/**
+ * Used for s̶t̶r̶i̶k̶e̶t̶h̶r̶o̶u̶g̶h̶ text effect.
+ *
+ * 1. Remove default line
+ * 2. Add custom line
+ * 3. Center the line vertically
+ */
+strike {
+  text-decoration: none; /* [1] */
+  position: relative;
+}
+strike::after { /* [2] */
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color);
+  left: 0;
+  top: 50%; /* [3] */
+}
+/*
+ ==============================================================================
+ Tables
+ ==============================================================================
+*/
+/**
+ * 1. Make sure tables will always have full width
+ * 2. Setup table cell text positioning
+ * 3. Add a horizontal divisor for every table row
+ * 4. Odd table rows should have a different background color
+ * 5. Remove border from first header row
+ * 6. Add a special border for the first header row
+ */
+table { /* [1] */
+  border-spacing: 0;
+  width: 100%;
+  max-width: 100%;
+}
+th,
+td {
+  text-align: var(--table-heading-text-align); /* [2] */
+  padding: 1rem;
+  line-height: var(--line-height);
+  vertical-align: top;
+  border-top: var(--table-border); /* [3] */
+}
+tbody > tr:nth-of-type(odd) { /* [4] */
+  background-color: var(--table-bg);
+}
+thead > tr:first-of-type > th { /* [5] */
+  border-top: 0;
+}
+thead > tr:first-of-type { /* [6] */
+  border-bottom: var(--table-heading-border);
+}
+/*
+ ==============================================================================
+ Images
+ ==============================================================================
+*/
+.figure p {
+  margin: 0;
+  margin-bottom: -20px;
+}
+.figure a {
+  background: none !important;
+}
+img {
+  width: 100%;
+}
+/* Custom */
+/*
+ ==============================================================================
+ Container
+ ==============================================================================
+*/
+/**
+ * Useful container that centers the content within it.
+ *
+ * 1. Center the container horizontally
+ * 2. Add a little padding to the vertical edges
+ * 3. Lock max width for not-so-small screens
+ */
+#content,
+#postamble {
+  margin-left: auto; /* [1] */
+  margin-right: auto; /* [1] */
+  padding-left: var(--container-padding-horizontal); /* [2] */
+  padding-right: var(--container-padding-horizontal) /* [2] */
+}
+@media screen and (min-width: 40em) {
+  #content,
+#postamble {
+    max-width: var(--container-max-width);/* [3] */
+  }
+  }
+/* stylelint-disable max-line-length */
+/*
+ ==============================================================================
+ Underline
+ ==============================================================================
+*/
+/**
+ * Fancy text underline used by `<a>` and `<u>` elements.
+ */
+a:not(.highlight):not(.collection-url),
+u {
+  text-decoration: none;
+  text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 2px, var(--underline-color) 2px, var(--underline-color) 3px, rgba(0, 0, 0, 0) 3px);
+}
+a:not(.highlight):not(.collection-url):hover,
+u:hover {
+  opacity: 0.65;
+}
+a:not(.highlight):not(.collection-url):active,
+u:active {
+  opacity: 0.45;
+}
+/* stylelint-enable */
+/* Theme */
