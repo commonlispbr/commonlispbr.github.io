@@ -9,7 +9,8 @@ Grupo oficial do Telegram: [[https://telegram.me/commonlispbr][Common Lisp Brasi
 
 /Os dados a seguir podem estar incompletos ou conter erros. Proceda com cuidado e, se você tiver uma sugestão ou reclamação, [[https://github.com/commonlispbr/commonlispbr.github.io][abra uma issue no repositório desta página]]. :)/
 
-* O que é Common Lisp?
+* Conceitos e Fundamentos
+** O que é Common Lisp?
 
 Common Lisp é um dos muitos dialetos da linguagem Lisp.
 Os Lisps (abreviação de List Processor, processador de listas) têm uma sintaxe singular baseada no uso, principalmente, de parênteses, que delimitam listas de símbolos, que podem ou não estarem associados a valores e/ou procedimentos.
@@ -28,6 +29,9 @@ Nos Lisps, há a peculiaridade de existir uma linha muito tênue de separação 
 - [Amazon] [[https://www.amazon.com.br/Common-LISP-Introduction-Computation-Engineering-ebook/dp/B00IZUEG1G/][Common Lisp: A Gentle Introduction to Symbolic Computation]], por David S. Touretsky
 - [Amazon] [[https://www.amazon.com.br/Land-Lisp-Learn-Program-Game-ebook/dp/B004AE3P4K/][Land of Lisp: Learn to Program in Lisp, One Game at a Time!]], por Conrad Barski
 - [Amazon] [[https://www.amazon.com.br/Common-Lisp-Recipes-Problem-Solution-Approach-ebook/dp/B01JFTONBS/][Common Lisp Recipes: A Problem-Solution Approach]], por Edmund Weitz
+- Practical Common Lisp, por Peter Seibel
+  - [Amazon] [[https://www.amazon.com.br/Practical-Common-Lisp-Peter-Seibel/dp/1590592395][Livro físico]]
+  - [[http://www.gigamonkeys.com/book/][Versão online]]
 
 ** Configuração do Emacs
 
@@ -62,11 +66,16 @@ Nos Lisps, há a peculiaridade de existir uma linha muito tênue de separação 
 
 
 
-* Mais Links e /Offtopic/
+* Apêndice: Mais Links e /Offtopic/
 
 - [Inglês] Build Your Own Lisp, por Daniel Holder
   - [Amazon] [[https://www.amazon.com.br/Build-Your-Own-Lisp-English-ebook/dp/B00ONV8CNO/][Livro físico]]
   - [[http://www.buildyourownlisp.com/][Versão online]]
 - [[https://github.com/luksamuk/YASWEG][YASWEG (Yet Another Static Website Generator), sintaxe para geração de websites estáticos]], escrito em Guile Scheme.
-- [Youtube] [[https://www.youtube.com/watch?v=cMxbSsRntv4][Transcrição regravada da mini-palestra de Alan Turing]]
+- [Youtube/Inglês] [[https://www.youtube.com/watch?v=cMxbSsRntv4][Transcrição regravada da mini-palestra de Alan Turing]]
   Originalmente difundida na rádio BBC de Londres, em 15 de maio de 1951. Leitura por James Grime.
+- [[http://lerax.me/lisp-bookmarks/][Lista de links relacionados a Lisp e/ou à cultura cyberpunk em geral]]
+  É provável que alguns destes links acabem integrados a esta lista.
+- [Inglês] [[http://hyperpolyglot.org/lisp][Comparativo entre os dialetos Common Lisp, Racket, Clojure e Emacs Lisp]]
+- [Inglês] [[http://borretti.me/article/common-lisp-sotu-2015][Estado do Ecossistema de Common Lisp (2015)]]
+- [Youtube/Inglês] [[https://www.youtube.com/playlist?list=PLBgJcoaU2hl-JnoVOzjYB5qk_PfYjPm-I][Playlist: Série Process Hacking]]
