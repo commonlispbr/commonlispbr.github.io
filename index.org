@@ -1,10 +1,72 @@
 #+SETUPFILE: org-theme/setup/short.setup
 
-#+AUTHOR: Manoel Vilela
+#+AUTHOR: Manoel Vilela, Lucas Vieira
 #+DATE: <2018-02-10 Sat>
 #+TITLE: Common Lisp Brasil
 
 
-Grupo oficial do telegram: [[https://telegram.me/commonlispbr][Common Lisp Brasil]]
+Grupo oficial do Telegram: [[https://telegram.me/commonlispbr][Common Lisp Brasil]]
 
-Mais informações serão oferecidas em breve. Entre e dê uma olhada.
+/Os dados a seguir podem estar incompletos ou conter erros. Proceda com cuidado e, se você tiver uma sugestão ou reclamação, [[https://github.com/commonlispbr/commonlispbr.github.io][abra uma issue no repositório desta página]]. :)/
+
+* O que é Common Lisp?
+
+Common Lisp é um dos muitos dialetos da linguagem Lisp.
+Os Lisps (abreviação de List Processor, processador de listas) têm uma sintaxe singular baseada no uso, principalmente, de parênteses, que delimitam listas de símbolos, que podem ou não estarem associados a valores e/ou procedimentos.
+Nos Lisps, há a peculiaridade de existir uma linha muito tênue de separação entre dados e procedimentos, quando seu código é produzido; na realidade, é possível produzir código a partir de dados e vice-versa.
+
+
+
+
+* Links de Aprendizado
+
+** Material sobre Common Lisp
+
+- [[http://www.lispworks.com/documentation/HyperSpec/Front/][Common Lisp Hyperspec]]
+  Sua primeira parada ao pesquisar por documentação de Common Lisp. [[http://clhs.lisp.se/][(Mirror)]]
+- [[https://www.cliki.net/][CLiki, a Wiki de Common Lisp]]
+- [Amazon] [[https://www.amazon.com.br/Common-LISP-Introduction-Computation-Engineering-ebook/dp/B00IZUEG1G/][Common Lisp: A Gentle Introduction to Symbolic Computation]], por David S. Touretsky
+- [Amazon] [[https://www.amazon.com.br/Land-Lisp-Learn-Program-Game-ebook/dp/B004AE3P4K/][Land of Lisp: Learn to Program in Lisp, One Game at a Time!]], por Conrad Barski
+- [Amazon] [[https://www.amazon.com.br/Common-Lisp-Recipes-Problem-Solution-Approach-ebook/dp/B01JFTONBS/][Common Lisp Recipes: A Problem-Solution Approach]], por Edmund Weitz
+
+** Configuração do Emacs
+
+- [Inglês] Mini-manual do Emacs, por [[https://github.com/tuhdo][tuhdo]]
+  - [[http://tuhdo.github.io/emacs-tutor.html][Parte 1: O Básico]]
+  - [[http://tuhdo.github.io/emacs-tutor2.html][Parte 2: Por que parênteses importam]]
+  - [[http://tuhdo.github.io/emacs-tutor3.html][Parte 3: Customizando e extendendo o Emacs]]
+
+** Configuração do Quicklisp
+
+- [Inglês] [[https://www.quicklisp.org/beta/][Site oficial do Quicklisp]]
+- [Inglês] [[https://www.xach.com/lisp/quickproject/][Quickproject: crie o esqueleto de um projeto de Common Lisp]]
+  
+  Este tutorial é extremamente útil para a criação de projetos compatíveis com Quicklisp.
+
+** Configuração do SLIME
+
+- [Inglês] [[https://astraybi.wordpress.com/2015/08/02/how-to-install-slimesbclquicklisp-into-emacs/][Instalando SLIME + SBCL + Quicklisp no Emacs]], por Astray_BI
+- [Inglês] [[https://github.com/quicklisp/quicklisp-slime-helper][Repositório do =quicklisp-slime-helper=]]
+
+  Este pacote torna mais fácil a instalação do SLIME, a partir do Quicklisp.
+
+* Projetos e Repositórios Relevantes
+
+- [[https://next-browser.github.io/][nEXT, um browser totalmente escrito em Common Lisp]]
+- [[https://github.com/adolenc/cl-neovim][=cl-neovim=, cliente de Common Lisp para Neovim]]
+- [[https://github.com/ryukinix/lisp-inference][=lisp-inference=, um motor de inferência baseado em Cálculo Proposicional, escrito em Common Lisp]]
+- [[https://github.com/ryukinix/lisp-chat][=lisp-chat=, um chat minimalista e experimental, escrito em Common Lisp]]
+- [[https://github.com/luksamuk/opengames][Repositório de pequenos jogos com código aberto]]
+
+  Neste repositório, foram feitos, em Common Lisp, os mini-jogos =cl-2048=, =cl-snake= e =dagarden=.
+
+
+
+* Mais Links e /Offtopic/
+
+- [Inglês] Build Your Own Lisp, por Daniel Holder
+  - [Amazon] [[https://www.amazon.com.br/Build-Your-Own-Lisp-English-ebook/dp/B00ONV8CNO/][Livro físico]]
+  - [[http://www.buildyourownlisp.com/][Versão online]]
+- [[https://github.com/luksamuk/YASWEG][YASWEG (Yet Another Static Website Generator), sintaxe para geração de websites estáticos]], escrito em Guile Scheme.
+- [Youtube] [[https://www.youtube.com/watch?v=cMxbSsRntv4][Transcrição regravada da mini-palestra de Alan Turing]]
+  Originalmente difundida na rádio BBC de Londres, em 15 de maio de 1951. Leitura por James Grime.
