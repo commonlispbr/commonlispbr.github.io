@@ -55,11 +55,12 @@ diversos dialectos Lisp dos quais derivou.
 
 ** Documentação e tutoriais
 
+- [[http://bnmcgn.github.io/lisp-guide/lisp-exploration.html][Common Lisp REPL Exploration Guide]], um guia interessantíssimo sobre
+  a exploração de Common Lisp pelo [[https://en.wikipedia.org/wiki/Read%25E2%2580%2593eval%25E2%2580%2593print_loop][REPL]].
 - [[http://www.lispworks.com/documentation/HyperSpec/Front/][Common Lisp Hyperspec]]
   Sua primeira parada ao pesquisar por documentação de Common Lisp. [[http://clhs.lisp.se/][(Mirror)]]
 - [[https://www.cliki.net/][CLiki, a Wiki de Common Lisp]]
-- [[http://bnmcgn.github.io/lisp-guide/lisp-exploration.html][Common Lisp REPL Exploration Guide]], um guia interessantíssimo sobre
-  a exploração de Common Lisp pelo [[https://en.wikipedia.org/wiki/Read%25E2%2580%2593eval%25E2%2580%2593print_loop][REPL]].
+
 
 ** Livros
 
