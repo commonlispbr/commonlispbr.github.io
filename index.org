@@ -6,11 +6,11 @@
 
 
 Grupo oficial do Telegram: [[https://telegram.me/commonlispbr][Common Lisp Brasil]]
-Grupo não-oficial de Lisp Brasileiro no server IRC freenode: [[http://webchat.freenode.net/][#lisp-br]]
 
-/Os dados a seguir podem estar incompletos ou conter erros. Proceda
-com cuidado e, se você tiver uma sugestão ou reclamação, [[https://github.com/commonlispbr/commonlispbr.github.io][abra uma
-issue no repositório desta página]]. :)/
+Grupo não-oficial de Lisp Brasileiro IRC freenode: [[http://webchat.freenode.net/][#lisp-br]]
+
+Os dados a seguir podem estar incompletos ou conter erros. Proceda com cuidado e, se você tiver uma sugestão ou reclamação, [[https://github.com/commonlispbr/commonlispbr.github.io][abra uma
+issue no repositório desta página]].
 
 * Conceitos e Fundamentos
 ** O que é Lisp?
