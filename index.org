@@ -1,4 +1,4 @@
-#+SETUPFILE: org-theme/setup/short.setup
+#+SETUPFILE: org-theme/setup/long.setup
 
 #+AUTHOR: Manoel Vilela, Lucas Vieira
 #+DATE: <2018-02-10 Sat>
@@ -44,7 +44,7 @@ Esta família de linguagens foi desenhada para abstrair a complexidade do hardwa
 
 - [Inglês] [[https://www.quicklisp.org/beta/][Site oficial do Quicklisp]]
 - [Inglês] [[https://www.xach.com/lisp/quickproject/][Quickproject: crie o esqueleto de um projeto de Common Lisp]]
-  
+
   Este tutorial é extremamente útil para a criação de projetos compatíveis com Quicklisp.
 
 ** Configuração do SLIME

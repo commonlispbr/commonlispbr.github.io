@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Common Lisp Brasil</title>
-<!-- 2018-02-10 sáb 22:37 -->
+<!-- 2018-02-11 Sun 01:05 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Manoel Vilela, Lucas Vieira" />
@@ -88,8 +88,8 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="/org-theme/dist/short/bundle.min.css"/>
-<script src="/org-theme/dist/short/bundle.min.js" type="text/javascript" ></script>
+<link rel="stylesheet" type="text/css" href="/org-theme/dist/long/bundle.min.css"/>
+<script src="/org-theme/dist/long/bundle.min.js" type="text/javascript" ></script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -144,7 +144,11 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1. O que é Common Lisp?</a></li>
+<li><a href="#sec-1">1. Conceitos e Fundamentos</a>
+<ul>
+<li><a href="#sec-1-1">1.1. O que é Common Lisp?</a></li>
+</ul>
+</li>
 <li><a href="#sec-2">2. Links de Aprendizado</a>
 <ul>
 <li><a href="#sec-2-1">2.1. Material sobre Common Lisp</a></li>
@@ -154,7 +158,7 @@ for the JavaScript code in this tag.
 </ul>
 </li>
 <li><a href="#sec-3">3. Projetos e Repositórios Relevantes</a></li>
-<li><a href="#sec-4">4. Mais Links e <i>Offtopic</i></a></li>
+<li><a href="#sec-4">4. Apêndice: Mais Links e <i>Offtopic</i></a></li>
 </ul>
 </div>
 </div>
@@ -167,16 +171,20 @@ Grupo oficial do Telegram: <a href="https://telegram.me/commonlispbr">Common Lis
 </p>
 
 <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> O que é Common Lisp?</h2>
+<h2 id="sec-1"><span class="section-number-2">1</span> Conceitos e Fundamentos</h2>
 <div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> O que é Common Lisp?</h3>
+<div class="outline-text-3" id="text-1-1">
 <p>
 Common Lisp é um dos muitos dialetos da linguagem Lisp.
 Os Lisps (abreviação de List Processor, processador de listas) têm uma sintaxe singular baseada no uso, principalmente, de parênteses, que delimitam listas de símbolos, que podem ou não estarem associados a valores e/ou procedimentos.
 Nos Lisps, há a peculiaridade de existir uma linha muito tênue de separação entre dados e procedimentos, quando seu código é produzido; na realidade, é possível produzir código a partir de dados e vice-versa.
+Esta família de linguagens foi desenhada para abstrair a complexidade do hardware de um computador, criando uma interface para que um humano possa se comunicar de maneira expressiva com a máquina.
 </p>
 </div>
 </div>
-
+</div>
 
 
 
@@ -197,6 +205,14 @@ Nos Lisps, há a peculiaridade de existir uma linha muito tênue de separação 
 <li>[Amazon] <a href="https://www.amazon.com.br/Land-Lisp-Learn-Program-Game-ebook/dp/B004AE3P4K/">Land of Lisp: Learn to Program in Lisp, One Game at a Time!</a>, por Conrad Barski
 </li>
 <li>[Amazon] <a href="https://www.amazon.com.br/Common-Lisp-Recipes-Problem-Solution-Approach-ebook/dp/B01JFTONBS/">Common Lisp Recipes: A Problem-Solution Approach</a>, por Edmund Weitz
+</li>
+<li>Practical Common Lisp, por Peter Seibel
+<ul class="org-ul">
+<li>[Amazon] <a href="https://www.amazon.com.br/Practical-Common-Lisp-Peter-Seibel/dp/1590592395">Livro físico</a>
+</li>
+<li><a href="http://www.gigamonkeys.com/book/">Versão online</a>
+</li>
+</ul>
 </li>
 </ul>
 </div>
@@ -271,14 +287,15 @@ Este pacote torna mais fácil a instalação do SLIME, a partir do Quicklisp.
 Neste repositório, foram feitos, em Common Lisp, os mini-jogos <code>cl-2048</code>, <code>cl-snake</code> e <code>dagarden</code>.
 </p>
 </li>
+
+<li><a href="http://xzpeter.org/starwar/"><code>starwar</code>, um jogo feito em Common Lisp usando SDL</a> (<a href="https://github.com/xzpeter/starwar">Repositório</a>) (<a href="https://github.com/commonlispbr/starwar">Mirror</a>)
+</li>
 </ul>
 </div>
 </div>
 
-
-
 <div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> Mais Links e <i>Offtopic</i></h2>
+<h2 id="sec-4"><span class="section-number-2">4</span> Apêndice: Mais Links e <i>Offtopic</i></h2>
 <div class="outline-text-2" id="text-4">
 <ul class="org-ul">
 <li>[Inglês] Build Your Own Lisp, por Daniel Holder
@@ -291,8 +308,17 @@ Neste repositório, foram feitos, em Common Lisp, os mini-jogos <code>cl-2048</c
 </li>
 <li><a href="https://github.com/luksamuk/YASWEG">YASWEG (Yet Another Static Website Generator), sintaxe para geração de websites estáticos</a>, escrito em Guile Scheme.
 </li>
-<li>[Youtube] <a href="https://www.youtube.com/watch?v=cMxbSsRntv4">Transcrição regravada da mini-palestra de Alan Turing</a>
+<li>[Youtube/Inglês] <a href="https://www.youtube.com/watch?v=cMxbSsRntv4">Transcrição regravada da mini-palestra de Alan Turing</a>
   Originalmente difundida na rádio BBC de Londres, em 15 de maio de 1951. Leitura por James Grime.
+</li>
+<li><a href="http://lerax.me/lisp-bookmarks/">Lista de links relacionados a Lisp e/ou à cultura cyberpunk em geral</a>
+  É provável que alguns destes links acabem integrados a esta lista.
+</li>
+<li>[Inglês] <a href="http://hyperpolyglot.org/lisp">Comparativo entre os dialetos Common Lisp, Racket, Clojure e Emacs Lisp</a>
+</li>
+<li>[Inglês] <a href="http://borretti.me/article/common-lisp-sotu-2015">Estado do Ecossistema de Common Lisp (2015)</a>
+</li>
+<li>[Youtube/Inglês] <a href="https://www.youtube.com/playlist?list=PLBgJcoaU2hl-JnoVOzjYB5qk_PfYjPm-I">Playlist: Série Process Hacking</a>
 </li>
 </ul>
 </div>
@@ -301,7 +327,7 @@ Neste repositório, foram feitos, em Common Lisp, os mini-jogos <code>cl-2048</c
 <div id="postamble" class="status">
 <p class="date">Date: <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-02-10 Sat&gt;</span></span></p>
 <p class="author">Author: Manoel Vilela, Lucas Vieira</p>
-<p class="date">Created: 2018-02-10 sáb 22:37</p>
+<p class="date">Created: 2018-02-11 Sun 01:05</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
