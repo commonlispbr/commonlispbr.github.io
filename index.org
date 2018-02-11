@@ -86,6 +86,25 @@ Common Lisp.
   - [[http://tuhdo.github.io/emacs-tutor2.html][Parte 2: Por que parênteses importam]]
   - [[http://tuhdo.github.io/emacs-tutor3.html][Parte 3: Customizando e extendendo o Emacs]]
 
+** SLIME
+
+SLIME significa /SUPERIOR LISP INTERACTION MODE for EMACS/. É uma
+das coisas mais fascinante que se faz Common Lisp uma linguagem tão
+produtiva e o Emacs ser seu editor ideal.
+
+- [Inglês] [[https://astraybi.wordpress.com/2015/08/02/how-to-install-slimesbclquicklisp-into-emacs/][Instalando SLIME + SBCL + Quicklisp no Emacs]], por Astray_BI
+- [Inglês] [[https://github.com/quicklisp/quicklisp-slime-helper][Repositório do =quicklisp-slime-helper=]]
+
+  Este pacote torna mais fácil a instalação do SLIME, a partir do
+  Quicklisp.
+
+** Compiladores
+
+- [Inglês] [[http://sbcl.org/][SBCL]]: Steel Bank Common Lisp (recomendado)
+- [Inglês] [[https://common-lisp.net/project/ecl/][ECL]]: Embedabble Common Lisp
+- [Inglês] [[https://clisp.sourceforge.io/][GNU CLISP]] (obsoleto desde 2010, artefato histórico)
+- [Inglês] [[https://ccl.clozure.com/][CCL]]: Clozure Common Lisp ([[https://clojure.org/][Clojure]] é outra coisa, não confunda!)
+
 **  Quicklisp
 
 Quicklisp é o gerenciador de pacote (sistemas nos jargões de CL),
@@ -98,17 +117,15 @@ muito útil para integrar sua aplicação usando pacotes de terceiro.
   Este tutorial é extremamente útil para a criação de projetos
   compatíveis com Quicklisp.
 
-** SLIME
+** Roswell
 
-SLIME significa /SUPERIOR LISP INTERACTION MODE for EMACS/. É uma
-das coisas mais fascinante que se faz Common Lisp uma linguagem tão
-produtiva e o Emacs ser seu editor ideal.
+Roswell é descrito como ser o instalador de lisp e launcher para
+o ambiente em geral de Common Lisp que simplesmente funciona.
+Tenta automatizar a instalação dos compiladores, pacotes do emacs
+e criação de binários com Common Lisp. Vale a pena tentar dar uma
+olhada!
 
-- [Inglês] [[https://astraybi.wordpress.com/2015/08/02/how-to-install-slimesbclquicklisp-into-emacs/][Instalando SLIME + SBCL + Quicklisp no Emacs]], por Astray_BI
-- [Inglês] [[https://github.com/quicklisp/quicklisp-slime-helper][Repositório do =quicklisp-slime-helper=]]
-
-  Este pacote torna mais fácil a instalação do SLIME, a partir do
-  Quicklisp.
+- [[https://github.com/roswell/roswell][Roswell]]
 
 * Projetos
 
