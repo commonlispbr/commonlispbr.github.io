@@ -79,6 +79,8 @@ diversos dialectos Lisp dos quais derivou.
 Emacs é o melhor editor de texto em consenso para se programar em
 Common Lisp.
 
+- [Inglês] [[https://www.gnu.org/software/emacs/][Site oficial]]
+- [Inglês] [[https://github.com/bbatsov/prelude][Prelude]] uma configuração com baterias pro Emacs para bons hábitos
 - [Inglês] Mini-manual do Emacs, por [[https://github.com/tuhdo][tuhdo]]
   - [[http://tuhdo.github.io/emacs-tutor.html][Parte 1: O Básico]]
   - [[http://tuhdo.github.io/emacs-tutor2.html][Parte 2: Por que parênteses importam]]
