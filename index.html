@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Common Lisp Brasil</title>
-<!-- 2018-02-11 Sun 17:13 -->
+<!-- 2018-02-11 Sun 17:42 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Manoel Vilela, Lucas Vieira" />
@@ -146,7 +146,8 @@ for the JavaScript code in this tag.
 <ul>
 <li><a href="#sec-1">1. Conceitos e Fundamentos</a>
 <ul>
-<li><a href="#sec-1-1">1.1. O que é Common Lisp?</a></li>
+<li><a href="#sec-1-1">1.1. O que é Lisp?</a></li>
+<li><a href="#sec-1-2">1.2. O que é Common Lisp?</a></li>
 </ul>
 </li>
 <li><a href="#sec-2">2. Links de Aprendizado sobre Common Lisp</a>
@@ -159,8 +160,10 @@ for the JavaScript code in this tag.
 <li><a href="#sec-3">3. Tooling</a>
 <ul>
 <li><a href="#sec-3-1">3.1. Emacs</a></li>
-<li><a href="#sec-3-2">3.2. Quicklisp</a></li>
-<li><a href="#sec-3-3">3.3. SLIME</a></li>
+<li><a href="#sec-3-2">3.2. SLIME</a></li>
+<li><a href="#sec-3-3">3.3. Compiladores</a></li>
+<li><a href="#sec-3-4">3.4. Quicklisp</a></li>
+<li><a href="#sec-3-5">3.5. Roswell</a></li>
 </ul>
 </li>
 <li><a href="#sec-4">4. Projetos</a></li>
@@ -183,30 +186,50 @@ issue no repositório desta página</a>. :)/
 <h2 id="sec-1"><span class="section-number-2">1</span> Conceitos e Fundamentos</h2>
 <div class="outline-text-2" id="text-1">
 </div><div id="outline-container-sec-1-1" class="outline-3">
-<h3 id="sec-1-1"><span class="section-number-3">1.1</span> O que é Common Lisp?</h3>
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> O que é Lisp?</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
-Common Lisp é um dos muitos dialetos da linguagem Lisp. Dialetos Lisp
-(abreviação de <b><b>LISt Processing</b></b>, processamento de listas) têm uma
-sintaxe singular baseada no uso de parênteses para denotar de
-símbolos, que podem ou não estarem associados a valores e/ou
-procedimentos. Nos Lisps, há a peculiaridade de existir uma linha
+Dialetos Lisp (abreviação de <b><b>LISt Processing</b></b>, processamento de
+listas) têm uma sintaxe singular baseada no uso de parênteses para
+denotar de símbolos, que podem ou não estarem associados a valores
+e/ou procedimentos. Nos Lisps, há a peculiaridade de existir uma linha
 muito tênue de separação entre dados e procedimentos quando seu código
 é produzido (na realidade, é possível produzir código a partir de
 dados e vice-versa).
 </p>
 
 <p>
-Esta família de linguagens foi desenhada para
-abstrair a complexidade do hardware de um computador, criando uma
-interface para que um humano possa se comunicar de maneira expressiva
-com a máquina. O primeiro Lisp denotado historicamente por <a href="https://pt.wikipedia.org/wiki/Lisp">LISP</a> foi
-criado por <a href="https://pt.wikipedia.org/wiki/John_McCarthy">John McCarthy</a> em 1958 nos laboratórios do MIT, USA.
+Esta família de linguagens foi desenhada para abstrair a complexidade
+do hardware de um computador, criando uma interface para que um humano
+possa se comunicar de maneira expressiva com a máquina. O primeiro
+Lisp denotado historicamente por <a href="https://pt.wikipedia.org/wiki/Lisp">LISP</a> foi criado por <a href="https://pt.wikipedia.org/wiki/John_McCarthy">John McCarthy</a> em
+1958 nos laboratórios do MIT, USA.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> O que é Common Lisp?</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+Common Lisp é uma implementação específica da linguagem de programação
+Lisp multi-paradigma que suporte programação funcional, orientação a
+objetos e por vezes funcional. Foi criada por Guy L. Steele
+nos anos '80 com o intuito de combinar aspectos de diversos
+dialetos anteriores, incluindo Scheme.
+</p>
+
+<p>
+Em 1994 foi publicada no padrão <a href="http://cvberry.com/tech_writings/notes/common_lisp_standard_draft.html">ANSI Information Technology -
+Programming Language - Common Lisp, registro X3.226-1994 (R1999)</a> É bem
+maior e semanticamente mais complexa que Scheme uma vez que foi
+projetada para ser uma linguagem comercial e ser compatível com os
+diversos dialectos Lisp dos quais derivou.
 </p>
 </div>
 </div>
 </div>
-
 
 <div id="outline-container-sec-2" class="outline-2">
 <h2 id="sec-2"><span class="section-number-2">2</span> Links de Aprendizado sobre Common Lisp</h2>
@@ -284,6 +307,10 @@ Common Lisp.
 </p>
 
 <ul class="org-ul">
+<li>[Inglês] <a href="https://www.gnu.org/software/emacs/">Site oficial</a>
+</li>
+<li>[Inglês] <a href="https://github.com/bbatsov/prelude">Prelude</a> uma configuração com baterias pro Emacs para bons hábitos
+</li>
 <li>[Inglês] Mini-manual do Emacs, por <a href="https://github.com/tuhdo">tuhdo</a>
 <ul class="org-ul">
 <li><a href="http://tuhdo.github.io/emacs-tutor.html">Parte 1: O Básico</a>
@@ -299,8 +326,47 @@ Common Lisp.
 </div>
 
 <div id="outline-container-sec-3-2" class="outline-3">
-<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Quicklisp</h3>
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> SLIME</h3>
 <div class="outline-text-3" id="text-3-2">
+<p>
+SLIME significa <i>SUPERIOR LISP INTERACTION MODE for EMACS</i>. É uma
+das coisas mais fascinante que se faz Common Lisp uma linguagem tão
+produtiva e o Emacs ser seu editor ideal.
+</p>
+
+<ul class="org-ul">
+<li>[Inglês] <a href="https://astraybi.wordpress.com/2015/08/02/how-to-install-slimesbclquicklisp-into-emacs/">Instalando SLIME + SBCL + Quicklisp no Emacs</a>, por Astray<sub>BI</sub>
+</li>
+<li>[Inglês] <a href="https://github.com/quicklisp/quicklisp-slime-helper">Repositório do <code>quicklisp-slime-helper</code></a>
+
+<p>
+Este pacote torna mais fácil a instalação do SLIME, a partir do
+Quicklisp.
+</p>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> Compiladores</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>[Inglês] <a href="http://sbcl.org/">SBCL</a>: Steel Bank Common Lisp (recomendado)
+</li>
+<li>[Inglês] <a href="https://common-lisp.net/project/ecl/">ECL</a>: Embedabble Common Lisp
+</li>
+<li>[Inglês] <a href="https://clisp.sourceforge.io/">GNU CLISP</a> (obsoleto desde 2010, artefato histórico)
+</li>
+<li>[Inglês] <a href="https://ccl.clozure.com/">CCL</a>: Clozure Common Lisp (<a href="https://clojure.org/">Clojure</a> é outra coisa, não confunda!)
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-3-4" class="outline-3">
+<h3 id="sec-3-4"><span class="section-number-3">3.4</span> Quicklisp</h3>
+<div class="outline-text-3" id="text-3-4">
 <p>
 Quicklisp é o gerenciador de pacote (sistemas nos jargões de CL),
 muito útil para integrar sua aplicação usando pacotes de terceiro.
@@ -322,24 +388,19 @@ compatíveis com Quicklisp.
 </div>
 </div>
 
-<div id="outline-container-sec-3-3" class="outline-3">
-<h3 id="sec-3-3"><span class="section-number-3">3.3</span> SLIME</h3>
-<div class="outline-text-3" id="text-3-3">
+<div id="outline-container-sec-3-5" class="outline-3">
+<h3 id="sec-3-5"><span class="section-number-3">3.5</span> Roswell</h3>
+<div class="outline-text-3" id="text-3-5">
 <p>
-SLIME significa <i>SUPERIOR LISP INTERACTION MODE for EMACS</i>. É uma
-das coisas mais fascinante que se faz Common Lisp uma linguagem tão
-produtiva e o Emacs ser seu editor ideal.
+Roswell é descrito como ser o instalador de lisp e launcher para
+o ambiente em geral de Common Lisp que simplesmente funciona.
+Tenta automatizar a instalação dos compiladores, pacotes do emacs
+e criação de binários com Common Lisp. Vale a pena tentar dar uma
+olhada!
 </p>
 
 <ul class="org-ul">
-<li>[Inglês] <a href="https://astraybi.wordpress.com/2015/08/02/how-to-install-slimesbclquicklisp-into-emacs/">Instalando SLIME + SBCL + Quicklisp no Emacs</a>, por Astray<sub>BI</sub>
-</li>
-<li>[Inglês] <a href="https://github.com/quicklisp/quicklisp-slime-helper">Repositório do <code>quicklisp-slime-helper</code></a>
-
-<p>
-Este pacote torna mais fácil a instalação do SLIME, a partir do
-Quicklisp.
-</p>
+<li><a href="https://github.com/roswell/roswell">Roswell</a>
 </li>
 </ul>
 </div>
@@ -411,7 +472,7 @@ Neste repositório, foram feitos, em Common Lisp, os mini-jogos
 <div id="postamble" class="status">
 <p class="date">Date: <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-02-10 Sat&gt;</span></span></p>
 <p class="author">Author: Manoel Vilela, Lucas Vieira</p>
-<p class="date">Created: 2018-02-11 Sun 17:13</p>
+<p class="date">Created: 2018-02-11 Sun 17:42</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
