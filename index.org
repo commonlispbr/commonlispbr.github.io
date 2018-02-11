@@ -15,25 +15,41 @@ issue no repositório desta página]]. :)/
 * Conceitos e Fundamentos
 ** O que é Common Lisp?
 
-Common Lisp é um dos muitos dialetos da linguagem Lisp.  Os Lisps
-(abreviação de List Processor, processador de listas) têm uma sintaxe
-singular baseada no uso, principalmente, de parênteses, que delimitam
-listas de símbolos, que podem ou não estarem associados a valores e/ou
-procedimentos.  Nos Lisps, há a peculiaridade de existir uma linha
-muito tênue de separação entre dados e procedimentos, quando seu
-código é produzido; na realidade, é possível produzir código a partir
-de dados e vice-versa.  Esta família de linguagens foi desenhada para
+Common Lisp é um dos muitos dialetos da linguagem Lisp. Dialetos Lisp
+(abreviação de **LISt Processing**, processamento de listas) têm uma
+sintaxe singular baseada no uso de parênteses para denotar de
+símbolos, que podem ou não estarem associados a valores e/ou
+procedimentos. Nos Lisps, há a peculiaridade de existir uma linha
+muito tênue de separação entre dados e procedimentos quando seu código
+é produzido (na realidade, é possível produzir código a partir de
+dados e vice-versa).
+
+Esta família de linguagens foi desenhada para
 abstrair a complexidade do hardware de um computador, criando uma
 interface para que um humano possa se comunicar de maneira expressiva
-com a máquina.
+com a máquina. O primeiro Lisp denotado historicamente por [[https://pt.wikipedia.org/wiki/Lisp][LISP]] foi
+criado por [[https://pt.wikipedia.org/wiki/John_McCarthy][John McCarthy]] em 1958 nos laboratórios do MIT, USA.
 
 
-* Links de Aprendizado
-** Material sobre Common Lisp
+* Links de Aprendizado sobre Common Lisp
+** Apresentação
+
+- [[http://lisp-lang.org/][Site oficial de Common Lisp]], apresentação sobre a linguagem e seu poder.
+- [[https://github.com/CodyReichert/awesome-cl][Awesome-CL]], uma lista imensa sobre frameworks e ferramentas para
+  Common Lisp.
+- [[http://www.lisperati.com/casting.html][Lisperati Casting]], uma história em quadrinhos sobre a magia que é
+  programar em Lisp.
+
+** Documentação e tutoriais
 
 - [[http://www.lispworks.com/documentation/HyperSpec/Front/][Common Lisp Hyperspec]]
   Sua primeira parada ao pesquisar por documentação de Common Lisp. [[http://clhs.lisp.se/][(Mirror)]]
 - [[https://www.cliki.net/][CLiki, a Wiki de Common Lisp]]
+- [[http://bnmcgn.github.io/lisp-guide/lisp-exploration.html][Common Lisp REPL Exploration Guide]], um guia interessantíssimo sobre
+  a exploração de Common Lisp pelo [[https://en.wikipedia.org/wiki/Read%25E2%2580%2593eval%25E2%2580%2593print_loop][REPL]].
+
+** Livros
+
 - Common Lisp: A Gentle Introduction to Symbolic Computation, por David S. Touretsky
   - [Amazon] [[https://www.amazon.com.br/Common-LISP-Introduction-Computation-Engineering-ebook/dp/B00IZUEG1G/][Livro físico]]
   - [[https://www.cs.cmu.edu/~dst/LispBook/][Versão online]]
@@ -43,22 +59,35 @@ com a máquina.
   - [Amazon] [[https://www.amazon.com.br/Practical-Common-Lisp-Peter-Seibel/dp/1590592395][Livro físico]]
   - [[http://www.gigamonkeys.com/book/][Versão online]]
 
-** Configuração do Emacs
+* Tooling
+
+** Emacs
+
+Emacs é o melhor editor de texto em consenso para se programar em
+Common Lisp.
 
 - [Inglês] Mini-manual do Emacs, por [[https://github.com/tuhdo][tuhdo]]
   - [[http://tuhdo.github.io/emacs-tutor.html][Parte 1: O Básico]]
   - [[http://tuhdo.github.io/emacs-tutor2.html][Parte 2: Por que parênteses importam]]
   - [[http://tuhdo.github.io/emacs-tutor3.html][Parte 3: Customizando e extendendo o Emacs]]
 
-** Configuração do Quicklisp
+**  Quicklisp
+
+Quicklisp é o gerenciador de pacote (sistemas nos jargões de CL),
+muito útil para integrar sua aplicação usando pacotes de terceiro.
 
 - [Inglês] [[https://www.quicklisp.org/beta/][Site oficial do Quicklisp]]
+- [Inglês] [[https://lispcookbook.github.io/cl-cookbook/getting-started.html][Lisp CookBook Getting Started (Quicklisp também incluso)]]
 - [Inglês] [[https://www.xach.com/lisp/quickproject/][Quickproject: crie o esqueleto de um projeto de Common Lisp]]
 
   Este tutorial é extremamente útil para a criação de projetos
   compatíveis com Quicklisp.
 
-** Configuração do SLIME
+** SLIME
+
+SLIME significa /SUPERIOR LISP INTERACTION MODE for EMACS/. É uma
+das coisas mais fascinante que se faz Common Lisp uma linguagem tão
+produtiva e o Emacs ser seu editor ideal.
 
 - [Inglês] [[https://astraybi.wordpress.com/2015/08/02/how-to-install-slimesbclquicklisp-into-emacs/][Instalando SLIME + SBCL + Quicklisp no Emacs]], por Astray_BI
 - [Inglês] [[https://github.com/quicklisp/quicklisp-slime-helper][Repositório do =quicklisp-slime-helper=]]
@@ -66,7 +95,7 @@ com a máquina.
   Este pacote torna mais fácil a instalação do SLIME, a partir do
   Quicklisp.
 
-* Projetos e Repositórios Relevantes
+* Projetos
 
 - [[https://next-browser.github.io/][nEXT, um browser totalmente escrito em Common Lisp]]
 - [[https://github.com/adolenc/cl-neovim][=cl-neovim=, cliente de Common Lisp para Neovim]]
@@ -79,9 +108,11 @@ com a máquina.
   Neste repositório, foram feitos, em Common Lisp, os mini-jogos
   =cl-2048=, =cl-snake= e =dagarden=.
 
-- [[http://xzpeter.org/starwar/][=starwar=, um jogo feito em Common Lisp usando SDL]] ([[https://github.com/xzpeter/starwar][Repositório]]) ([[https://github.com/commonlispbr/starwar][Fork da nossa comunidade]])
+- [[http://xzpeter.org/starwar/][=starwar=, um jogo feito em Common Lisp usando SDL]] ([[https://github.com/xzpeter/starwar][Repositório]])
+  ([[https://github.com/commonlispbr/starwar][Fork da nossa comunidade]])
+- [[https://github.com/azzamsa/awesome-cl-software][Awesome-CL-software]], uma lista sobre aplicações feitas em Common Lisp!
 
-* Apêndice: Mais Links e /Off-topic/
+* Apêndice: Referências amplas
 
 - [Inglês] Build Your Own Lisp, por Daniel Holder
   - [Amazon] [[https://www.amazon.com.br/Build-Your-Own-Lisp-English-ebook/dp/B00ONV8CNO/][Livro físico]]
