@@ -6,16 +6,26 @@
 
 
 Grupo oficial do Telegram: [[https://telegram.me/commonlispbr][Common Lisp Brasil]]
+Grupo não-oficial de Lisp Brasileiro no server IRC freenode: [[http://webchat.freenode.net/][#lisp-br]]
 
-/Os dados a seguir podem estar incompletos ou conter erros. Proceda com cuidado e, se você tiver uma sugestão ou reclamação, [[https://github.com/commonlispbr/commonlispbr.github.io][abra uma issue no repositório desta página]]. :)/
+/Os dados a seguir podem estar incompletos ou conter erros. Proceda
+com cuidado e, se você tiver uma sugestão ou reclamação, [[https://github.com/commonlispbr/commonlispbr.github.io][abra uma
+issue no repositório desta página]]. :)/
 
 * Conceitos e Fundamentos
 ** O que é Common Lisp?
 
-Common Lisp é um dos muitos dialetos da linguagem Lisp.
-Os Lisps (abreviação de List Processor, processador de listas) têm uma sintaxe singular baseada no uso, principalmente, de parênteses, que delimitam listas de símbolos, que podem ou não estarem associados a valores e/ou procedimentos.
-Nos Lisps, há a peculiaridade de existir uma linha muito tênue de separação entre dados e procedimentos, quando seu código é produzido; na realidade, é possível produzir código a partir de dados e vice-versa.
-Esta família de linguagens foi desenhada para abstrair a complexidade do hardware de um computador, criando uma interface para que um humano possa se comunicar de maneira expressiva com a máquina.
+Common Lisp é um dos muitos dialetos da linguagem Lisp.  Os Lisps
+(abreviação de List Processor, processador de listas) têm uma sintaxe
+singular baseada no uso, principalmente, de parênteses, que delimitam
+listas de símbolos, que podem ou não estarem associados a valores e/ou
+procedimentos.  Nos Lisps, há a peculiaridade de existir uma linha
+muito tênue de separação entre dados e procedimentos, quando seu
+código é produzido; na realidade, é possível produzir código a partir
+de dados e vice-versa.  Esta família de linguagens foi desenhada para
+abstrair a complexidade do hardware de um computador, criando uma
+interface para que um humano possa se comunicar de maneira expressiva
+com a máquina.
 
 
 * Links de Aprendizado
@@ -45,14 +55,16 @@ Esta família de linguagens foi desenhada para abstrair a complexidade do hardwa
 - [Inglês] [[https://www.quicklisp.org/beta/][Site oficial do Quicklisp]]
 - [Inglês] [[https://www.xach.com/lisp/quickproject/][Quickproject: crie o esqueleto de um projeto de Common Lisp]]
 
-  Este tutorial é extremamente útil para a criação de projetos compatíveis com Quicklisp.
+  Este tutorial é extremamente útil para a criação de projetos
+  compatíveis com Quicklisp.
 
 ** Configuração do SLIME
 
 - [Inglês] [[https://astraybi.wordpress.com/2015/08/02/how-to-install-slimesbclquicklisp-into-emacs/][Instalando SLIME + SBCL + Quicklisp no Emacs]], por Astray_BI
 - [Inglês] [[https://github.com/quicklisp/quicklisp-slime-helper][Repositório do =quicklisp-slime-helper=]]
 
-  Este pacote torna mais fácil a instalação do SLIME, a partir do Quicklisp.
+  Este pacote torna mais fácil a instalação do SLIME, a partir do
+  Quicklisp.
 
 * Projetos e Repositórios Relevantes
 
@@ -64,12 +76,12 @@ Esta família de linguagens foi desenhada para abstrair a complexidade do hardwa
   desenvolvimento de jogos com Lisp, assim como Common Lisp]]
 - [[https://github.com/luksamuk/opengames][Repositório de pequenos jogos com código aberto]]
 
-
-  Neste repositório, foram feitos, em Common Lisp, os mini-jogos =cl-2048=, =cl-snake= e =dagarden=.
+  Neste repositório, foram feitos, em Common Lisp, os mini-jogos
+  =cl-2048=, =cl-snake= e =dagarden=.
 
 - [[http://xzpeter.org/starwar/][=starwar=, um jogo feito em Common Lisp usando SDL]] ([[https://github.com/xzpeter/starwar][Repositório]]) ([[https://github.com/commonlispbr/starwar][Fork da nossa comunidade]])
 
-* Apêndice: Mais Links e /Offtopic/
+* Apêndice: Mais Links e /Off-topic/
 
 - [Inglês] Build Your Own Lisp, por Daniel Holder
   - [Amazon] [[https://www.amazon.com.br/Build-Your-Own-Lisp-English-ebook/dp/B00ONV8CNO/][Livro físico]]
