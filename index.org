@@ -26,7 +26,9 @@ Esta família de linguagens foi desenhada para abstrair a complexidade do hardwa
 - [[http://www.lispworks.com/documentation/HyperSpec/Front/][Common Lisp Hyperspec]]
   Sua primeira parada ao pesquisar por documentação de Common Lisp. [[http://clhs.lisp.se/][(Mirror)]]
 - [[https://www.cliki.net/][CLiki, a Wiki de Common Lisp]]
-- [Amazon] [[https://www.amazon.com.br/Common-LISP-Introduction-Computation-Engineering-ebook/dp/B00IZUEG1G/][Common Lisp: A Gentle Introduction to Symbolic Computation]], por David S. Touretsky
+- Common Lisp: A Gentle Introduction to Symbolic Computation, por David S. Touretsky
+  - [Amazon] [[https://www.amazon.com.br/Common-LISP-Introduction-Computation-Engineering-ebook/dp/B00IZUEG1G/][Livro físico]]
+  - [[https://www.cs.cmu.edu/~dst/LispBook/][Versão online]]
 - [Amazon] [[https://www.amazon.com.br/Land-Lisp-Learn-Program-Game-ebook/dp/B004AE3P4K/][Land of Lisp: Learn to Program in Lisp, One Game at a Time!]], por Conrad Barski
 - [Amazon] [[https://www.amazon.com.br/Common-Lisp-Recipes-Problem-Solution-Approach-ebook/dp/B01JFTONBS/][Common Lisp Recipes: A Problem-Solution Approach]], por Edmund Weitz
 - Practical Common Lisp, por Peter Seibel
