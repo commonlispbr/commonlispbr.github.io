@@ -21,7 +21,9 @@ símbolos, que podem ou não estarem associados a valores e/ou
 procedimentos. Na linguagens da família Lisp, há a peculiaridade de
 existir uma linha muito tênue de separação entre dados e procedimentos
 quando seu código é produzido (na realidade, é possível produzir
-código a partir de dados e vice-versa).
+código a partir de dados e vice-versa). Uma das características
+forte da linguagem é o uso da [[https://pt.wikipedia.org/wiki/Nota%25C3%25A7%25C3%25A3o_polonesa][notação polonesa]] onde simplifica
+de uma maneira sem ambiguidade operações e operandos.
 
 Esta família de linguagens foi desenhada para abstrair a complexidade
 do hardware de um computador, criando uma interface para que um humano
@@ -46,9 +48,12 @@ diversos dialectos Lisp dos quais derivou.
 
 #+BEGIN_SRC lisp
 
-  (defun hello-world ()
+  (defun hello-world () ;; definição de função
     (princ "Hello, Lispers!"))
 
+  (hello-world) ;; chamada de função
+
+  ;; resultado: Hello, Lispers!
 #+END_SRC
 
 * Links de Aprendizado sobre Common Lisp
