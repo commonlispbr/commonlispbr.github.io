@@ -129,7 +129,8 @@ olhada!
 
 * Projetos
 
-- [[https://next-browser.github.io/][nEXT, um browser totalmente escrito em Common Lisp]]
+- [[https://next-browser.github.io/][next, um browser escrito em Common Lisp orientado a teclado Emacs-like
+  usando WebKit]]
 - [[https://github.com/adolenc/cl-neovim][=cl-neovim=, cliente de Common Lisp para Neovim]]
 - [[https://github.com/ryukinix/lisp-inference][=lisp-inference=, um motor de inferência baseado em Cálculo Proposicional, escrito em Common Lisp]]
 - [[https://github.com/ryukinix/lisp-chat][=lisp-chat=, um chat minimalista e experimental, escrito em Common Lisp]]
