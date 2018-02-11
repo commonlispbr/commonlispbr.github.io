@@ -15,7 +15,7 @@ Grupo oficial do Telegram: [[https://telegram.me/commonlispbr][Common Lisp Brasi
 Common Lisp é um dos muitos dialetos da linguagem Lisp.
 Os Lisps (abreviação de List Processor, processador de listas) têm uma sintaxe singular baseada no uso, principalmente, de parênteses, que delimitam listas de símbolos, que podem ou não estarem associados a valores e/ou procedimentos.
 Nos Lisps, há a peculiaridade de existir uma linha muito tênue de separação entre dados e procedimentos, quando seu código é produzido; na realidade, é possível produzir código a partir de dados e vice-versa.
-
+Esta família de linguagens foi desenhada para abstrair a complexidade do hardware de um computador, criando uma interface para que um humano possa se comunicar de maneira expressiva com a máquina.
 
 
 
@@ -64,7 +64,7 @@ Nos Lisps, há a peculiaridade de existir uma linha muito tênue de separação 
 
   Neste repositório, foram feitos, em Common Lisp, os mini-jogos =cl-2048=, =cl-snake= e =dagarden=.
 
-
+- [[http://xzpeter.org/starwar/][=starwar=, um jogo feito em Common Lisp usando SDL]] ([[https://github.com/xzpeter/starwar][Repositório]]) ([[https://github.com/commonlispbr/starwar][Mirror]])
 
 * Apêndice: Mais Links e /Offtopic/
 
