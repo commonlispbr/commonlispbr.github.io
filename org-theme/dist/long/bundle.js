@@ -155,4 +155,4 @@
   // Hold bootstrap until document body is parsed
   exports.onload = bootstrap;
 
-})(window,{"table-of-contents":true,"section-numbers":true,"postamble":true,"fancy-lists":true,"fancy-icons":true,"back-to-top":true,"back-to-top-text":"Back to top","collection":{"enabled":true,"avatar":"http://www.lisperati.com/lisplogo_flag_64.png","title":"Common Lisp Brazil","url":"/"}});
+})(window,{"table-of-contents":true,"section-numbers":true,"postamble":true,"fancy-lists":true,"fancy-icons":true,"back-to-top":true,"back-to-top-text":"Back to top","collection":{"enabled":true,"avatar":"http://www.lisperati.com/lisplogo_flag_64.png","title":"Common Lisp Brasil","url":"/"}});
