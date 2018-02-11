@@ -13,23 +13,36 @@ com cuidado e, se você tiver uma sugestão ou reclamação, [[https://github.co
 issue no repositório desta página]]. :)/
 
 * Conceitos e Fundamentos
-** O que é Common Lisp?
+** O que é Lisp?
 
-Common Lisp é um dos muitos dialetos da linguagem Lisp. Dialetos Lisp
-(abreviação de **LISt Processing**, processamento de listas) têm uma
-sintaxe singular baseada no uso de parênteses para denotar de
-símbolos, que podem ou não estarem associados a valores e/ou
-procedimentos. Nos Lisps, há a peculiaridade de existir uma linha
+Dialetos Lisp (abreviação de **LISt Processing**, processamento de
+listas) têm uma sintaxe singular baseada no uso de parênteses para
+denotar de símbolos, que podem ou não estarem associados a valores
+e/ou procedimentos. Nos Lisps, há a peculiaridade de existir uma linha
 muito tênue de separação entre dados e procedimentos quando seu código
 é produzido (na realidade, é possível produzir código a partir de
 dados e vice-versa).
 
-Esta família de linguagens foi desenhada para
-abstrair a complexidade do hardware de um computador, criando uma
-interface para que um humano possa se comunicar de maneira expressiva
-com a máquina. O primeiro Lisp denotado historicamente por [[https://pt.wikipedia.org/wiki/Lisp][LISP]] foi
-criado por [[https://pt.wikipedia.org/wiki/John_McCarthy][John McCarthy]] em 1958 nos laboratórios do MIT, USA.
+Esta família de linguagens foi desenhada para abstrair a complexidade
+do hardware de um computador, criando uma interface para que um humano
+possa se comunicar de maneira expressiva com a máquina. O primeiro
+Lisp denotado historicamente por [[https://pt.wikipedia.org/wiki/Lisp][LISP]] foi criado por [[https://pt.wikipedia.org/wiki/John_McCarthy][John McCarthy]] em
+1958 nos laboratórios do MIT, USA.
 
+
+** O que é Common Lisp?
+
+Common Lisp é uma implementação específica da linguagem de programação
+Lisp multi-paradigma que suporte programação funcional, orientação a
+objetos e por vezes funcional. Foi criada por Guy L. Steele
+nos anos '80 com o intuito de combinar aspectos de diversos
+dialetos anteriores, incluindo Scheme.
+
+Em 1994 foi publicada no padrão [[http://cvberry.com/tech_writings/notes/common_lisp_standard_draft.html][ANSI Information Technology -
+Programming Language - Common Lisp, registro X3.226-1994 (R1999)]] É bem
+maior e semanticamente mais complexa que Scheme uma vez que foi
+projetada para ser uma linguagem comercial e ser compatível com os
+diversos dialectos Lisp dos quais derivou.
 
 * Links de Aprendizado sobre Common Lisp
 ** Apresentação
