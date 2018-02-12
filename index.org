@@ -74,6 +74,7 @@ compatível com os diversos outros dialetos Lisp dos quais derivou.
   Common Lisp.
 - [[http://www.lisperati.com/casting.html][Lisperati Casting]], uma história em quadrinhos sobre a magia que é
   programar em Lisp.
+- [[http://www.avelino.xxx/hist%C3%B3ria-do-lisp-abra-os-olhos-para-programa%C3%A7%C3%A3o-funcional/][História do Lisp]], entenda como o Lisp começou e porque temos tantos dialetos.
 
 ** Documentação e tutoriais
 
