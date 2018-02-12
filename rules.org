@@ -2,7 +2,7 @@
 
 #+AUTHOR: Manoel Vilela
 #+DATE: <2018-02-10 Sat>
-#+TITLE: Common Lisp Brasil
+#+TITLE: Regras
 
 
 1. Não seja um **cuzão**, não poste spam ou coisas totalmente
