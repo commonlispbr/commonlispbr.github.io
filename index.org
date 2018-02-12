@@ -15,13 +15,12 @@ issue no repositório desta página]].
 * Conceitos e Fundamentos
 ** O que é Lisp?
 
-Dialetos Lisp (abreviação de **LISt Processing**, processamento de
-listas) têm uma sintaxe singular simplificada para denotar, listas e
+Dialetos Lisp [fn:1]  têm uma sintaxe singular simplificada para denotar, listas e
 símbolos, que podem ou não estarem associados a valores e/ou
 procedimentos. Na linguagens da família Lisp, há a peculiaridade de
 existir uma linha muito tênue de separação entre dados e procedimentos
-no código-fonte (na realidade, é possível produzir código a partir de
-dados e vice-versa). Uma das características fortes da linguagem é o
+no código-fonte. Na realidade, é possível produzir código a partir de
+dados e vice-versa! Uma das características fortes da linguagem é o
 uso da [[https://pt.wikipedia.org/wiki/Nota%25C3%25A7%25C3%25A3o_polonesa][notação polonesa]] onde simplifica a sintaxe da linguagem de uma
 maneira sem acrescentar ambiguidades: operações e operandos são
 denotados de forma explícita em sua ordem de precedência no uso de
@@ -40,6 +39,7 @@ possa se comunicar de maneira expressiva com a máquina. O primeiro
 Lisp denotado historicamente por [[https://pt.wikipedia.org/wiki/Lisp][LISP]] foi criado por [[https://pt.wikipedia.org/wiki/John_McCarthy][John McCarthy]] em
 1958 nos laboratórios do MIT, USA.
 
+[fn:1] Lisp é uma abreviação de **LISt Processing**, processamento de listas.
 
 ** O que é Common Lisp?
 
@@ -78,11 +78,14 @@ diversos dialectos Lisp dos quais derivou.
 ** Documentação e tutoriais
 
 - [[http://bnmcgn.github.io/lisp-guide/lisp-exploration.html][Common Lisp REPL Exploration Guide]], um guia interessantíssimo sobre
-  a exploração de Common Lisp pelo [[https://en.wikipedia.org/wiki/Read%25E2%2580%2593eval%25E2%2580%2593print_loop][REPL]].
+  a exploração de Common Lisp pelo REPL [fn:2].
 - [[http://www.lispworks.com/documentation/HyperSpec/Front/][Common Lisp Hyperspec]]
   Sua primeira parada ao pesquisar por documentação de Common Lisp. [[http://clhs.lisp.se/][(Mirror)]]
 - [[https://www.cliki.net/][CLiki, a Wiki de Common Lisp]]
 
+[fn:2] REPL significa Read-Eval-Print-Loop, muito comum em linguagens
+interativas como Lisp e Python. A propósito, o conceito foi
+inicialmente feito justamente em Lisp!
 
 ** Livros
 
@@ -128,7 +131,7 @@ produtiva e o Emacs ser seu editor ideal.
 - [Inglês] [[https://clisp.sourceforge.io/][GNU CLISP]] (obsoleto desde 2010, artefato histórico)
 - [Inglês] [[https://ccl.clozure.com/][CCL]]: Clozure Common Lisp ([[https://clojure.org/][Clojure]] é outra coisa, não confunda!)
 
-**  Quicklisp
+** Quicklisp
 
 Quicklisp é o gerenciador de pacote (sistemas nos jargões de CL),
 muito útil para integrar sua aplicação usando pacotes de terceiro.
