@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Common Lisp Brasil</title>
-<!-- 2018-02-11 Sun 19:27 -->
+<!-- 2018-02-11 Sun 22:56 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Manoel Vilela, Lucas Vieira" />
@@ -196,9 +196,20 @@ listas) têm uma sintaxe singular simplificada para denotar, listas e
 símbolos, que podem ou não estarem associados a valores e/ou
 procedimentos. Na linguagens da família Lisp, há a peculiaridade de
 existir uma linha muito tênue de separação entre dados e procedimentos
-quando seu código é produzido (na realidade, é possível produzir
-código a partir de dados e vice-versa).
+no código-fonte (na realidade, é possível produzir código a partir de
+dados e vice-versa). Uma das características fortes da linguagem é o
+uso da <a href="https://pt.wikipedia.org/wiki/Nota%25C3%25A7%25C3%25A3o_polonesa">notação polonesa</a> onde simplifica a sintaxe da linguagem de uma
+maneira sem acrescentar ambiguidades: operações e operandos são
+denotados de forma explícita em sua ordem de precedência no uso de
+listas.
 </p>
+
+<div class="org-src-container">
+
+<pre class="src src-lisp"><span style="color: #51afef;">(</span>operacao operando1 operand2<span style="color: #51afef;">)</span>
+<span style="color: #51afef;">(</span>+ 1 2<span style="color: #51afef;">)</span> <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">=&gt; 3</span>
+</pre>
+</div>
 
 <p>
 Esta família de linguagens foi desenhada para abstrair a complexidade
@@ -216,16 +227,17 @@ Lisp denotado historicamente por <a href="https://pt.wikipedia.org/wiki/Lisp">LI
 <div class="outline-text-3" id="text-1-2">
 <p>
 Common Lisp é uma implementação específica da linguagem de programação
-Lisp multi-paradigma que suporte programação funcional, orientação a
-objetos e por vezes funcional. Foi criada por Guy L. Steele
-nos anos '80 com o intuito de combinar aspectos de diversos
-dialetos anteriores, incluindo Scheme.
+Lisp multi-paradigma! Suporte programação procedural, orientação a
+objetos e por vezes o paradigma funcional como é comum em todos os
+Lisps por sua próxima relação a natureza do Cálculo Lambda.
 </p>
 
 <p>
-Em 1994 foi publicada no padrão <a href="http://cvberry.com/tech_writings/notes/common_lisp_standard_draft.html">ANSI Information Technology -
-Programming Language - Common Lisp, registro X3.226-1994 (R1999)</a> É bem
-maior e semanticamente mais complexa que Scheme uma vez que foi
+Foi criada por Guy L. Steele nos anos '80 com o intuito de combinar
+aspectos de diversos dialetos anteriores, incluindo Scheme. Em 1994
+foi publicada no padrão <a href="http://cvberry.com/tech_writings/notes/common_lisp_standard_draft.html">ANSI Information Technology - Programming
+Language - Common Lisp, registro X3.226-1994 (R1999)</a>. Common Lisp é
+bem maior e semanticamente mais complexa que Scheme uma vez que foi
 projetada para ser uma linguagem comercial e ser compatível com os
 diversos dialectos Lisp dos quais derivou.
 </p>
@@ -487,7 +499,7 @@ Neste repositório, foram feitos, em Common Lisp, os mini-jogos
 <div id="postamble" class="status">
 <p class="date">Date: <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-02-10 Sat&gt;</span></span></p>
 <p class="author">Author: Manoel Vilela, Lucas Vieira</p>
-<p class="date">Created: 2018-02-11 Sun 19:27</p>
+<p class="date">Created: 2018-02-11 Sun 22:56</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
