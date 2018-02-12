@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Common Lisp Brasil</title>
-<!-- 2018-02-11 Sun 19:27 -->
+<!-- 2018-02-12 seg 00:36 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Manoel Vilela, Lucas Vieira" />
@@ -160,10 +160,11 @@ for the JavaScript code in this tag.
 <li><a href="#sec-3">3. Tooling</a>
 <ul>
 <li><a href="#sec-3-1">3.1. Emacs</a></li>
-<li><a href="#sec-3-2">3.2. SLIME</a></li>
-<li><a href="#sec-3-3">3.3. Compiladores</a></li>
-<li><a href="#sec-3-4">3.4. Quicklisp</a></li>
-<li><a href="#sec-3-5">3.5. Roswell</a></li>
+<li><a href="#sec-3-2">3.2. Portacle</a></li>
+<li><a href="#sec-3-3">3.3. SLIME</a></li>
+<li><a href="#sec-3-4">3.4. Compiladores</a></li>
+<li><a href="#sec-3-5">3.5. Quicklisp</a></li>
+<li><a href="#sec-3-6">3.6. Roswell</a></li>
 </ul>
 </li>
 <li><a href="#sec-4">4. Projetos</a></li>
@@ -192,12 +193,14 @@ issue no repositório desta página</a>.
 <div class="outline-text-3" id="text-1-1">
 <p>
 Dialetos Lisp (abreviação de <b><b>LISt Processing</b></b>, processamento de
-listas) têm uma sintaxe singular simplificada para denotar, listas e
+listas) têm uma sintaxe singular para representar listas e
 símbolos, que podem ou não estarem associados a valores e/ou
 procedimentos. Na linguagens da família Lisp, há a peculiaridade de
-existir uma linha muito tênue de separação entre dados e procedimentos
+existir uma linha muito tênue de separação entre dados e procedimentos,
 quando seu código é produzido (na realidade, é possível produzir
-código a partir de dados e vice-versa).
+código a partir de dados e vice-versa). Uma das características
+fortes da linguagem é o uso da <a href="https://pt.wikipedia.org/wiki/Nota%25C3%25A7%25C3%25A3o_polonesa">notação polonesa</a>, simplificando
+e retirando a ambiguidade de operações e operandos.
 </p>
 
 <p>
@@ -210,12 +213,11 @@ Lisp denotado historicamente por <a href="https://pt.wikipedia.org/wiki/Lisp">LI
 </div>
 </div>
 
-
 <div id="outline-container-sec-1-2" class="outline-3">
 <h3 id="sec-1-2"><span class="section-number-3">1.2</span> O que é Common Lisp?</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
-Common Lisp é uma implementação específica da linguagem de programação
+Common Lisp é um dialeto específico da linguagem de programação
 Lisp multi-paradigma que suporte programação funcional, orientação a
 objetos e por vezes funcional. Foi criada por Guy L. Steele
 nos anos '80 com o intuito de combinar aspectos de diversos
@@ -232,12 +234,12 @@ diversos dialectos Lisp dos quais derivou.
 
 <div class="org-src-container">
 
-<pre class="src src-lisp"><span style="color: #51afef;">(</span><span style="color: #51afef;">defun</span> <span style="color: #c678dd;">hello-world</span> <span style="color: #c678dd;">()</span> <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">defini&#231;&#227;o de fun&#231;&#227;o</span>
-  <span style="color: #c678dd;">(</span>princ <span style="color: #98be65;">"Hello, Lispers!"</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+<pre class="src src-lisp">(defun hello-world () ;; definição de função
+  (princ "Hello, Lispers!"))
 
-<span style="color: #51afef;">(</span>hello-world<span style="color: #51afef;">)</span> <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">chamada de fun&#231;&#227;o</span>
+(hello-world) ;; chamada de função
 
-<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">resultado: Hello, Lispers!</span>
+;; resultado: Hello, Lispers!
 </pre>
 </div>
 </div>
@@ -270,6 +272,8 @@ programar em Lisp.
 <li><a href="http://bnmcgn.github.io/lisp-guide/lisp-exploration.html">Common Lisp REPL Exploration Guide</a>, um guia interessantíssimo sobre
 a exploração de Common Lisp pelo <a href="https://en.wikipedia.org/wiki/Read%25E2%2580%2593eval%25E2%2580%2593print_loop">REPL</a>.
 </li>
+<li><a href="https://lispcookbook.github.io/cl-cookbook/">Cookbook de Common Lisp</a>. Também inclui tutoriais sobre Quicklisp (veja a seção de Tooling).
+</li>
 <li><a href="http://www.lispworks.com/documentation/HyperSpec/Front/">Common Lisp Hyperspec</a>
   Sua primeira parada ao pesquisar por documentação de Common Lisp. <a href="http://clhs.lisp.se/">(Mirror)</a>
 </li>
@@ -278,7 +282,6 @@ a exploração de Common Lisp pelo <a href="https://en.wikipedia.org/wiki/Read%2
 </ul>
 </div>
 </div>
-
 
 <div id="outline-container-sec-2-3" class="outline-3">
 <h3 id="sec-2-3"><span class="section-number-3">2.3</span> Livros</h3>
@@ -340,8 +343,32 @@ Common Lisp.
 </div>
 
 <div id="outline-container-sec-3-2" class="outline-3">
-<h3 id="sec-3-2"><span class="section-number-3">3.2</span> SLIME</h3>
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Portacle</h3>
 <div class="outline-text-3" id="text-3-2">
+<p>
+Portacle é um reempacotamento de Emacs. Diferente do programa original,
+Portacle é uma edição voltada para programadores Common Lisp. Este editor
+já inclui o SBCL (implementação de Common Lisp), Quicklisp (para gerenciar
+projetos e pacotes), e Magit (para lidar com versionamento de código em
+Git). Enquanto recomendamos instalar o Emacs e aprender a configurá-lo,
+esta é também uma excelente ferramenta para iniciantes que queiram um
+ambiente Common Lisp que funcione logo de cara, ou mesmo para lispeiros
+experientes que queiram um ambiente CL que possam carregar no pendrive,
+e que funcione em quase qualquer sistema operacional.
+</p>
+
+<ul class="org-ul">
+<li>[Inglês] <a href="https://portacle.github.io/">Link oficial do Portacle</a>
+</li>
+<li>[Inglês] <a href="https://github.com/portacle/portacle">Repositório oficial</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> SLIME</h3>
+<div class="outline-text-3" id="text-3-3">
 <p>
 SLIME significa <i>SUPERIOR LISP INTERACTION MODE for EMACS</i>. É uma
 das coisas mais fascinante que se faz Common Lisp uma linguagem tão
@@ -362,9 +389,9 @@ Quicklisp.
 </div>
 </div>
 
-<div id="outline-container-sec-3-3" class="outline-3">
-<h3 id="sec-3-3"><span class="section-number-3">3.3</span> Compiladores</h3>
-<div class="outline-text-3" id="text-3-3">
+<div id="outline-container-sec-3-4" class="outline-3">
+<h3 id="sec-3-4"><span class="section-number-3">3.4</span> Compiladores</h3>
+<div class="outline-text-3" id="text-3-4">
 <ul class="org-ul">
 <li>[Inglês] <a href="http://sbcl.org/">SBCL</a>: Steel Bank Common Lisp (recomendado)
 </li>
@@ -378,9 +405,9 @@ Quicklisp.
 </div>
 </div>
 
-<div id="outline-container-sec-3-4" class="outline-3">
-<h3 id="sec-3-4"><span class="section-number-3">3.4</span> Quicklisp</h3>
-<div class="outline-text-3" id="text-3-4">
+<div id="outline-container-sec-3-5" class="outline-3">
+<h3 id="sec-3-5"><span class="section-number-3">3.5</span> Quicklisp</h3>
+<div class="outline-text-3" id="text-3-5">
 <p>
 Quicklisp é o gerenciador de pacote (sistemas nos jargões de CL),
 muito útil para integrar sua aplicação usando pacotes de terceiro.
@@ -388,8 +415,6 @@ muito útil para integrar sua aplicação usando pacotes de terceiro.
 
 <ul class="org-ul">
 <li>[Inglês] <a href="https://www.quicklisp.org/beta/">Site oficial do Quicklisp</a>
-</li>
-<li>[Inglês] <a href="https://lispcookbook.github.io/cl-cookbook/getting-started.html">Lisp CookBook Getting Started (Quicklisp também incluso)</a>
 </li>
 <li>[Inglês] <a href="https://www.xach.com/lisp/quickproject/">Quickproject: crie o esqueleto de um projeto de Common Lisp</a>
 
@@ -402,9 +427,9 @@ compatíveis com Quicklisp.
 </div>
 </div>
 
-<div id="outline-container-sec-3-5" class="outline-3">
-<h3 id="sec-3-5"><span class="section-number-3">3.5</span> Roswell</h3>
-<div class="outline-text-3" id="text-3-5">
+<div id="outline-container-sec-3-6" class="outline-3">
+<h3 id="sec-3-6"><span class="section-number-3">3.6</span> Roswell</h3>
+<div class="outline-text-3" id="text-3-6">
 <p>
 Roswell é descrito como ser o instalador de lisp e launcher para
 o ambiente em geral de Common Lisp que simplesmente funciona.
@@ -425,7 +450,7 @@ olhada!
 <h2 id="sec-4"><span class="section-number-2">4</span> Projetos</h2>
 <div class="outline-text-2" id="text-4">
 <ul class="org-ul">
-<li><a href="https://next-browser.github.io/">next, um browser escrito em Common Lisp orientado a teclado Emacs-like
+<li><a href="https://next-browser.github.io/"><code>nEXT</code>, um browser escrito em Common Lisp orientado a teclado Emacs-like
 usando WebKit</a>
 </li>
 <li><a href="https://github.com/adolenc/cl-neovim"><code>cl-neovim</code>, cliente de Common Lisp para Neovim</a>
@@ -434,21 +459,22 @@ usando WebKit</a>
 </li>
 <li><a href="https://github.com/ryukinix/lisp-chat"><code>lisp-chat</code>, um chat minimalista e experimental, escrito em Common Lisp</a>
 </li>
-<li><a href="https://github.com/lispgames/lispgames.github.io/wiki/Common-Lisp"><code>lispgames</code>, comunidade internacional de referência sobre
-desenvolvimento de jogos com Lisp, assim como Common Lisp</a>
+<li><a href="https://github.com/lispgames/lispgames.github.io/wiki/Common-Lisp"><code>lispgames</code>, comunidade internacional de referência sobre desenvolvimento de jogos com Lisp, assim como Common Lisp</a>
 </li>
-<li><a href="https://github.com/luksamuk/opengames">Repositório de pequenos jogos com código aberto</a>
-
-<p>
-Neste repositório, foram feitos, em Common Lisp, os mini-jogos
-<code>cl-2048</code>, <code>cl-snake</code> e <code>dagarden</code>.
-</p>
+<li><a href="https://github.com/froggey/Mezzano">Mezzano, um sistema operacional feito em Common Lisp</a> (<a href="https://github.com/froggey/MBuild">Link para o build system</a>)
 </li>
-
+<li><a href="https://github.com/luksamuk/opengames">Repositório de pequenos jogos com código aberto</a>.Neste repositório, foram feitos, em Common Lisp, os mini-jogos <code>cl-2048</code>, <code>cl-snake</code> e <code>dagarden</code>.
+</li>
 <li><a href="http://xzpeter.org/starwar/"><code>starwar</code>, um jogo feito em Common Lisp usando SDL</a> (<a href="https://github.com/xzpeter/starwar">Repositório</a>)
 (<a href="https://github.com/commonlispbr/starwar">Fork da nossa comunidade</a>)
 </li>
 <li><a href="https://github.com/azzamsa/awesome-cl-software">Awesome-CL-software</a>, uma lista sobre aplicações feitas em Common Lisp!
+</li>
+<li><a href="https://github.com/aimacode/aima-lisp">Implementação em Common Lisp dos algoritmos do livro <i>Artificial Intelligence - A Modern Approach</i>, de Russell e Norvig</a>
+</li>
+<li><a href="https://github.com/norvig/paip-lisp">Implementação em Common Lisp dos algoritmos do livro <i>Paradigms of Artificial Intelligente Programming</i>, de Norvig</a>
+</li>
+<li><a href="https://github.com/kingcons/coleslaw"><code>coleslaw</code>, software em Common Lisp para escrever seu próprio blog estático</a>, similar a Frog, Jekyll e Hakyll.
 </li>
 </ul>
 </div>
@@ -487,7 +513,7 @@ Neste repositório, foram feitos, em Common Lisp, os mini-jogos
 <div id="postamble" class="status">
 <p class="date">Date: <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-02-10 Sat&gt;</span></span></p>
 <p class="author">Author: Manoel Vilela, Lucas Vieira</p>
-<p class="date">Created: 2018-02-11 Sun 19:27</p>
+<p class="date">Created: 2018-02-12 seg 00:36</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>

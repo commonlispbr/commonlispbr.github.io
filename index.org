@@ -16,14 +16,14 @@ issue no repositório desta página]].
 ** O que é Lisp?
 
 Dialetos Lisp (abreviação de **LISt Processing**, processamento de
-listas) têm uma sintaxe singular simplificada para denotar, listas e
+listas) têm uma sintaxe singular para representar listas e
 símbolos, que podem ou não estarem associados a valores e/ou
 procedimentos. Na linguagens da família Lisp, há a peculiaridade de
-existir uma linha muito tênue de separação entre dados e procedimentos
+existir uma linha muito tênue de separação entre dados e procedimentos,
 quando seu código é produzido (na realidade, é possível produzir
 código a partir de dados e vice-versa). Uma das características
-forte da linguagem é o uso da [[https://pt.wikipedia.org/wiki/Nota%25C3%25A7%25C3%25A3o_polonesa][notação polonesa]] onde simplifica
-de uma maneira sem ambiguidade operações e operandos.
+fortes da linguagem é o uso da [[https://pt.wikipedia.org/wiki/Nota%25C3%25A7%25C3%25A3o_polonesa][notação polonesa]], simplificando
+e retirando a ambiguidade de operações e operandos.
 
 Esta família de linguagens foi desenhada para abstrair a complexidade
 do hardware de um computador, criando uma interface para que um humano
@@ -31,10 +31,9 @@ possa se comunicar de maneira expressiva com a máquina. O primeiro
 Lisp denotado historicamente por [[https://pt.wikipedia.org/wiki/Lisp][LISP]] foi criado por [[https://pt.wikipedia.org/wiki/John_McCarthy][John McCarthy]] em
 1958 nos laboratórios do MIT, USA.
 
-
 ** O que é Common Lisp?
 
-Common Lisp é uma implementação específica da linguagem de programação
+Common Lisp é um dialeto específico da linguagem de programação
 Lisp multi-paradigma que suporte programação funcional, orientação a
 objetos e por vezes funcional. Foi criada por Guy L. Steele
 nos anos '80 com o intuito de combinar aspectos de diversos
@@ -69,10 +68,10 @@ diversos dialectos Lisp dos quais derivou.
 
 - [[http://bnmcgn.github.io/lisp-guide/lisp-exploration.html][Common Lisp REPL Exploration Guide]], um guia interessantíssimo sobre
   a exploração de Common Lisp pelo [[https://en.wikipedia.org/wiki/Read%25E2%2580%2593eval%25E2%2580%2593print_loop][REPL]].
+- [[https://lispcookbook.github.io/cl-cookbook/][Cookbook de Common Lisp]]. Também inclui tutoriais sobre Quicklisp (veja a seção de Tooling).
 - [[http://www.lispworks.com/documentation/HyperSpec/Front/][Common Lisp Hyperspec]]
   Sua primeira parada ao pesquisar por documentação de Common Lisp. [[http://clhs.lisp.se/][(Mirror)]]
 - [[https://www.cliki.net/][CLiki, a Wiki de Common Lisp]]
-
 
 ** Livros
 
@@ -99,6 +98,21 @@ Common Lisp.
   - [[http://tuhdo.github.io/emacs-tutor2.html][Parte 2: Por que parênteses importam]]
   - [[http://tuhdo.github.io/emacs-tutor3.html][Parte 3: Customizando e extendendo o Emacs]]
 
+** Portacle
+
+Portacle é um reempacotamento de Emacs. Diferente do programa original,
+Portacle é uma edição voltada para programadores Common Lisp. Este editor
+já inclui o SBCL (implementação de Common Lisp), Quicklisp (para gerenciar
+projetos e pacotes), e Magit (para lidar com versionamento de código em
+Git). Enquanto recomendamos instalar o Emacs e aprender a configurá-lo,
+esta é também uma excelente ferramenta para iniciantes que queiram um
+ambiente Common Lisp que funcione logo de cara, ou mesmo para lispeiros
+experientes que queiram um ambiente CL que possam carregar no pendrive,
+e que funcione em quase qualquer sistema operacional.
+
+- [Inglês] [[https://portacle.github.io/][Link oficial do Portacle]]
+- [Inglês] [[https://github.com/portacle/portacle][Repositório oficial]]
+
 ** SLIME
 
 SLIME significa /SUPERIOR LISP INTERACTION MODE for EMACS/. É uma
@@ -118,13 +132,12 @@ produtiva e o Emacs ser seu editor ideal.
 - [Inglês] [[https://clisp.sourceforge.io/][GNU CLISP]] (obsoleto desde 2010, artefato histórico)
 - [Inglês] [[https://ccl.clozure.com/][CCL]]: Clozure Common Lisp ([[https://clojure.org/][Clojure]] é outra coisa, não confunda!)
 
-**  Quicklisp
+** Quicklisp
 
 Quicklisp é o gerenciador de pacote (sistemas nos jargões de CL),
 muito útil para integrar sua aplicação usando pacotes de terceiro.
 
 - [Inglês] [[https://www.quicklisp.org/beta/][Site oficial do Quicklisp]]
-- [Inglês] [[https://lispcookbook.github.io/cl-cookbook/getting-started.html][Lisp CookBook Getting Started (Quicklisp também incluso)]]
 - [Inglês] [[https://www.xach.com/lisp/quickproject/][Quickproject: crie o esqueleto de um projeto de Common Lisp]]
 
   Este tutorial é extremamente útil para a criação de projetos
@@ -139,24 +152,23 @@ e criação de binários com Common Lisp. Vale a pena tentar dar uma
 olhada!
 
 - [[https://github.com/roswell/roswell][Roswell]]
-
+  
 * Projetos
 
-- [[https://next-browser.github.io/][next, um browser escrito em Common Lisp orientado a teclado Emacs-like
+- [[https://next-browser.github.io/][=nEXT=, um browser escrito em Common Lisp orientado a teclado Emacs-like
   usando WebKit]]
 - [[https://github.com/adolenc/cl-neovim][=cl-neovim=, cliente de Common Lisp para Neovim]]
 - [[https://github.com/ryukinix/lisp-inference][=lisp-inference=, um motor de inferência baseado em Cálculo Proposicional, escrito em Common Lisp]]
 - [[https://github.com/ryukinix/lisp-chat][=lisp-chat=, um chat minimalista e experimental, escrito em Common Lisp]]
-- [[https://github.com/lispgames/lispgames.github.io/wiki/Common-Lisp][=lispgames=, comunidade internacional de referência sobre
-  desenvolvimento de jogos com Lisp, assim como Common Lisp]]
-- [[https://github.com/luksamuk/opengames][Repositório de pequenos jogos com código aberto]]
-
-  Neste repositório, foram feitos, em Common Lisp, os mini-jogos
-  =cl-2048=, =cl-snake= e =dagarden=.
-
+- [[https://github.com/lispgames/lispgames.github.io/wiki/Common-Lisp][=lispgames=, comunidade internacional de referência sobre desenvolvimento de jogos com Lisp, assim como Common Lisp]]
+- [[https://github.com/froggey/Mezzano][Mezzano, um sistema operacional feito em Common Lisp]] ([[https://github.com/froggey/MBuild][Link para o build system]])
+- [[https://github.com/luksamuk/opengames][Repositório de pequenos jogos com código aberto]].Neste repositório, foram feitos, em Common Lisp, os mini-jogos =cl-2048=, =cl-snake= e =dagarden=.
 - [[http://xzpeter.org/starwar/][=starwar=, um jogo feito em Common Lisp usando SDL]] ([[https://github.com/xzpeter/starwar][Repositório]])
   ([[https://github.com/commonlispbr/starwar][Fork da nossa comunidade]])
 - [[https://github.com/azzamsa/awesome-cl-software][Awesome-CL-software]], uma lista sobre aplicações feitas em Common Lisp!
+- [[https://github.com/aimacode/aima-lisp][Implementação em Common Lisp dos algoritmos do livro /Artificial Intelligence - A Modern Approach/, de Russell e Norvig]]
+- [[https://github.com/norvig/paip-lisp][Implementação em Common Lisp dos algoritmos do livro /Paradigms of Artificial Intelligente Programming/, de Norvig]]
+- [[https://github.com/kingcons/coleslaw][=coleslaw=, software em Common Lisp para escrever seu próprio blog estático]], similar a Frog, Jekyll e Hakyll.
 
 * Apêndice: Referências amplas
 
