@@ -1,0 +1,14 @@
+#+SETUPFILE: org-theme/setup/short.setup
+
+#+AUTHOR: Manoel Vilela
+#+DATE: <2018-02-10 Sat>
+#+TITLE: Regras
+
+
+1. Não seja um **cuzão**, não poste spam ou coisas totalmente
+   descorrelacionadas com Lisp, Tecnologia e Lain.
+2. Leia a primeira regra.
+
+
+Descumprimentos das regras receberá um aviso (se merecer). Na segunda
+vez não terá aviso. É BAN.
