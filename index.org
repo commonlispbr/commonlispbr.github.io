@@ -3,14 +3,24 @@
 #+AUTHOR: Manoel Vilela, Lucas Vieira
 #+DATE: <2018-02-10 Sat>
 #+TITLE: Common Lisp Brasil
+#+LANGUAGE: bt-br
+#+OPTIONS: toc:nil
 
+#+BEGIN_ABSTRACT
+Olá! Seja-bem vindo ao grupo de estudos
+e projetos do Common Lisp Brasil!
 
 Grupo oficial do Telegram: [[https://telegram.me/commonlispbr][Common Lisp Brasil]]
 
 Grupo não-oficial de Lisp Brasileiro IRC freenode: [[http://webchat.freenode.net/][#lisp-br]]
 
-Os dados a seguir podem estar incompletos ou conter erros. Proceda com cuidado e, se você tiver uma sugestão ou reclamação, [[https://github.com/commonlispbr/commonlispbr.github.io][abra uma
-issue no repositório desta página]].
+Os dados a seguir podem estar incompletos ou conter erros. Proceda com
+cuidado e, se você tiver uma sugestão ou reclamação, [[https://github.com/commonlispbr/commonlispbr.github.io][abra uma issue no
+repositório desta página]].
+#+END_ABSTRACT
+#+TOC: headlines=2
+
+
 
 * Conceitos e Fundamentos
 ** O que é Lisp?
@@ -28,7 +38,7 @@ listas.
 
 #+BEGIN_SRC lisp
 
-(operacao operando1 operand2)
+(operação operando-1 operando-2)
 (+ 1 2) ;; => 3
 
 #+END_SRC
@@ -168,7 +178,7 @@ e criação de binários com Common Lisp. Vale a pena tentar dar uma
 olhada!
 
 - [[https://github.com/roswell/roswell][Roswell]]
-  
+
 * Projetos
 
 - [[https://next-browser.github.io/][=nEXT=, um browser escrito em Common Lisp orientado a teclado Emacs-like
