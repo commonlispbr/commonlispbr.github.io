@@ -23,11 +23,11 @@ repositório desta página]].
 
 * Sitemap
 
-- [[file:rules.html][Regras]]
 - [[file:appendix.html][Apêndice]]
-- [[file:projects.html][Projetos]]
 - [[http://lisp.com.br/archive/][Arquivos]]
 - [[http://lisp.com.br/cl-cookbook][cl-cookbook PT_BR (em progresso)]]
+- [[file:projects.html][Projetos]]
+- [[file:rules.html][Regras]]
 
 * Conceitos e Fundamentos
 ** O que é Lisp?
