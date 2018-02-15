@@ -1,0 +1,19 @@
+#+SETUPFILE: org-theme/setup/short.setup
+
+#+AUTHOR: Manoel Vilela
+#+DATE: <2018-02-15 Thu>
+#+TITLE: Apêndice
+#+LANGUAGE: bt-br
+
+
+- [Inglês] Build Your Own Lisp, por Daniel Holder
+  - [Amazon] [[https://www.amazon.com.br/Build-Your-Own-Lisp-English-ebook/dp/B00ONV8CNO/][Livro físico]]
+  - [[http://www.buildyourownlisp.com/][Versão online]]
+- [[https://github.com/luksamuk/YASWEG][YASWEG (Yet Another Static Website Generator), sintaxe para geração de websites estáticos]], escrito em Guile Scheme.
+- [Youtube/Inglês] [[https://www.youtube.com/watch?v=cMxbSsRntv4][Transcrição regravada da mini-palestra de Alan Turing]]
+  Originalmente difundida na rádio BBC de Londres, em 15 de maio de 1951. Leitura por James Grime.
+- [[http://lerax.me/lisp-bookmarks/][Lista de links relacionados a Lisp e/ou à cultura cyberpunk em geral]]
+  É provável que alguns destes links acabem integrados a esta lista.
+- [Inglês] [[http://hyperpolyglot.org/lisp][Comparativo entre os dialetos Common Lisp, Racket, Clojure e Emacs Lisp]]
+- [Inglês] [[http://borretti.me/article/common-lisp-sotu-2015][Estado do Ecossistema de Common Lisp (2015)]]
+- [Youtube/Inglês] [[https://www.youtube.com/playlist?list=PLBgJcoaU2hl-JnoVOzjYB5qk_PfYjPm-I][Playlist: Série Process Hacking]]

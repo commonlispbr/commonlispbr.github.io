@@ -1,0 +1,21 @@
+#+SETUPFILE: org-theme/setup/short.setup
+
+#+AUTHOR: Manoel Vilela
+#+DATE: <2018-02-15 Thu>
+#+TITLE: Projetos
+#+LANGUAGE: bt-br
+
+- [[https://next-browser.github.io/][=nEXT=, um browser escrito em Common Lisp orientado a teclado Emacs-like
+  usando WebKit]]
+- [[https://github.com/adolenc/cl-neovim][=cl-neovim=, cliente de Common Lisp para Neovim]]
+- [[https://github.com/ryukinix/lisp-inference][=lisp-inference=, um motor de inferência baseado em Cálculo Proposicional, escrito em Common Lisp]]
+- [[https://github.com/ryukinix/lisp-chat][=lisp-chat=, um chat minimalista e experimental, escrito em Common Lisp]]
+- [[https://github.com/lispgames/lispgames.github.io/wiki/Common-Lisp][=lispgames=, comunidade internacional de referência sobre desenvolvimento de jogos com Lisp, assim como Common Lisp]]
+- [[https://github.com/froggey/Mezzano][Mezzano, um sistema operacional feito em Common Lisp]] ([[https://github.com/froggey/MBuild][Link para o build system]])
+- [[https://github.com/luksamuk/opengames][Repositório de pequenos jogos com código aberto]].Neste repositório, foram feitos, em Common Lisp, os mini-jogos =cl-2048=, =cl-snake= e =dagarden=.
+- [[http://xzpeter.org/starwar/][=starwar=, um jogo feito em Common Lisp usando SDL]] ([[https://github.com/xzpeter/starwar][Repositório]])
+  ([[https://github.com/commonlispbr/starwar][Fork da nossa comunidade]])
+- [[https://github.com/azzamsa/awesome-cl-software][Awesome-CL-software]], uma lista sobre aplicações feitas em Common Lisp!
+- [[https://github.com/aimacode/aima-lisp][Implementação em Common Lisp dos algoritmos do livro /Artificial Intelligence - A Modern Approach/, de Russell e Norvig]]
+- [[https://github.com/norvig/paip-lisp][Implementação em Common Lisp dos algoritmos do livro /Paradigms of Artificial Intelligente Programming/, de Norvig]]
+- [[https://github.com/kingcons/coleslaw][=coleslaw=, software em Common Lisp para escrever seu próprio blog estático]], similar a Frog, Jekyll e Hakyll.

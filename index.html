@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="bt-br" xml:lang="bt-br">
 <head>
 <title>Common Lisp Brasil</title>
-<!-- 2018-02-12 Mon 09:47 -->
+<!-- 2018-02-15 Thu 04:03 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Manoel Vilela, Lucas Vieira" />
@@ -147,7 +147,7 @@ e projetos do Common Lisp Brasil!
 </p>
 
 <p>
-Grupo oficial do Telegram: <a href="https://telegram.me/commonlispbr">Common Lisp Brasil</a>
+Grupo <b>oficial</b> do Telegram: <a href="https://telegram.me/commonlispbr">Common Lisp Brasil</a>
 </p>
 
 <p>
@@ -165,43 +165,59 @@ repositório desta página</a>.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1. Conceitos e Fundamentos</a>
+<li><a href="#sec-1">1. Sitemap</a></li>
+<li><a href="#sec-2">2. Conceitos e Fundamentos</a>
 <ul>
-<li><a href="#sec-1-1">1.1. O que é Lisp?</a></li>
-<li><a href="#sec-1-2">1.2. O que é Common Lisp?</a></li>
+<li><a href="#sec-2-1">2.1. O que é Lisp?</a></li>
+<li><a href="#sec-2-2">2.2. O que é Common Lisp?</a></li>
 </ul>
 </li>
-<li><a href="#sec-2">2. Links de Aprendizado sobre Common Lisp</a>
+<li><a href="#sec-3">3. Links de Aprendizado sobre Common Lisp</a>
 <ul>
-<li><a href="#sec-2-1">2.1. Apresentação</a></li>
-<li><a href="#sec-2-2">2.2. Documentação e tutoriais</a></li>
-<li><a href="#sec-2-3">2.3. Livros</a></li>
+<li><a href="#sec-3-1">3.1. Apresentação</a></li>
+<li><a href="#sec-3-2">3.2. Documentação e tutoriais</a></li>
+<li><a href="#sec-3-3">3.3. Livros</a></li>
 </ul>
 </li>
-<li><a href="#sec-3">3. Tooling</a>
+<li><a href="#sec-4">4. Tooling</a>
 <ul>
-<li><a href="#sec-3-1">3.1. Emacs</a></li>
-<li><a href="#sec-3-2">3.2. Portacle</a></li>
-<li><a href="#sec-3-3">3.3. SLIME</a></li>
-<li><a href="#sec-3-4">3.4. Compiladores</a></li>
-<li><a href="#sec-3-5">3.5. Quicklisp</a></li>
-<li><a href="#sec-3-6">3.6. Roswell</a></li>
+<li><a href="#sec-4-1">4.1. Emacs</a></li>
+<li><a href="#sec-4-2">4.2. Portacle</a></li>
+<li><a href="#sec-4-3">4.3. SLIME</a></li>
+<li><a href="#sec-4-4">4.4. Compiladores</a></li>
+<li><a href="#sec-4-5">4.5. Quicklisp</a></li>
+<li><a href="#sec-4-6">4.6. Roswell</a></li>
 </ul>
 </li>
-<li><a href="#sec-4">4. Projetos</a></li>
-<li><a href="#sec-5">5. Apêndice: Referências amplas</a></li>
 </ul>
 </div>
 </div>
-
 
 
 <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> Conceitos e Fundamentos</h2>
+<h2 id="sec-1"><span class="section-number-2">1</span> Sitemap</h2>
 <div class="outline-text-2" id="text-1">
-</div><div id="outline-container-sec-1-1" class="outline-3">
-<h3 id="sec-1-1"><span class="section-number-3">1.1</span> O que é Lisp?</h3>
-<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li><a href="rules.html">Regras</a>
+</li>
+<li><a href="appendix.html">Apêndice</a>
+</li>
+<li><a href="projects.html">Projetos</a>
+</li>
+<li><a href="http://lisp.com.br/archive/">Arquivos</a>
+</li>
+<li><a href="http://lisp.com.br/cl-cookbook">cl-cookbook PT<sub>BR</sub> (em progresso)</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Conceitos e Fundamentos</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> O que é Lisp?</h3>
+<div class="outline-text-3" id="text-2-1">
 <p>
 Dialetos Lisp <sup><a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">1</a></sup>  têm uma sintaxe singular simplificada para denotar, listas e
 símbolos, que podem ou não estarem associados a valores e/ou
@@ -218,7 +234,7 @@ listas.
 <div class="org-src-container">
 
 <pre class="src src-lisp"><span style="color: #51afef;">(</span>opera&#231;&#227;o operando-1 operando-2<span style="color: #51afef;">)</span>
-<span style="color: #51afef;">(</span>+ 1 2<span style="color: #51afef;">)</span> <span style="color: #62686E;">;; </span><span style="color: #62686E;">=&gt; 3</span>
+<span style="color: #51afef;">(</span>+ 1 2<span style="color: #51afef;">)</span> <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">=&gt; 3</span>
 </pre>
 </div>
 
@@ -232,9 +248,9 @@ Lisp denotado historicamente por <a href="https://pt.wikipedia.org/wiki/Lisp">LI
 </div>
 </div>
 
-<div id="outline-container-sec-1-2" class="outline-3">
-<h3 id="sec-1-2"><span class="section-number-3">1.2</span> O que é Common Lisp?</h3>
-<div class="outline-text-3" id="text-1-2">
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> O que é Common Lisp?</h3>
+<div class="outline-text-3" id="text-2-2">
 <p>
 Common Lisp é um dialeto multi-paradigma da linguagem de programação
 Lisp. Suporta programação procedural, orientação a
@@ -254,24 +270,24 @@ compatível com os diversos outros dialetos Lisp dos quais derivou.
 
 <div class="org-src-container">
 
-<pre class="src src-lisp"><span style="color: #51afef;">(</span><span style="color: #51afef;">defun</span> <span style="color: #5cEfFF;">hello-world</span> <span style="color: #C57BDB;">()</span> <span style="color: #62686E;">;; </span><span style="color: #62686E;">defini&#231;&#227;o de fun&#231;&#227;o</span>
-  <span style="color: #C57BDB;">(</span>princ <span style="color: #7bc275;">"Hello, Lispers!"</span><span style="color: #C57BDB;">)</span><span style="color: #51afef;">)</span>
+<pre class="src src-lisp"><span style="color: #51afef;">(</span><span style="color: #51afef;">defun</span> <span style="color: #c678dd;">hello-world</span> <span style="color: #c678dd;">()</span> <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">defini&#231;&#227;o de fun&#231;&#227;o</span>
+  <span style="color: #c678dd;">(</span>princ <span style="color: #98be65;">"Hello, Lispers!"</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
 
-<span style="color: #51afef;">(</span>hello-world<span style="color: #51afef;">)</span> <span style="color: #62686E;">;; </span><span style="color: #62686E;">chamada de fun&#231;&#227;o</span>
+<span style="color: #51afef;">(</span>hello-world<span style="color: #51afef;">)</span> <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">chamada de fun&#231;&#227;o</span>
 
-<span style="color: #62686E;">;; </span><span style="color: #62686E;">resultado: Hello, Lispers!</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">resultado: Hello, Lispers!</span>
 </pre>
 </div>
 </div>
 </div>
 </div>
 
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> Links de Aprendizado sobre Common Lisp</h2>
-<div class="outline-text-2" id="text-2">
-</div><div id="outline-container-sec-2-1" class="outline-3">
-<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Apresentação</h3>
-<div class="outline-text-3" id="text-2-1">
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Links de Aprendizado sobre Common Lisp</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Apresentação</h3>
+<div class="outline-text-3" id="text-3-1">
 <ul class="org-ul">
 <li><a href="http://lisp-lang.org/">Site oficial de Common Lisp</a>, apresentação sobre a linguagem e seu poder.
 </li>
@@ -287,9 +303,9 @@ programar em Lisp.
 </div>
 </div>
 
-<div id="outline-container-sec-2-2" class="outline-3">
-<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Documentação e tutoriais</h3>
-<div class="outline-text-3" id="text-2-2">
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Documentação e tutoriais</h3>
+<div class="outline-text-3" id="text-3-2">
 <ul class="org-ul">
 <li><a href="http://bnmcgn.github.io/lisp-guide/lisp-exploration.html">Common Lisp REPL Exploration Guide</a>, um guia interessantíssimo sobre
 a exploração de Common Lisp pelo REPL <sup><a id="fnr.2" name="fnr.2" class="footref" href="#fn.2">2</a></sup>.
@@ -305,9 +321,9 @@ a exploração de Common Lisp pelo REPL <sup><a id="fnr.2" name="fnr.2" class="f
 </div>
 </div>
 
-<div id="outline-container-sec-2-3" class="outline-3">
-<h3 id="sec-2-3"><span class="section-number-3">2.3</span> Livros</h3>
-<div class="outline-text-3" id="text-2-3">
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> Livros</h3>
+<div class="outline-text-3" id="text-3-3">
 <ul class="org-ul">
 <li>Common Lisp: A Gentle Introduction to Symbolic Computation, por David S. Touretsky
 <ul class="org-ul">
@@ -334,12 +350,12 @@ a exploração de Common Lisp pelo REPL <sup><a id="fnr.2" name="fnr.2" class="f
 </div>
 </div>
 
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> Tooling</h2>
-<div class="outline-text-2" id="text-3">
-</div><div id="outline-container-sec-3-1" class="outline-3">
-<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Emacs</h3>
-<div class="outline-text-3" id="text-3-1">
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Tooling</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> Emacs</h3>
+<div class="outline-text-3" id="text-4-1">
 <p>
 Emacs é o melhor editor de texto em consenso para se programar em
 Common Lisp.
@@ -364,9 +380,9 @@ Common Lisp.
 </div>
 </div>
 
-<div id="outline-container-sec-3-2" class="outline-3">
-<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Portacle</h3>
-<div class="outline-text-3" id="text-3-2">
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> Portacle</h3>
+<div class="outline-text-3" id="text-4-2">
 <p>
 Portacle é um reempacotamento de Emacs. Diferente do programa original,
 Portacle é uma edição voltada para programadores Common Lisp. Este editor
@@ -388,9 +404,9 @@ e que funcione em quase qualquer sistema operacional.
 </div>
 </div>
 
-<div id="outline-container-sec-3-3" class="outline-3">
-<h3 id="sec-3-3"><span class="section-number-3">3.3</span> SLIME</h3>
-<div class="outline-text-3" id="text-3-3">
+<div id="outline-container-sec-4-3" class="outline-3">
+<h3 id="sec-4-3"><span class="section-number-3">4.3</span> SLIME</h3>
+<div class="outline-text-3" id="text-4-3">
 <p>
 SLIME significa <i>SUPERIOR LISP INTERACTION MODE for EMACS</i>. É uma
 das coisas mais fascinante que se faz Common Lisp uma linguagem tão
@@ -411,9 +427,9 @@ Quicklisp.
 </div>
 </div>
 
-<div id="outline-container-sec-3-4" class="outline-3">
-<h3 id="sec-3-4"><span class="section-number-3">3.4</span> Compiladores</h3>
-<div class="outline-text-3" id="text-3-4">
+<div id="outline-container-sec-4-4" class="outline-3">
+<h3 id="sec-4-4"><span class="section-number-3">4.4</span> Compiladores</h3>
+<div class="outline-text-3" id="text-4-4">
 <ul class="org-ul">
 <li>[Inglês] <a href="http://sbcl.org/">SBCL</a>: Steel Bank Common Lisp (recomendado)
 </li>
@@ -427,9 +443,9 @@ Quicklisp.
 </div>
 </div>
 
-<div id="outline-container-sec-3-5" class="outline-3">
-<h3 id="sec-3-5"><span class="section-number-3">3.5</span> Quicklisp</h3>
-<div class="outline-text-3" id="text-3-5">
+<div id="outline-container-sec-4-5" class="outline-3">
+<h3 id="sec-4-5"><span class="section-number-3">4.5</span> Quicklisp</h3>
+<div class="outline-text-3" id="text-4-5">
 <p>
 Quicklisp é o gerenciador de pacote (sistemas nos jargões de CL),
 muito útil para integrar sua aplicação usando pacotes de terceiro.
@@ -449,9 +465,9 @@ compatíveis com Quicklisp.
 </div>
 </div>
 
-<div id="outline-container-sec-3-6" class="outline-3">
-<h3 id="sec-3-6"><span class="section-number-3">3.6</span> Roswell</h3>
-<div class="outline-text-3" id="text-3-6">
+<div id="outline-container-sec-4-6" class="outline-3">
+<h3 id="sec-4-6"><span class="section-number-3">4.6</span> Roswell</h3>
+<div class="outline-text-3" id="text-4-6">
 <p>
 Roswell é descrito como ser o instalador de lisp e launcher para
 o ambiente em geral de Common Lisp que simplesmente funciona.
@@ -465,70 +481,6 @@ olhada!
 </li>
 </ul>
 </div>
-</div>
-</div>
-
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> Projetos</h2>
-<div class="outline-text-2" id="text-4">
-<ul class="org-ul">
-<li><a href="https://next-browser.github.io/"><code>nEXT</code>, um browser escrito em Common Lisp orientado a teclado Emacs-like
-usando WebKit</a>
-</li>
-<li><a href="https://github.com/adolenc/cl-neovim"><code>cl-neovim</code>, cliente de Common Lisp para Neovim</a>
-</li>
-<li><a href="https://github.com/ryukinix/lisp-inference"><code>lisp-inference</code>, um motor de inferência baseado em Cálculo Proposicional, escrito em Common Lisp</a>
-</li>
-<li><a href="https://github.com/ryukinix/lisp-chat"><code>lisp-chat</code>, um chat minimalista e experimental, escrito em Common Lisp</a>
-</li>
-<li><a href="https://github.com/lispgames/lispgames.github.io/wiki/Common-Lisp"><code>lispgames</code>, comunidade internacional de referência sobre desenvolvimento de jogos com Lisp, assim como Common Lisp</a>
-</li>
-<li><a href="https://github.com/froggey/Mezzano">Mezzano, um sistema operacional feito em Common Lisp</a> (<a href="https://github.com/froggey/MBuild">Link para o build system</a>)
-</li>
-<li><a href="https://github.com/luksamuk/opengames">Repositório de pequenos jogos com código aberto</a>.Neste repositório, foram feitos, em Common Lisp, os mini-jogos <code>cl-2048</code>, <code>cl-snake</code> e <code>dagarden</code>.
-</li>
-<li><a href="http://xzpeter.org/starwar/"><code>starwar</code>, um jogo feito em Common Lisp usando SDL</a> (<a href="https://github.com/xzpeter/starwar">Repositório</a>)
-(<a href="https://github.com/commonlispbr/starwar">Fork da nossa comunidade</a>)
-</li>
-<li><a href="https://github.com/azzamsa/awesome-cl-software">Awesome-CL-software</a>, uma lista sobre aplicações feitas em Common Lisp!
-</li>
-<li><a href="https://github.com/aimacode/aima-lisp">Implementação em Common Lisp dos algoritmos do livro <i>Artificial Intelligence - A Modern Approach</i>, de Russell e Norvig</a>
-</li>
-<li><a href="https://github.com/norvig/paip-lisp">Implementação em Common Lisp dos algoritmos do livro <i>Paradigms of Artificial Intelligente Programming</i>, de Norvig</a>
-</li>
-<li><a href="https://github.com/kingcons/coleslaw"><code>coleslaw</code>, software em Common Lisp para escrever seu próprio blog estático</a>, similar a Frog, Jekyll e Hakyll.
-</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5"><span class="section-number-2">5</span> Apêndice: Referências amplas</h2>
-<div class="outline-text-2" id="text-5">
-<ul class="org-ul">
-<li>[Inglês] Build Your Own Lisp, por Daniel Holder
-<ul class="org-ul">
-<li>[Amazon] <a href="https://www.amazon.com.br/Build-Your-Own-Lisp-English-ebook/dp/B00ONV8CNO/">Livro físico</a>
-</li>
-<li><a href="http://www.buildyourownlisp.com/">Versão online</a>
-</li>
-</ul>
-</li>
-<li><a href="https://github.com/luksamuk/YASWEG">YASWEG (Yet Another Static Website Generator), sintaxe para geração de websites estáticos</a>, escrito em Guile Scheme.
-</li>
-<li>[Youtube/Inglês] <a href="https://www.youtube.com/watch?v=cMxbSsRntv4">Transcrição regravada da mini-palestra de Alan Turing</a>
-  Originalmente difundida na rádio BBC de Londres, em 15 de maio de 1951. Leitura por James Grime.
-</li>
-<li><a href="http://lerax.me/lisp-bookmarks/">Lista de links relacionados a Lisp e/ou à cultura cyberpunk em geral</a>
-  É provável que alguns destes links acabem integrados a esta lista.
-</li>
-<li>[Inglês] <a href="http://hyperpolyglot.org/lisp">Comparativo entre os dialetos Common Lisp, Racket, Clojure e Emacs Lisp</a>
-</li>
-<li>[Inglês] <a href="http://borretti.me/article/common-lisp-sotu-2015">Estado do Ecossistema de Common Lisp (2015)</a>
-</li>
-<li>[Youtube/Inglês] <a href="https://www.youtube.com/playlist?list=PLBgJcoaU2hl-JnoVOzjYB5qk_PfYjPm-I">Playlist: Série Process Hacking</a>
-</li>
-</ul>
 </div>
 </div>
 <div id="footnotes">
@@ -551,7 +503,7 @@ inicialmente feito justamente em Lisp!
 <div id="postamble" class="status">
 <p class="date">Date: <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-02-10 Sat&gt;</span></span></p>
 <p class="author">Author: Manoel Vilela, Lucas Vieira</p>
-<p class="date">Created: 2018-02-12 Mon 09:47</p>
+<p class="date">Created: 2018-02-15 Thu 04:03</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
