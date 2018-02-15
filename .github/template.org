@@ -1,0 +1,6 @@
+#+SETUPFILE: org-theme/setup/short.setup
+
+#+AUTHOR: <AUTORES-SEPARADOS-POR-VIRGULA>
+#+DATE: <DIGITE: C-c .>
+#+TITLE: <INSIRA-O-TITULO-AQUI>
+#+LANGUAGE: bt-br
