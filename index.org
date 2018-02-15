@@ -10,7 +10,7 @@
 Olá! Seja-bem vindo ao grupo de estudos
 e projetos do Common Lisp Brasil!
 
-Grupo oficial do Telegram: [[https://telegram.me/commonlispbr][Common Lisp Brasil]]
+Grupo *oficial* do Telegram: [[https://telegram.me/commonlispbr][Common Lisp Brasil]]
 
 Grupo não-oficial de Lisp Brasileiro IRC freenode: [[http://webchat.freenode.net/][#lisp-br]]
 
@@ -21,6 +21,13 @@ repositório desta página]].
 #+TOC: headlines=2
 
 
+* Sitemap
+
+- [[file:appendix.html][Apêndice]]
+- [[http://lisp.com.br/archive/][Arquivos]]
+- [[http://lisp.com.br/cl-cookbook][cl-cookbook PT_BR (em progresso)]]
+- [[file:projects.html][Projetos]]
+- [[file:rules.html][Regras]]
 
 * Conceitos e Fundamentos
 ** O que é Lisp?
@@ -178,34 +185,3 @@ e criação de binários com Common Lisp. Vale a pena tentar dar uma
 olhada!
 
 - [[https://github.com/roswell/roswell][Roswell]]
-
-* Projetos
-
-- [[https://next-browser.github.io/][=nEXT=, um browser escrito em Common Lisp orientado a teclado Emacs-like
-  usando WebKit]]
-- [[https://github.com/adolenc/cl-neovim][=cl-neovim=, cliente de Common Lisp para Neovim]]
-- [[https://github.com/ryukinix/lisp-inference][=lisp-inference=, um motor de inferência baseado em Cálculo Proposicional, escrito em Common Lisp]]
-- [[https://github.com/ryukinix/lisp-chat][=lisp-chat=, um chat minimalista e experimental, escrito em Common Lisp]]
-- [[https://github.com/lispgames/lispgames.github.io/wiki/Common-Lisp][=lispgames=, comunidade internacional de referência sobre desenvolvimento de jogos com Lisp, assim como Common Lisp]]
-- [[https://github.com/froggey/Mezzano][Mezzano, um sistema operacional feito em Common Lisp]] ([[https://github.com/froggey/MBuild][Link para o build system]])
-- [[https://github.com/luksamuk/opengames][Repositório de pequenos jogos com código aberto]].Neste repositório, foram feitos, em Common Lisp, os mini-jogos =cl-2048=, =cl-snake= e =dagarden=.
-- [[http://xzpeter.org/starwar/][=starwar=, um jogo feito em Common Lisp usando SDL]] ([[https://github.com/xzpeter/starwar][Repositório]])
-  ([[https://github.com/commonlispbr/starwar][Fork da nossa comunidade]])
-- [[https://github.com/azzamsa/awesome-cl-software][Awesome-CL-software]], uma lista sobre aplicações feitas em Common Lisp!
-- [[https://github.com/aimacode/aima-lisp][Implementação em Common Lisp dos algoritmos do livro /Artificial Intelligence - A Modern Approach/, de Russell e Norvig]]
-- [[https://github.com/norvig/paip-lisp][Implementação em Common Lisp dos algoritmos do livro /Paradigms of Artificial Intelligente Programming/, de Norvig]]
-- [[https://github.com/kingcons/coleslaw][=coleslaw=, software em Common Lisp para escrever seu próprio blog estático]], similar a Frog, Jekyll e Hakyll.
-
-* Apêndice: Referências amplas
-
-- [Inglês] Build Your Own Lisp, por Daniel Holder
-  - [Amazon] [[https://www.amazon.com.br/Build-Your-Own-Lisp-English-ebook/dp/B00ONV8CNO/][Livro físico]]
-  - [[http://www.buildyourownlisp.com/][Versão online]]
-- [[https://github.com/luksamuk/YASWEG][YASWEG (Yet Another Static Website Generator), sintaxe para geração de websites estáticos]], escrito em Guile Scheme.
-- [Youtube/Inglês] [[https://www.youtube.com/watch?v=cMxbSsRntv4][Transcrição regravada da mini-palestra de Alan Turing]]
-  Originalmente difundida na rádio BBC de Londres, em 15 de maio de 1951. Leitura por James Grime.
-- [[http://lerax.me/lisp-bookmarks/][Lista de links relacionados a Lisp e/ou à cultura cyberpunk em geral]]
-  É provável que alguns destes links acabem integrados a esta lista.
-- [Inglês] [[http://hyperpolyglot.org/lisp][Comparativo entre os dialetos Common Lisp, Racket, Clojure e Emacs Lisp]]
-- [Inglês] [[http://borretti.me/article/common-lisp-sotu-2015][Estado do Ecossistema de Common Lisp (2015)]]
-- [Youtube/Inglês] [[https://www.youtube.com/playlist?list=PLBgJcoaU2hl-JnoVOzjYB5qk_PfYjPm-I][Playlist: Série Process Hacking]]
