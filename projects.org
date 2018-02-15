@@ -1,6 +1,6 @@
 #+SETUPFILE: org-theme/setup/short.setup
 
-#+AUTHOR: Manoel Vilela
+#+AUTHOR: Manoel Vilela, Lucas Vieira
 #+DATE: <2018-02-15 Thu>
 #+TITLE: Projetos
 #+LANGUAGE: bt-br
