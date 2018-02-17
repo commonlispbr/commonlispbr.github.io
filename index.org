@@ -12,7 +12,7 @@ e projetos do Common Lisp Brasil!
 
 Grupo *oficial* do Telegram: [[https://telegram.me/commonlispbr][Common Lisp Brasil]]
 
-Grupo não-oficial de Lisp Brasileiro IRC freenode: [[http://webchat.freenode.net/][#lisp-br]]
+Canal do IRC não-oficial de Lisp Brasileiro no Freenode: [[http://webchat.freenode.net/][#lisp-br]]
 
 Os dados a seguir podem estar incompletos ou conter erros. Proceda com
 cuidado e, se você tiver uma sugestão ou reclamação, [[https://github.com/commonlispbr/commonlispbr.github.io][abra uma issue no
@@ -25,7 +25,7 @@ repositório desta página]].
 
 - [[file:appendix.html][Apêndice]]
 - [[http://lisp.com.br/archive/][Arquivos]]
-- [[http://lisp.com.br/cl-cookbook][cl-cookbook PT_BR (em progresso)]]
+- [[http://lisp.com.br/cl-cookbook][The Common Lisp Cookbook (PT-BR) (em progresso)]]
 - [[file:projects.html][Projetos]]
 - [[file:rules.html][Regras]]
 
@@ -34,13 +34,13 @@ repositório desta página]].
 
 Dialetos Lisp [fn:1]  têm uma sintaxe singular simplificada para denotar, listas e
 símbolos, que podem ou não estarem associados a valores e/ou
-procedimentos. Na linguagens da família Lisp, há a peculiaridade de
+a procedimentos. Na linguagens da família Lisp, há a peculiaridade de
 existir uma linha muito tênue de separação entre dados e procedimentos
 no código-fonte. Na realidade, é possível produzir código a partir de
 dados e vice-versa! Uma das características fortes da linguagem é o
-uso da [[https://pt.wikipedia.org/wiki/Nota%25C3%25A7%25C3%25A3o_polonesa][notação polonesa]] onde simplifica a sintaxe da linguagem de uma
-maneira sem acrescentar ambiguidades: operações e operandos são
-denotados de forma explícita em sua ordem de precedência no uso de
+uso da [[https://pt.wikipedia.org/wiki/Nota%25C3%25A7%25C3%25A3o_polonesa][notação polonesa]], que simplifica a sintaxe da linguagem, de forma
+a previnir ambiguidades: operações e operandos são
+denotados de forma explícita, em sua ordem de precedência, no uso de
 listas.
 
 #+BEGIN_SRC lisp
@@ -53,16 +53,16 @@ listas.
 Esta família de linguagens foi desenhada para abstrair a complexidade
 do hardware de um computador, criando uma interface para que um humano
 possa se comunicar de maneira expressiva com a máquina. O primeiro
-Lisp denotado historicamente por [[https://pt.wikipedia.org/wiki/Lisp][LISP]] foi criado por [[https://pt.wikipedia.org/wiki/John_McCarthy][John McCarthy]] em
-1958 nos laboratórios do MIT, USA.
+Lisp denotado historicamente por [[https://pt.wikipedia.org/wiki/Lisp][LISP]] foi criado por [[https://pt.wikipedia.org/wiki/John_McCarthy][John McCarthy]], em
+1958, nos laboratórios do MIT, USA.
 
 [fn:1] Lisp é uma abreviação de **LISt Processing**, processamento de listas.
 
 ** O que é Common Lisp?
 
 Common Lisp é um dialeto multi-paradigma da linguagem de programação
-Lisp. Suporta programação procedural, orientação a
-objetos e o paradigma funcional, algo comum a todos os
+Lisp. Suporta os paradigmas de programação procedural, orientado a
+objetos e, inclusive, o funcional, comum a todos os
 Lisps, por sua próxima relação com a natureza do Cálculo Lambda.
 
 Foi criada por Guy L. Steele nos anos 80, com o intuito de combinar
@@ -70,7 +70,7 @@ aspectos de diversos dialetos anteriores, incluindo Scheme. Em 1994
 foi publicada no padrão [[http://cvberry.com/tech_writings/notes/common_lisp_standard_draft.html][ANSI Information Technology - Programming
 Language - Common Lisp, registro X3.226-1994 (R1999)]]. Common Lisp é
 bem maior e semanticamente mais complexa que um dialeto como Scheme,
-uma vez que foi projetada para ser uma linguagem comercial e ser
+uma vez que foi projetada para ser uma linguagem comercial e para ser
 compatível com os diversos outros dialetos Lisp dos quais derivou.
 
 #+BEGIN_SRC lisp
@@ -97,7 +97,8 @@ compatível com os diversos outros dialetos Lisp dos quais derivou.
 
 - [[http://bnmcgn.github.io/lisp-guide/lisp-exploration.html][Common Lisp REPL Exploration Guide]], um guia interessantíssimo sobre
   a exploração de Common Lisp pelo REPL [fn:2].
-- [[https://lispcookbook.github.io/cl-cookbook/][Cookbook de Common Lisp]]. Também inclui tutoriais sobre Quicklisp (veja a seção de Tooling).
+- [[https://lispcookbook.github.io/cl-cookbook/][Cookbook de Common Lisp]], atualmente com uma [[lisp.com.br/cl-cookbook][tradução para o Português em andamento]], feita pela comunidade.
+  Também inclui tutoriais sobre Quicklisp (veja a seção de Tooling).
 - [[http://www.lispworks.com/documentation/HyperSpec/Front/][Common Lisp Hyperspec]]
   Sua primeira parada ao pesquisar por documentação de Common Lisp. [[http://clhs.lisp.se/][(Mirror)]]
 - [[https://www.cliki.net/][CLiki, a Wiki de Common Lisp]]
@@ -121,7 +122,7 @@ inicialmente feito justamente em Lisp!
 
 ** Emacs
 
-Emacs é o melhor editor de texto em consenso para se programar em
+Emacs é, consensualmente, o melhor editor de texto para se programar em
 Common Lisp.
 
 - [Inglês] [[https://www.gnu.org/software/emacs/][Site oficial]]
@@ -167,8 +168,8 @@ produtiva e o Emacs ser seu editor ideal.
 
 ** Quicklisp
 
-Quicklisp é o gerenciador de pacote (sistemas nos jargões de CL),
-muito útil para integrar sua aplicação usando pacotes de terceiro.
+Quicklisp é o gerenciador de pacotes (systems, nos jargões de CL),
+muito útil para integrar sua aplicação usando pacotes de terceiros.
 
 - [Inglês] [[https://www.quicklisp.org/beta/][Site oficial do Quicklisp]]
 - [Inglês] [[https://www.xach.com/lisp/quickproject/][Quickproject: crie o esqueleto de um projeto de Common Lisp]]
@@ -178,10 +179,11 @@ muito útil para integrar sua aplicação usando pacotes de terceiro.
 
 ** Roswell
 
-Roswell é descrito como ser o instalador de lisp e launcher para
-o ambiente em geral de Common Lisp que simplesmente funciona.
-Tenta automatizar a instalação dos compiladores, pacotes do emacs
+Roswell é descrito como sendo o instalador de implementações de
+Common Lisp, bem como um launcher para o ambiente em geral de
+Common Lisp, que simplesmente funciona.
+Tenta automatizar a instalação dos compiladores, pacotes do Emacs
 e criação de binários com Common Lisp. Vale a pena tentar dar uma
 olhada!
 
-- [[https://github.com/roswell/roswell][Roswell]]
+- [Inglês] [[https://github.com/roswell/roswell][Repositório oficial]]
