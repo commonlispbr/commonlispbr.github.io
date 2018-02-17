@@ -13,7 +13,7 @@ e projetos do Common Lisp Brasil!
 
 Grupo *oficial* do Telegram: [[https://telegram.me/commonlispbr][Common Lisp Brasil]]
 
-Canal do IRC não-oficial de Lisp Brasileiro no Freenode: [[http://webchat.freenode.net/][#lisp-br]]
+Grupo não-oficial de Lisp Brasileiro IRC freenode: [[https://kiwiirc.com/client/chat.freenode.net:%2B6697/#lisp-br][#lisp-br]]
 
 Os dados a seguir podem estar incompletos ou conter erros. Proceda com
 cuidado e, se você tiver uma sugestão ou reclamação, [[https://github.com/commonlispbr/commonlispbr.github.io][abra uma issue no
