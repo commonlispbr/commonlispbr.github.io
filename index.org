@@ -33,27 +33,25 @@ repositório desta página]].
 * Conceitos e Fundamentos
 ** O que é Lisp?
 
-Lisp (historicamente, LISP) é uma família de linguagens de programação de
-computadores com uma longa história e tradição. Originalmente concebida por John
-McCarthy em 1958, Lisp é a segunda linguagem de programação de alto nível em uso
-atualmente, advinda antes mesmo da própria Internet (somente Fortran é mais
-antiga). Desde sua origem, Lisp se tornou rapidamente a linguagem favorita para
+Lisp é uma família de linguagens de programação de computadores com
+uma longa história e tradição. O primeiro Lisp denotado historicamente
+por [[https://pt.wikipedia.org/wiki/Lisp][LISP]] foi criado por [[https://pt.wikipedia.org/wiki/John_McCarthy][John McCarthy]], em 1958, nos laboratórios de
+inteligência artificial do MIT, USA., Lisp é a segunda linguagem de
+programação de alto nível mais antiga ainda em uso atualmente, advinda
+antes mesmo da própria Internet (somente Fortran é mais antiga). Desde
+sua origem, Lisp se tornou rapidamente a linguagem favorita para
 Inteligência Artificial.
 
-Influenciada pela notação lambda Calculus de Alonzo Church, atualmente os
-dialetos de Lisp de uso geral mais utilizados e conhecidos são Common Lisp,
-Scheme e Clojure.
-
-Dialetos Lisp [fn:1]  têm uma sintaxe singular simplificada para denotar, listas e
-símbolos, que podem ou não estarem associados a valores e/ou
-a procedimentos. Na linguagens da família Lisp, há a peculiaridade de
-existir uma linha muito tênue de separação entre dados e procedimentos
-no código-fonte. Na realidade, é possível produzir código a partir de
-dados e vice-versa! Uma das características fortes da linguagem é o
-uso da [[https://pt.wikipedia.org/wiki/Nota%25C3%25A7%25C3%25A3o_polonesa][notação polonesa]], que simplifica a sintaxe da linguagem, de forma
-a previnir ambiguidades: operações e operandos são
-denotados de forma explícita, em sua ordem de precedência, no uso de
-listas.
+Dialetos Lisp [fn:1] têm uma sintaxe singular simplificada para
+denotar, listas e símbolos, que podem ou não estarem associados a
+valores e/ou a procedimentos. Na linguagens da família Lisp, há a
+peculiaridade de existir uma linha muito tênue de separação entre
+dados e procedimentos no código-fonte. Na realidade, é possível
+produzir código a partir de dados e vice-versa! Uma das
+características fortes da linguagem é o uso da [[https://pt.wikipedia.org/wiki/Nota%25C3%25A7%25C3%25A3o_polonesa][notação polonesa]], que
+simplifica a sintaxe da linguagem, de forma a previnir ambiguidades:
+operações e operandos são denotados de forma explícita, em sua ordem
+de precedência, no uso de listas.
 
 #+BEGIN_SRC lisp
 
@@ -64,9 +62,10 @@ listas.
 
 Esta família de linguagens foi desenhada para abstrair a complexidade
 do hardware de um computador, criando uma interface para que um humano
-possa se comunicar de maneira expressiva com a máquina. O primeiro
-Lisp denotado historicamente por [[https://pt.wikipedia.org/wiki/Lisp][LISP]] foi criado por [[https://pt.wikipedia.org/wiki/John_McCarthy][John McCarthy]], em
-1958, nos laboratórios do MIT, USA.
+possa se comunicar de maneira expressiva com a máquina. Influenciada
+pela linguagem de computação teórica Lambda Calculus de Alonzo Church,
+atualmente os dialetos de Lisp de uso geral mais utilizados e
+conhecidos são Common Lisp, Scheme e Clojure.
 
 [fn:1] Lisp é uma abreviação de **LISt Processing**, processamento de listas.
 
