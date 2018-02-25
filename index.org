@@ -32,6 +32,17 @@ repositório desta página]].
 * Conceitos e Fundamentos
 ** O que é Lisp?
 
+Lisp (historicamente, LISP) é uma família de linguagens de programação de
+computadores com uma longa história e tradição. Originalmente concebida por John
+McCarthy em 1958, Lisp é a segunda linguagem de programação de alto nível em uso
+atualmente, advinda antes mesmo da própria Internet (somente Fortran é mais
+antiga). Desde sua origem, Lisp se tornou rapidamente a linguagem favorita para
+Inteligência Artificial.
+
+Influenciada pela notação lambda Calculus de Alonzo Church, atualmente os
+dialetos de Lisp de uso geral mais utilizados e conhecidos são Common Lisp,
+Scheme e Clojure.
+
 Dialetos Lisp [fn:1]  têm uma sintaxe singular simplificada para denotar, listas e
 símbolos, que podem ou não estarem associados a valores e/ou
 a procedimentos. Na linguagens da família Lisp, há a peculiaridade de
