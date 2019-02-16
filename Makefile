@@ -22,7 +22,7 @@ shell:
 %.html: %.org
 	@printf $(STATUS_PREFIX); echo "COMPILING: $< -> $*.html"
 	@$(DOCKER_RUN) $(DOCKER_IMG) $< $(EMACS_FLAGS) -f org-html-export-to-html
-	@$(DOCKER_RUN) --entrypoint=/bin/chown $(DOCKER_IMG) $(USER) "$*.org"
+	@$(DOCKER_RUN) --entrypoint=/bin/chown $(DOCKER_IMG) $(USER) "$*.html"
 
 clean:
 	rm -rf *.html
