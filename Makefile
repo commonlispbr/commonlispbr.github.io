@@ -3,7 +3,7 @@ EMACS_LOAD  := -l $(EMACS_INIT)
 EMACS_FLAGS := --batch --kill $(EMACS_LOAD)
 ORG_FILES   := $(wildcard *.org)
 HTML_FILES  := $(patsubst %.org, %.html, $(ORG_FILES))
-DOCKER_IMG  := ryukinix/lerax
+DOCKER_IMG  := commonlispbr/emacs
 USER        := $(shell id -u):$(shell id -g)
 DOCKER_RUN  := docker run  -w /tmp \
 	                       -v $(shell pwd):/tmp \
@@ -23,6 +23,9 @@ shell:
 	@printf $(STATUS_PREFIX); echo "COMPILING: $< -> $*.html"
 	@$(DOCKER_RUN) $(DOCKER_IMG) $< $(EMACS_FLAGS) -f org-html-export-to-html
 	@$(DOCKER_RUN) --entrypoint=/bin/chown $(DOCKER_IMG) $(USER) "$*.html"
+
+server:
+	python3 -m http.server 8000
 
 clean:
 	rm -rf *.html
