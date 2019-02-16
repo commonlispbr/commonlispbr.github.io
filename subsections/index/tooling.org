@@ -1,0 +1,67 @@
+* Emacs
+
+Emacs é, consensualmente, o melhor editor de texto para se programar em
+Common Lisp.
+
+- [Inglês] [[https://www.gnu.org/software/emacs/][Site oficial]]
+- [Inglês] [[https://github.com/bbatsov/prelude][Prelude]] uma configuração com baterias pro Emacs para bons hábitos
+- [Inglês] Mini-manual do Emacs, por [[https://github.com/tuhdo][tuhdo]]
+  - [[http://tuhdo.github.io/emacs-tutor.html][Parte 1: O Básico]]
+  - [[http://tuhdo.github.io/emacs-tutor2.html][Parte 2: Por que parênteses importam]]
+  - [[http://tuhdo.github.io/emacs-tutor3.html][Parte 3: Customizando e extendendo o Emacs]]
+
+* Portacle
+
+Portacle é um reempacotamento de Emacs. Diferente do programa original,
+Portacle é uma edição voltada para programadores Common Lisp. Este editor
+já inclui o SBCL (implementação de Common Lisp), Quicklisp (para gerenciar
+projetos e pacotes), e Magit (para lidar com versionamento de código em
+Git). Enquanto recomendamos instalar o Emacs e aprender a configurá-lo,
+esta é também uma excelente ferramenta para iniciantes que queiram um
+ambiente Common Lisp que funcione logo de cara, ou mesmo para lispeiros
+experientes que queiram um ambiente CL que possam carregar no pendrive,
+e que funcione em quase qualquer sistema operacional.
+
+- [Inglês] [[https://portacle.github.io/][Link oficial do Portacle]]
+- [Inglês] [[https://github.com/portacle/portacle][Repositório oficial]]
+
+* SLIME
+
+SLIME significa /SUPERIOR LISP INTERACTION MODE for EMACS/. É uma
+das coisas mais fascinante que se faz Common Lisp uma linguagem tão
+produtiva e o Emacs ser seu editor ideal.
+
+- [Inglês] [[https://astraybi.wordpress.com/2015/08/02/how-to-install-slimesbclquicklisp-into-emacs/][Instalando SLIME + SBCL + Quicklisp no Emacs]], por Astray_BI
+- [Inglês] [[https://github.com/quicklisp/quicklisp-slime-helper][Repositório do =quicklisp-slime-helper=]]
+
+  Este pacote torna mais fácil a instalação do SLIME, a partir do
+  Quicklisp.
+
+* Compiladores
+
+- [Inglês] [[http://sbcl.org/][SBCL]]: Steel Bank Common Lisp (recomendado)
+- [Inglês] [[https://common-lisp.net/project/ecl/][ECL]]: Embedabble Common Lisp
+- [Inglês] [[https://clisp.sourceforge.io/][GNU CLISP]] (obsoleto desde 2010, artefato histórico)
+- [Inglês] [[https://ccl.clozure.com/][CCL]]: Clozure Common Lisp ([[https://clojure.org/][Clojure]] é outra coisa, não confunda!)
+
+* Quicklisp
+
+Quicklisp é o gerenciador de pacotes (systems, nos jargões de CL),
+muito útil para integrar sua aplicação usando pacotes de terceiros.
+
+- [Inglês] [[https://www.quicklisp.org/beta/][Site oficial do Quicklisp]]
+- [Inglês] [[https://www.xach.com/lisp/quickproject/][Quickproject: crie o esqueleto de um projeto de Common Lisp]]
+
+  Este tutorial é extremamente útil para a criação de projetos
+  compatíveis com Quicklisp.
+
+* Roswell
+
+Roswell é descrito como sendo o instalador de implementações de
+Common Lisp, bem como um launcher para o ambiente em geral de
+Common Lisp, que simplesmente funciona.
+Tenta automatizar a instalação dos compiladores, pacotes do Emacs
+e criação de binários com Common Lisp. Vale a pena tentar dar uma
+olhada!
+
+- [Inglês] [[https://github.com/roswell/roswell][Repositório oficial]]

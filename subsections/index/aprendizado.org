@@ -1,0 +1,33 @@
+* Apresentação
+
+- [[http://lisp-lang.org/][Site oficial de Common Lisp]], apresentação sobre a linguagem e seu poder.
+- [[https://github.com/CodyReichert/awesome-cl][Awesome-CL]], uma lista imensa sobre frameworks e ferramentas para
+  Common Lisp.
+- [[http://www.lisperati.com/casting.html][Lisperati Casting]], uma história em quadrinhos sobre a magia que é
+  programar em Lisp.
+- [[http://www.avelino.xxx/hist%C3%B3ria-do-lisp-abra-os-olhos-para-programa%C3%A7%C3%A3o-funcional/][História do Lisp]], entenda como o Lisp começou e porque temos tantos dialetos.
+
+* Documentação e tutoriais
+
+- [[http://bnmcgn.github.io/lisp-guide/lisp-exploration.html][Common Lisp REPL Exploration Guide]], um guia interessantíssimo sobre
+  a exploração de Common Lisp pelo REPL [fn:2].
+- [[https://lispcookbook.github.io/cl-cookbook/][Cookbook de Common Lisp]], atualmente com uma [[lisp.com.br/cl-cookbook][tradução para o Português em andamento]], feita pela comunidade.
+  Também inclui tutoriais sobre Quicklisp (veja a seção de Tooling).
+- [[http://www.lispworks.com/documentation/HyperSpec/Front/][Common Lisp Hyperspec]]
+  Sua primeira parada ao pesquisar por documentação de Common Lisp. [[http://clhs.lisp.se/][(Mirror)]]
+- [[https://www.cliki.net/][CLiki, a Wiki de Common Lisp]]
+
+[fn:2] REPL significa Read-Eval-Print-Loop, muito comum em linguagens
+interativas como Lisp e Python. A propósito, o conceito foi
+inicialmente feito justamente em Lisp!
+
+* Livros
+
+- Common Lisp: A Gentle Introduction to Symbolic Computation, por David S. Touretsky
+  - [Amazon] [[https://www.amazon.com.br/Common-LISP-Introduction-Computation-Engineering-ebook/dp/B00IZUEG1G/][Livro físico]]
+  - [[https://www.cs.cmu.edu/~dst/LispBook/][Versão online]]
+- [Amazon] [[https://www.amazon.com.br/Land-Lisp-Learn-Program-Game-ebook/dp/B004AE3P4K/][Land of Lisp: Learn to Program in Lisp, One Game at a Time!]], por Conrad Barski
+- [Amazon] [[https://www.amazon.com.br/Common-Lisp-Recipes-Problem-Solution-Approach-ebook/dp/B01JFTONBS/][Common Lisp Recipes: A Problem-Solution Approach]], por Edmund Weitz
+- Practical Common Lisp, por Peter Seibel
+  - [Amazon] [[https://www.amazon.com.br/Practical-Common-Lisp-Peter-Seibel/dp/1590592395][Livro físico]]
+  - [[http://www.gigamonkeys.com/book/][Versão online]]
