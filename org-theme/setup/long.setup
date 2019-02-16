@@ -21,4 +21,5 @@
 # theme.json before building it.
 #
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="/org-theme/dist/long/bundle.min.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="/css/syntax.css" />
 #+HTML_HEAD: <script src="/org-theme/dist/long/bundle.min.js" type="text/javascript" ></script>
