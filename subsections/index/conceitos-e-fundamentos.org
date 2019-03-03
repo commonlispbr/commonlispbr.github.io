@@ -67,11 +67,17 @@ Computação Quântica, assim como tem sido usado comercialmente em
 softwares como [[http://www.schloerconsulting.com/quantum-computer-q-lisp-programming-language][QLisp Project]].
 
 #+BEGIN_SRC lisp
+  (defun range (a b)
+    (loop for x from a to b
+          collect x))
+
+  (defun fact (n)
+    (reduce #'* (range 1 n)))
 
   (defun hello-world () ;; definição de função
-    (princ "Hello, Lispers!"))
+    (format t "Fatorial de 10! é: ~a" (fact 10)))
 
   (hello-world) ;; chamada de função
 
-  ;; resultado: Hello, Lispers!
+  ;; resultado: Fatorial de 10! é: 3628800
 #+END_SRC
