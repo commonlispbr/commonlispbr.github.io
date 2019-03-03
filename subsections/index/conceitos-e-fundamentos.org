@@ -38,18 +38,33 @@ conhecidos são Common Lisp, Scheme e Clojure.
 
 * O que é Common Lisp?
 
-Common Lisp é um dialeto multi-paradigma da linguagem de programação
-Lisp. Suporta os paradigmas de programação procedural, orientado a
-objetos e, inclusive, o funcional, comum a todos os
-Lisps, por sua próxima relação com a natureza do Cálculo Lambda.
+Common Lisp é uma linguagem multi-paradigma pertencente a família de
+linguagems de programação Lisp. Suporta os paradigmas de programação
+funcional, procedural e orientado a objetos.
 
-Foi criada por Guy L. Steele nos anos 80, com o intuito de combinar
-aspectos de diversos dialetos anteriores, incluindo Scheme. Em 1994
-foi publicada no padrão [[http://cvberry.com/tech_writings/notes/common_lisp_standard_draft.html][ANSI Information Technology - Programming
-Language - Common Lisp, registro X3.226-1994 (R1999)]]. Common Lisp é
-bem maior e semanticamente mais complexa que um dialeto como Scheme,
-uma vez que foi projetada para ser uma linguagem comercial e para ser
-compatível com os diversos outros dialetos Lisp dos quais derivou.
+No início dos anos 80, existiam dezenas de implementações Lisp
+incompatíveis, com cerca de meia dúzia de dialetos principais. Um
+projeto foi iniciado, liderado por Scott Fahlman, Daniel Weinreb,
+David Moon, Guy Steele e Richard Gabriel, para definir um Lisp comum
+que combinaria as melhores características dos dialetos existentes em
+um todo coerente.
+
+A primeira edição do padrão Common Lisp apareceu em 1984; um padrão
+revisado apareceu em 1990. O padrão ANSI Common Lisp foi lançado em
+1994 e revisado em 2004. Common Lisp tornou-se rapidamente o Lisp
+escolhido em ambientes acadêmicos e industriais. Os outros dialetos
+praticamente desapareceram, com exceção do Scheme, que continua a
+desfrutar de uma popularidade modesta para aplicações educacionais.
+
+Muitas das idéias mais importantes nos sistemas de programação
+surgiram em conexão com Lisp. Estas incluem a combinação de funções
+interpretadas e compiladas, coleta de lixo, chamadas de função
+recursiva, rastreamento e depuração no nível de
+código-fonte. Atualmente, Lisp é uma linguagem líder para pesquisa
+sofisticada sobre estilos de programação funcional, paralelo e
+orientada a objetos. Além de ser também uma grande referência para
+Computação Quântica, assim como tem sido usado comercialmente em
+softwares como [[http://www.schloerconsulting.com/quantum-computer-q-lisp-programming-language][QLisp Project]].
 
 #+BEGIN_SRC lisp
 
