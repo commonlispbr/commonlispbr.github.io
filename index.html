@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="bt-br" xml:lang="bt-br">
 <head>
 <title>Common Lisp Brasil</title>
-<!-- 2019-02-16 Sat 21:33 -->
+<!-- 2019-03-04 Mon 03:31 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Manoel Vilela, Lucas Vieira, Hélio Cordeiro" />
@@ -265,30 +265,56 @@ conhecidos são Common Lisp, Scheme e Clojure.
 <h3 id="sec-2-2"><span class="section-number-3">2.2</span> O que é Common Lisp?</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Common Lisp é um dialeto multi-paradigma da linguagem de programação
-Lisp. Suporta os paradigmas de programação procedural, orientado a
-objetos e, inclusive, o funcional, comum a todos os
-Lisps, por sua próxima relação com a natureza do Cálculo Lambda.
+Common Lisp é uma linguagem multi-paradigma pertencente a família de
+linguagems de programação Lisp. Suporta os paradigmas de programação
+funcional, procedural e orientado a objetos.
 </p>
 
 <p>
-Foi criada por Guy L. Steele nos anos 80, com o intuito de combinar
-aspectos de diversos dialetos anteriores, incluindo Scheme. Em 1994
-foi publicada no padrão <a href="http://cvberry.com/tech_writings/notes/common_lisp_standard_draft.html">ANSI Information Technology - Programming
-Language - Common Lisp, registro X3.226-1994 (R1999)</a>. Common Lisp é
-bem maior e semanticamente mais complexa que um dialeto como Scheme,
-uma vez que foi projetada para ser uma linguagem comercial e para ser
-compatível com os diversos outros dialetos Lisp dos quais derivou.
+No início dos anos 80, existiam dezenas de implementações Lisp
+incompatíveis, com cerca de meia dúzia de dialetos principais. Um
+projeto foi iniciado, liderado por Scott Fahlman, Daniel Weinreb,
+David Moon, Guy Steele e Richard Gabriel, para definir um Lisp comum
+que combinaria as melhores características dos dialetos existentes em
+um todo coerente.
+</p>
+
+<p>
+A primeira edição do padrão Common Lisp apareceu em 1984; um padrão
+revisado apareceu em 1990. O padrão ANSI Common Lisp foi lançado em
+1994 e revisado em 2004. Common Lisp tornou-se rapidamente o Lisp
+escolhido em ambientes acadêmicos e industriais. Os outros dialetos
+praticamente desapareceram, com exceção do Scheme, que continua a
+desfrutar de uma popularidade modesta para aplicações educacionais.
+</p>
+
+<p>
+Muitas das idéias mais importantes nos sistemas de programação
+surgiram em conexão com Lisp. Estas incluem a combinação de funções
+interpretadas e compiladas, coleta de lixo, chamadas de função
+recursiva, rastreamento e depuração no nível de
+código-fonte. Atualmente, Lisp é uma linguagem líder para pesquisa
+sofisticada sobre estilos de programação funcional, paralelo e
+orientada a objetos. Além de ser também uma grande referência para
+Computação Quântica, assim como tem sido usado comercialmente em
+softwares como <a href="http://www.schloerconsulting.com/quantum-computer-q-lisp-programming-language">QLisp Project</a>.
 </p>
 
 <div class="org-src-container">
 
-<pre class="src src-lisp"><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-keyword">defun</span> <span class="org-function-name">hello-world</span> <span class="org-rainbow-delimiters-depth-2">()</span> <span class="org-comment-delimiter">;; </span><span class="org-comment">defini&#231;&#227;o de fun&#231;&#227;o</span>
-  <span class="org-rainbow-delimiters-depth-2">(</span>princ <span class="org-string">"Hello, Lispers!"</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+<pre class="src src-lisp"><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-keyword">defun</span> <span class="org-function-name">range</span> <span class="org-rainbow-delimiters-depth-2">(</span>a b<span class="org-rainbow-delimiters-depth-2">)</span>
+  <span class="org-rainbow-delimiters-depth-2">(</span><span class="org-keyword">loop</span> for x from a to b
+        collect x<span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+
+<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-keyword">defun</span> <span class="org-function-name">fact</span> <span class="org-rainbow-delimiters-depth-2">(</span>n<span class="org-rainbow-delimiters-depth-2">)</span>
+  <span class="org-rainbow-delimiters-depth-2">(</span>reduce #'* <span class="org-rainbow-delimiters-depth-3">(</span>range 1 n<span class="org-rainbow-delimiters-depth-3">)</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+
+<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-keyword">defun</span> <span class="org-function-name">hello-world</span> <span class="org-rainbow-delimiters-depth-2">()</span> <span class="org-comment-delimiter">;; </span><span class="org-comment">defini&#231;&#227;o de fun&#231;&#227;o</span>
+  <span class="org-rainbow-delimiters-depth-2">(</span>format t <span class="org-string">"Fatorial de 10! &#233;: ~a"</span> <span class="org-rainbow-delimiters-depth-3">(</span>fact 10<span class="org-rainbow-delimiters-depth-3">)</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
 
 <span class="org-rainbow-delimiters-depth-1">(</span>hello-world<span class="org-rainbow-delimiters-depth-1">)</span> <span class="org-comment-delimiter">;; </span><span class="org-comment">chamada de fun&#231;&#227;o</span>
 
-<span class="org-comment-delimiter">;; </span><span class="org-comment">resultado: Hello, Lispers!</span>
+<span class="org-comment-delimiter">;; </span><span class="org-comment">resultado: Fatorial de 10! &#233;: 3628800</span>
 </pre>
 </div>
 </div>
@@ -518,7 +544,7 @@ inicialmente feito justamente em Lisp!
 <div id="postamble" class="status">
 <p class="date">Date: <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-02-10 Sat&gt;</span></span></p>
 <p class="author">Author: Manoel Vilela, Lucas Vieira, Hélio Cordeiro</p>
-<p class="date">Created: 2019-02-16 Sat 21:33</p>
+<p class="date">Created: 2019-03-04 Mon 03:31</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.1.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
