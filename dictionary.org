@@ -1,3 +1,5 @@
+#+SETUPFILE: org-theme/setup/short.setup
+
 #+TITLE: Glossário de termos
 #+DATE: 2019-03-03
 #+AUTHOR: Gilgamesh
