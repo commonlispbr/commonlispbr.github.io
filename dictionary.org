@@ -1,0 +1,48 @@
+#+TITLE: Glossário de termos
+#+DATE: 2019-03-03
+
+*** A
+*Átomos* (/atoms/): Em Lisp, átomos é uma palavra para todos os tipos de dados que não são sequências.
+
+/Exemplos de átomos: números e caracteres./
+
+Referência: [[https://www.gnu.org/software/emacs/manual/html_node/eintr/Lisp-Atoms.html][Lisp Atoms - Programming in Emacs Lisp]].
+*** F
+*Form*: Um objeto que é esperado ser evaluado sem um erro.
+
+/Exemplos de formas: (+ 3 5 3)/
+
+Referência: [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Forms.html][Forms - GNU Emacs Lisp Reference Manual]].
+*** L
+*Lisp Machine*: Um computador criado especialmente para rodar Lisp de forma eficiente, como seu software principal e linguagem de programação, usualmente via suporte de hardware.
+
+Referência: [[https://en.wikipedia.org/wiki/Lisp_machine][Lisp Machine - Wikipedia]].
+*** P
+*Polish Notation*: Uma forma de notação matemática onde os operadores precedem os operandos.
+
+/Exemplos: "+ 3 4", onde o resultado será 7./
+
+Referência: [[https://en.wikipedia.org/wiki/Polish_notation][Polish Notation - Wikipedia]].
+
+*Predicate*: Um predicado é uma função que testa alguma condição envolvendo seus argumentos e retorna /nil/ se a condição for falsa (/false/), ou algum valor não-/nil/ se a condição for verdadeira (/true/).
+
+/Exemplos: (atom '(a b c))/
+
+Referência: [[https://www.cs.cmu.edu/Groups/AI/html/cltl/clm/node69.html][Common Lisp the Language - 6. Predicates]].
+
+*Packages*: /Pacotes/ são, de grosso modo, contêineres para símbolos. Eles estão ali para ajudar você a criar /namespaces/ separados dentro de seus programas.
+
+Referências: [[http://mirror.informatimago.com/lisp/weitz.de/packages.html][Packages, systems, modules, libraries - WTF?]], [[http://gigamonkeys.com/book/programming-in-the-large-packages-and-symbols.html][Practical Common Lisp - 21. Programming in the Large: Packages and Symbols]].
+
+*** R
+*REPL*: Sigla para "/Read-Eval-Print Loop/", termo para um ambiente interativo lê o "/input/" do usuário, evalua o "/input/" e retorna o resultado para o usuário.
+
+Referência: [[https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop][Read-Eval-Print Loop - Wikipedia]].
+*** S
+*SLIME*: "/The Superior Lisp Interaction Mode for Emacs/", ou simplesmente "/SLIME/", é um modo para o Emacs, para desenvolver aplicações em Common Lisp.
+
+Referências: [[https://common-lisp.net/project/slime/][SLIME]], [[https://en.wikipedia.org/wiki/SLIME][SLIME - Wikipedia]].
+*** T
+*TL;DR*: Acrônimo para o termo "/too long; didn't read/", geralmente usado por alguém que escreveu um texto muito longo para poder mostrar um breve resumo do texto.
+
+Referência: [[https://www.urbandictionary.com/define.php?term=tl%3Bdr][Urban Dictionary: tl;dr]].
