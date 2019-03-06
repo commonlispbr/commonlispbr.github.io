@@ -8,11 +8,11 @@
 
 Referência: [[https://www.gnu.org/software/emacs/manual/html_node/eintr/Lisp-Atoms.html][Lisp Atoms - Programming in Emacs Lisp]].
 *** F
-*Form*: Um objeto que é esperado ser evaluado sem um erro.
+*Form*: Uma "/forma/" é uma lista onde o primeiro símbolo na lista tem que ser uma palavra especial que o compilador pode entender (/geralmente o nome de uma função/).
 
 /Exemplos de formas: (+ 3 5 3)/
 
-Referência: [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Forms.html][Forms - GNU Emacs Lisp Reference Manual]].
+Referências: [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Forms.html][Forms - GNU Emacs Lisp Reference Manual]], [[http://www.lisperati.com/syntax.htlm][Lispirati - Syntax and Semantics]].
 *** L
 *Lisp Machine*: Um computador criado especialmente para rodar Lisp de forma eficiente, como seu software principal e linguagem de programação, usualmente via suporte de hardware.
 
@@ -26,7 +26,7 @@ Referência: [[https://en.wikipedia.org/wiki/Polish_notation][Polish Notation - 
 
 *Predicate*: Um predicado é uma função que testa alguma condição envolvendo seus argumentos e retorna /nil/ se a condição for falsa (/false/), ou algum valor não-/nil/ se a condição for verdadeira (/true/).
 
-/Exemplos: (atom '(a b c))/
+/Exemplos: (listp '(a b c))/
 
 Referência: [[https://www.cs.cmu.edu/Groups/AI/html/cltl/clm/node69.html][Common Lisp the Language - 6. Predicates]].
 
