@@ -22,12 +22,20 @@ interativas como Lisp e Python. A propósito, o conceito foi
 inicialmente feito justamente em Lisp!
 
 * Livros
+# Os livros físicos devem conter link para compra em lojas no Brasil. Links de compras em outros países não serão aceitos.
 
 - Common Lisp: A Gentle Introduction to Symbolic Computation, por David S. Touretsky
-  - [Amazon] [[https://www.amazon.com.br/Common-LISP-Introduction-Computation-Engineering-ebook/dp/B00IZUEG1G/][Livro físico]]
+  - [[https://www.amazon.com.br/Common-LISP-Introduction-Computation-Engineering-ebook/dp/B00IZUEG1G/][Livro físico]] [/Amazon/]
   - [[https://www.cs.cmu.edu/~dst/LispBook/][Versão online]]
-- [Amazon] [[https://www.amazon.com.br/Land-Lisp-Learn-Program-Game-ebook/dp/B004AE3P4K/][Land of Lisp: Learn to Program in Lisp, One Game at a Time!]], por Conrad Barski
-- [Amazon] [[https://www.amazon.com.br/Common-Lisp-Recipes-Problem-Solution-Approach-ebook/dp/B01JFTONBS/][Common Lisp Recipes: A Problem-Solution Approach]], por Edmund Weitz
-- Practical Common Lisp, por Peter Seibel
-  - [Amazon] [[https://www.amazon.com.br/Practical-Common-Lisp-Peter-Seibel/dp/1590592395][Livro físico]]
+
+- [[https://www.amazon.com.br/Common-Lisp-Recipes-Problem-Solution-Approach-ebook/dp/B01JFTONBS/][Common Lisp Recipes: A Problem-Solution Approach]], por Edmund Weitz. [/Amazon/]
+
+- Practical Common Lisp, por Peter Seibel.
+  - [[https://www.amazon.com.br/Practical-Common-Lisp-Peter-Seibel/dp/1590592395][Livro físico]] [/Amazon/]
   - [[http://www.gigamonkeys.com/book/][Versão online]]
+
+- [[https://www.cs.cmu.edu/Groups/AI/html/cltl/clm/clm.html][Common Lisp the Language, 2nd Edition]], por Guy L. Steele Jr. [/Online/]
+
+- [[https://www.amazon.com.br/Land-Lisp-Learn-Program-Game-ebook/dp/B004AE3P4K/][Land of Lisp: Learn to Program in Lisp, One Game at a Time!]], por Conrad Barski. [/Amazon/]
+
+- [[https://lispcookbook.github.io/cl-cookbook/][The Common Lisp Cookbook]] (/inglês/). [/Online/]
