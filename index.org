@@ -3,7 +3,7 @@
 #+AUTHOR: Manoel Vilela, Lucas Vieira, Hélio Cordeiro
 #+DATE: <2018-02-10 Sat>
 #+TITLE: Common Lisp Brasil
-#+LANGUAGE: bt-br
+#+LANGUAGE: pt-br
 #+LATEX_HEADER: \usepackage[]{babel}
 #+OPTIONS: toc:nil
 
@@ -26,10 +26,11 @@ repositório desta página]].
 
 - [[file:appendix.html][Apêndice]]
 - [[http://lisp.com.br/archive/][Arquivos]]
-- [[http://lisp.com.br/cl-cookbook][The Common Lisp Cookbook (PT-BR) (em progresso)]]
+- [[dictionary.html][Glossário de termos]]
 - [[file:projects.html][Projetos]]
 - [[file:rules.html][Regras]]
-
+- [[http://lisp.com.br/cl-cookbook][The Common Lisp Cookbook (PT-BR) (em progresso)]]
+  
 * Conceitos e Fundamentos
 #+INCLUDE: subsections/index/conceitos-e-fundamentos.org :only-contents t
 
