@@ -15,7 +15,7 @@ valores e/ou a procedimentos. Na linguagens da família Lisp, há a
 peculiaridade de existir uma linha muito tênue de separação entre
 dados e procedimentos no código-fonte. Na realidade, é possível
 produzir código a partir de dados e vice-versa! Uma das
-características fortes da linguagem é o uso da [[https://pt.wikipedia.org/wiki/Nota%25C3%25A7%25C3%25A3o_polonesa][notação polonesa]], que
+características fortes da linguagem é o uso da [[https://pt.wikipedia.org/wiki/Nota%C3%A7%C3%A3o_polonesa][notação polonesa]] que
 simplifica a sintaxe da linguagem, de forma a previnir ambiguidades:
 operações e operandos são denotados de forma explícita, em sua ordem
 de precedência, no uso de listas.
