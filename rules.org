@@ -52,7 +52,7 @@ poderá ser banido imediatamente.
 Durante a pandemia global de 2020,  grupos de /trolls/ acharam que seria
 divertido redirecionar  pessoas para entrarem  em nosso grupo.  Como a
 maioria  das pessoas  nunca lê  as regras  ou descrições  de um  grupo
-(aliás, parabéns por  ler até aqui), muitos novos  membros entraram na
+(aliás, parabéns por  ler até aqui), muitos novos  membros entraram no grupo
 Common Lisp Brasil em busca de cartões de crédito clonados, resoluções
 de  exercícios de  faculdade em  outras linguagens  de programação,  e
 outros pedidos muitas vezes ilegais e descorrelacionados com Lisp.
