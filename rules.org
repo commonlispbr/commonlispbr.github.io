@@ -27,7 +27,7 @@ necessário, esta página poderá também ser modificada no futuro.
 1. Aja  com *boa-fé*. Escreva  com respeito e seja  respeitado. Ademais,
    nunca aja como  se algum comentário tivesse a  intenção de ofender;
    se esse for o caso, a moderação agirá para resolver a situação.
-2. Não  poste /spam/, e não  inicie assuntos que não  tenham relação com
+2. Não  poste /spam/! Evite assuntos descorrelacionados de
    Common Lisp, outros dialetos de Lisp ou Tecnologia em geral.
 3.  Somos muito receptivos a  discussões sobre outros dialetos de Lisp
    como Scheme,  Clojure, LFE, etc.   Mas cuide  para que o  grupo não
