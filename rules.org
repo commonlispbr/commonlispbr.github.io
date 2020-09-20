@@ -19,7 +19,7 @@ Não temos  a prática de  reforçar regras restritivas. Ao  invés disso,
 esperamos que  os participantes  possam usufruir de  um bom  espaço de
 discussão onde majoritariamente discuta-se Common Lisp.
 
-Alguns  pontos de  convivência estão  listados a  seguir. Na  falta ou
+Algumas sugestões de convivência estão listadas a seguir. Na  falta ou
 dubiedade de  algum tópico, esperamos  que o membro possa  confiar nas
 decisões  dos moderadores,  que  lidarão com  a  situação.  Caso  seja
 necessário, esta página poderá também ser modificada no futuro.
