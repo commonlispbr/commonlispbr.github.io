@@ -8,7 +8,7 @@
 A *Common Lisp Brasil* é a principal comunidade brasileira a respeito da
 linguagem de  programação Common Lisp, onde  discute-se principalmente
 sobre  programação  nessa  linguagem,   mas  também  admite-se  outros
-assuntos relacionados, desde que /com parcimônia/.
+assuntos relacionados (/não abuse/).
 
 * Quais são as regras?
 
