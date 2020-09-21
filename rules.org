@@ -1,14 +1,61 @@
 #+SETUPFILE: org-theme/setup/short.setup
-
-#+AUTHOR: Manoel Vilela
-#+DATE: <2018-02-10 Sat>
+#+AUTHOR: Manoel Vilela, Lucas S. Vieira
+#+DATE: <2020-09-20 dom>
 #+TITLE: Regras
 
+* Que grupo é esse?
 
-1. Não seja um **cuzão**, não poste spam ou coisas totalmente
-   descorrelacionadas com Lisp, Tecnologia e Lain.
-2. Leia a primeira regra.
+A *Common Lisp Brasil* é uma  comunidade brasileira, que tem o Português
+como  língua  principal,  e  que  promove  discussões  a  respeito  da
+linguagem  de programação  Common Lisp,  além de  outras linguagens  e
+dialetos relacionados a ela.
 
+* Quais são as regras?
 
-Descumprimentos das regras receberá um aviso (se merecer). Na segunda
-vez não terá aviso. É BAN.
+As  "regras"  a  seguir  são  linhas  gerais  para  garantir  uma  boa
+convivência na nossa comunidade de Common Lisp.
+
+Não costumamos impor regras  restritivas, e procuramos fazê-lo somente
+para garantir que a comunidade seja um bom ambiente de discussões.
+
+Seguem algumas sugestões para a  boa convivência. Quando em dúvida, os
+moderadores lidarão com a situação, e poderão ampliar este texto.
+
+1. Trate a todos com respeito  e, assim, seja respeitado. Nunca assuma
+   que um comentário tem a  intenção de ofender; a moderação intervirá
+   sempre que isso não ocorrer.
+2. Não poste /spam/. Nunca.
+   - Qualquer assunto relacionado poderá  ser abordado, mas sempre que
+     uma  discussão  sobre Lisp  estiver  em  curso, abordar  qualquer
+     assunto divergente será considerado impertinente.
+3. Não há tolerância para /trolls/. Portanto, não os alimente.
+4.   Divulgações são  toleradas para  membros engajados,  mas promover
+   conteúdo  não-relacionado   ao  tema  da  comunidade   será  sempre
+   mal-visto.
+
+Os moderadores  zelam pelo  bem-estar da  comunidade. Caso  você cause
+algum problema,  poderá receber um  aviso (dependendo da  gravidade da
+ofensa).  Caso haja  um problema  grave ou  houver reincidência,  você
+poderá ser banido imediatamente.
+
+Aproveite nossa comunidade para aprender  e discutir Common Lisp!  Não
+faz  sentido você  participar do  grupo se  não vai  explorar uma  das
+melhores linguagens que existem, não é mesmo?
+
+* Sobre banimentos automáticos
+
+Durante a pandemia global de 2020,  grupos de /trolls/ acharam que seria
+divertido redirecionar  pessoas para entrarem  em nosso grupo.  Como a
+maioria  das pessoas  nunca lê  as regras  ou descrições  de um  grupo
+(aliás, parabéns por  ler até aqui), muitos novos  membros entraram no
+grupo  Common Lisp  Brasil em  busca de  cartões de  crédito clonados,
+resoluções  de  exercícios  de   faculdade  em  outras  linguagens  de
+programação, e outros pedidos muitas vezes ilegais e/ou que nada têm a
+ver com Lisp.
+
+Por conta disso, poderemos usar nosso bot de banimento automático, que
+banirá qualquer participante de grupos que consideremos como fontes de
+/trolls/.
+
+Caso você  seja banido e queira  recorrer da decisão, converse  com os
+moderadores em privado.
