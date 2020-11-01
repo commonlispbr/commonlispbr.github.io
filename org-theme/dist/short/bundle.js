@@ -132,7 +132,7 @@
 
   function bootstrap() {
     // Bootstrap fonts
-    setupFonts();
+    //setupFonts();
 
     // Bootstrap lists
     if (options['fancy-lists']) {

@@ -198,9 +198,9 @@ samp {
   --h6: 1.15rem;
 
   /* Fonts */
-  --font-family-sans-serif: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-family-serif: 'PT Serif', Georgia, Cambria, 'Times New Roman', Times, serif;
-  --font-family-monospace: Menlo, Monaco, 'Courier New', Courier, monospace;
+  --font-family-sans-serif: sans-serif;
+  --font-family-serif: serif;
+  --font-family-monospace: monospace;
 
   /* Weight */
   --font-weight-bold: 700;
@@ -322,7 +322,7 @@ html {
    * toggle it after webfont is loaded to prevet
    * FOUT
    **/
-  visibility: hidden
+/*  visibility: hidden*/
 }
 @media screen and (min-width: 40em) {
   html {

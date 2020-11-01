@@ -17,6 +17,6 @@
 # theme.json before building it.
 #
 #
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="/org-theme/dist/short/bundle.min.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="/org-theme/dist/short/bundle.css"/>
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="/css/syntax.css" />
-#+HTML_HEAD: <script src="/org-theme/dist/short/bundle.min.js" type="text/javascript" ></script>
+#+HTML_HEAD: <script src="/org-theme/dist/short/bundle.js" type="text/javascript" ></script>
