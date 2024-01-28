@@ -10,6 +10,9 @@ Common Lisp.
   - [[http://tuhdo.github.io/emacs-tutor2.html][Parte 2: Por que parênteses importam]]
   - [[http://tuhdo.github.io/emacs-tutor3.html][Parte 3: Customizando e extendendo o Emacs]]
 
+** Spacemacs
+   - [Português] [[file:subsections/guides/guide-spacemacs-lisp.org][Guia: Spacemacs como ambiente de programação para Common Lisp]].
+
 * Portacle
 
 Portacle é um reempacotamento de Emacs. Diferente do programa original,
