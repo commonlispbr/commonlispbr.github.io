@@ -11,7 +11,7 @@ Common Lisp.
   - [[http://tuhdo.github.io/emacs-tutor3.html][Parte 3: Customizando e extendendo o Emacs]]
 
 ** Spacemacs
-   - [Português] [[file:subsections/guides/guide-spacemacs-lisp.org][Guia: Spacemacs como ambiente de programação para Common Lisp]].
+   - [Português] [[file:spacemacs-guide.html][Guia: Spacemacs como ambiente de programação para Common Lisp]].
 
 * Portacle
 
