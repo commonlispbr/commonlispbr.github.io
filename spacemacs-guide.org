@@ -1,0 +1,157 @@
+#+SETUPFILE: org-theme/setup/short.setup
+
+#+AUTHOR: Alexandre Péret
+#+DATE: <2024-01-20 sáb>
+#+TITLE: Guia: Spacemacs como ambiente de programação para Common Lisp
+#+LANGUAGE: bt-br
+
+* Introdução
+  Configurando o Spacemacs como ambiente de programação para Common Lisp.
+
+  Este tutorial utiliza Ubuntu 22.04 e Emacs (27.1) da própria distribuição. Além disto, o Spacemacs é configurado com os key bindings do Vim.
+
+* Instalação
+** Emacs e SBCL
+   #+begin_src bash
+   sudo apt update && sudo apt upgrade
+   sudo apt install emacs
+   sudo apt install sbcl
+   #+end_src
+
+** Spacemacs
+   #+begin_src bash
+   cd ~
+   git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+   emacs
+   #+end_src
+
+   O Spacemacs vai solicitar algumas opções de configuração na primeira execução.
+   - What is your preferred editing style?
+     - selecione (vim)
+
+   - What distribution of spacemacs would you like to start with?
+     - selecione "spacemacs"
+
+   Aguarde a instalação dos pacotes.
+
+* Preparando o suporte ao Common Lisp
+** Spacemacs/Emacs
+   Antes de começar, lembre-se que configuramos o Spacemacs para utilizar os key-bindings do Vim (evil-mode) e será preciso alternar para o Insert Mode para editar texto nos buffers (tecla i) e ESC para voltar ao Normal mode e poder executar as sequências de atalhos do Spacemacs (SPC ...).
+
+   Abra o arquivo de configuração do Spacemacs (dot file) pressionando a combinação de teclas: SPC f e d.
+
+   Localize a variável "dotspacemacs-configuration-layers", adicione "common-lisp" e descomente "auto-completion" na lista de layers:
+   #+begin_src lisp
+     ;; List of configuration layers to load.
+     dotspacemacs-configuration-layers
+     '(
+       ;; ----------------------------------------------------------------
+       ;; Example of useful layers you may want to use right away.
+       ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
+       ;; `M-m f e R' (Emacs style) to install them.
+       ;; ----------------------------------------------------------------
+       auto-completion
+       ;; better-defaults
+       emacs-lisp
+       common-lisp
+       ;; git
+       helm
+       ;; lsp
+       ;; markdown
+       multiple-cursors
+       ;; org
+       ;; (shell :variables
+       ;;        shell-default-height 30
+       ;;        shell-default-position 'bottom)
+       ;; spell-checking
+       ;; syntax-checking
+       ;; version-control
+       treemacs)
+   #+end_src
+
+   Pressione SPC f e R para recarregar as configurações e instalar as novas layers.
+
+   Encerre o Emacs: SPC q q.
+
+** Quicklisp
+   No shell (bash), baixe o arquivo de instalação e carregue-o no SBCL:
+   #+begin_src bash
+     curl -O https://beta.quicklisp.org/quicklisp.lisp
+     sbcl --load quicklisp.lisp
+   #+end_src
+
+   No REPL, execute:
+   #+begin_src lisp
+     (quicklisp-quickstart:install)
+     (ql:add-to-init-file)
+     (quit)
+   #+end_src
+
+** ASDF
+   Crie um diretório para seus projetos e adicione o caminho ao registro do ASDF:
+   #+begin_src bash
+     cd ~
+     mkdir alien-secrets
+   #+end_src
+
+   Adicione o caminho para o diretório de projetos no source registry do ASDF. Exemplo:
+   "~/.config/common-lisp/source-registry.conf.d/10-meus-projetos.conf".
+
+   Nota: talvez seja necessário criar a estrutura de diretórios.
+
+   Este arquivo deve ter o seguinte conteúdo:
+   #+begin_src lisp
+     (:tree "/home/{user}/alien-secrets/")
+   #+end_src
+
+   Substitua "{user}" pelo seu usuário.
+
+* Spacemacs e Common Lisp
+  Antes de voltarmos ao Emacs, vamos criar um projeto de exemplo.
+
+  Inicie o SBCL e carregue o pacote "cl-project" para criar uma estrutura básica de projeto para o Common Lisp utilizando o ASDF:
+  #+begin_src bash
+    sbcl
+  #+end_src
+
+  No SBCL
+  #+begin_src lisp
+    (ql:quickload "cl-project")
+    (cl-project:make-project #P"./alien-secrets/secret-1/")
+    (quit)
+  #+end_src
+
+  Execute o Emacs e abra o arquivo "~/alien-secrets/secret-1/src/main.lisp". Utilize a seguinte sequência de teclas SPC f f para abrir o arquivo.
+
+  Uma vez aberto o arquivo "main.lisp", acione o slime para iniciar o REPL, pressionando as teclas ",'" (vírgula e aspa simples).
+
+  No REPL, carregue o projeto com o Quicklisp e entre no namespace do projeto:
+  #+begin_src lisp
+    (ql:quickload "secret-1")
+    (in-package :secret-1)
+  #+end_src
+
+  No buffer¹ do arquivo "main.lisp", crie uma função de testes, posicione o cursor em qualquer parte da função e "avalie" (evaluate) a mesma utilizando a segiunte sequência de teclas: , e f
+
+  Ex.:
+  #+begin_src lisp
+    (defun what-secret? ()
+      (format t "Can't tell, it's a secret."))
+  #+end_src
+
+  Caso queira salvar as alterações no arquivo, SPC f s.
+
+  ¹ para alternar entre os buffers, pressione SPC tab
+
+  Alterne para o REPL e "avalie" a função:
+  #+begin_src lisp
+    (what-secret?)
+  #+end_src
+
+  Para encerrar o REPL, é preciso retornar ao CL-USER namespace
+  #+begin_src lisp
+    (in-package :cl-user)
+    (quit)
+  #+end_src
+
+  SPC b d para fechar o buffer.

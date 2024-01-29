@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="bt-br" xml:lang="bt-br">
+<head>
+<title>Guia: Spacemacs como ambiente de programação para Common Lisp</title>
+<!-- 2024-01-29 Mon 03:28 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Alexandre Péret" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="/org-theme/dist/short/bundle.css"/>
+<link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+<script src="/org-theme/dist/short/bundle.js" type="text/javascript" ></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Guia: Spacemacs como ambiente de programação para Common Lisp</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Introdução</a></li>
+<li><a href="#sec-2">2. Instalação</a>
+<ul>
+<li><a href="#sec-2-1">2.1. Emacs e SBCL</a></li>
+<li><a href="#sec-2-2">2.2. Spacemacs</a></li>
+</ul>
+</li>
+<li><a href="#sec-3">3. Preparando o suporte ao Common Lisp</a>
+<ul>
+<li><a href="#sec-3-1">3.1. Spacemacs/Emacs</a></li>
+<li><a href="#sec-3-2">3.2. Quicklisp</a></li>
+<li><a href="#sec-3-3">3.3. ASDF</a></li>
+</ul>
+</li>
+<li><a href="#sec-4">4. Spacemacs e Common Lisp</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Introdução</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Configurando o Spacemacs como ambiente de programação para Common Lisp.
+</p>
+
+<p>
+Este tutorial utiliza Ubuntu 22.04 e Emacs (27.1) da própria distribuição. Além disto, o Spacemacs é configurado com os key bindings do Vim.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Instalação</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Emacs e SBCL</h3>
+<div class="outline-text-3" id="text-2-1">
+<div class="org-src-container">
+
+<pre class="src src-bash">sudo apt update &amp;&amp; sudo apt upgrade
+sudo apt install emacs
+sudo apt install sbcl
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Spacemacs</h3>
+<div class="outline-text-3" id="text-2-2">
+<div class="org-src-container">
+
+<pre class="src src-bash">cd ~
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+emacs
+</pre>
+</div>
+
+<p>
+O Spacemacs vai solicitar algumas opções de configuração na primeira execução.
+</p>
+<ul class="org-ul">
+<li>What is your preferred editing style?
+<ul class="org-ul">
+<li>selecione (vim)
+</li>
+</ul>
+</li>
+
+<li>What distribution of spacemacs would you like to start with?
+<ul class="org-ul">
+<li>selecione "spacemacs"
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+Aguarde a instalação dos pacotes.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Preparando o suporte ao Common Lisp</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Spacemacs/Emacs</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+Antes de começar, lembre-se que configuramos o Spacemacs para utilizar os key-bindings do Vim (evil-mode) e será preciso alternar para o Insert Mode para editar texto nos buffers (tecla i) e ESC para voltar ao Normal mode e poder executar as sequências de atalhos do Spacemacs (SPC &#x2026;).
+</p>
+
+<p>
+Abra o arquivo de configuração do Spacemacs (dot file) pressionando a combinação de teclas: SPC f e d.
+</p>
+
+<p>
+Localize a variável "dotspacemacs-configuration-layers", adicione "common-lisp" e descomente "auto-completion" na lista de layers:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp"><span class="org-comment-delimiter">;; </span><span class="org-comment">List of configuration layers to load.</span>
+dotspacemacs-configuration-layers
+'<span class="org-rainbow-delimiters-depth-1">(</span>
+  <span class="org-comment-delimiter">;; </span><span class="org-comment">----------------------------------------------------------------</span>
+  <span class="org-comment-delimiter">;; </span><span class="org-comment">Example of useful layers you may want to use right away.</span>
+  <span class="org-comment-delimiter">;; </span><span class="org-comment">Uncomment some layer names and press `SPC f e R' (Vim style) or</span>
+  <span class="org-comment-delimiter">;; </span><span class="org-comment">`M-m f e R' (Emacs style) to install them.</span>
+  <span class="org-comment-delimiter">;; </span><span class="org-comment">----------------------------------------------------------------</span>
+  auto-completion
+  <span class="org-comment-delimiter">;; </span><span class="org-comment">better-defaults</span>
+  emacs-lisp
+  common-lisp
+  <span class="org-comment-delimiter">;; </span><span class="org-comment">git</span>
+  helm
+  <span class="org-comment-delimiter">;; </span><span class="org-comment">lsp</span>
+  <span class="org-comment-delimiter">;; </span><span class="org-comment">markdown</span>
+  multiple-cursors
+  <span class="org-comment-delimiter">;; </span><span class="org-comment">org</span>
+  <span class="org-comment-delimiter">;; </span><span class="org-comment">(shell :variables</span>
+  <span class="org-comment-delimiter">;;        </span><span class="org-comment">shell-default-height 30</span>
+  <span class="org-comment-delimiter">;;        </span><span class="org-comment">shell-default-position 'bottom)</span>
+  <span class="org-comment-delimiter">;; </span><span class="org-comment">spell-checking</span>
+  <span class="org-comment-delimiter">;; </span><span class="org-comment">syntax-checking</span>
+  <span class="org-comment-delimiter">;; </span><span class="org-comment">version-control</span>
+  treemacs<span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<p>
+Pressione SPC f e R para recarregar as configurações e instalar as novas layers.
+</p>
+
+<p>
+Encerre o Emacs: SPC q q.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Quicklisp</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+No shell (bash), baixe o arquivo de instalação e carregue-o no SBCL:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-bash">curl -O https://beta.quicklisp.org/quicklisp.lisp
+sbcl --load quicklisp.lisp
+</pre>
+</div>
+
+<p>
+No REPL, execute:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp"><span class="org-rainbow-delimiters-depth-1">(</span>quicklisp-quickstart:install<span class="org-rainbow-delimiters-depth-1">)</span>
+<span class="org-rainbow-delimiters-depth-1">(</span>ql:add-to-init-file<span class="org-rainbow-delimiters-depth-1">)</span>
+<span class="org-rainbow-delimiters-depth-1">(</span>quit<span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> ASDF</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+Crie um diretório para seus projetos e adicione o caminho ao registro do ASDF:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-bash">cd ~
+mkdir alien-secrets
+</pre>
+</div>
+
+<p>
+Adicione o caminho para o diretório de projetos no source registry do ASDF. Exemplo:
+"~/.config/common-lisp/source-registry.conf.d/10-meus-projetos.conf".
+</p>
+
+<p>
+Nota: talvez seja necessário criar a estrutura de diretórios.
+</p>
+
+<p>
+Este arquivo deve ter o seguinte conteúdo:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp"><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-builtin">:tree</span> <span class="org-string">"/home/{user}/alien-secrets/"</span><span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<p>
+Substitua "{user}" pelo seu usuário.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Spacemacs e Common Lisp</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Antes de voltarmos ao Emacs, vamos criar um projeto de exemplo.
+</p>
+
+<p>
+Inicie o SBCL e carregue o pacote "cl-project" para criar uma estrutura básica de projeto para o Common Lisp utilizando o ASDF:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-bash">sbcl
+</pre>
+</div>
+
+<p>
+No SBCL
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp"><span class="org-rainbow-delimiters-depth-1">(</span>ql:quickload <span class="org-string">"cl-project"</span><span class="org-rainbow-delimiters-depth-1">)</span>
+<span class="org-rainbow-delimiters-depth-1">(</span>cl-project:make-project #P<span class="org-string">"./alien-secrets/secret-1/"</span><span class="org-rainbow-delimiters-depth-1">)</span>
+<span class="org-rainbow-delimiters-depth-1">(</span>quit<span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<p>
+Execute o Emacs e abra o arquivo "~/alien-secrets/secret-1/src/main.lisp". Utilize a seguinte sequência de teclas SPC f f para abrir o arquivo.
+</p>
+
+<p>
+Uma vez aberto o arquivo "main.lisp", acione o slime para iniciar o REPL, pressionando as teclas ",'" (vírgula e aspa simples).
+</p>
+
+<p>
+No REPL, carregue o projeto com o Quicklisp e entre no namespace do projeto:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp"><span class="org-rainbow-delimiters-depth-1">(</span>ql:quickload <span class="org-string">"secret-1"</span><span class="org-rainbow-delimiters-depth-1">)</span>
+<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-keyword">in-package</span> <span class="org-builtin">:secret-1</span><span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<p>
+No buffer¹ do arquivo "main.lisp", crie uma função de testes, posicione o cursor em qualquer parte da função e "avalie" (evaluate) a mesma utilizando a segiunte sequência de teclas: , e f
+</p>
+
+<p>
+Ex.:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp"><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-keyword">defun</span> <span class="org-function-name">what-secret?</span> <span class="org-rainbow-delimiters-depth-2">()</span>
+  <span class="org-rainbow-delimiters-depth-2">(</span>format t <span class="org-string">"Can't tell, it's a secret."</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<p>
+Caso queira salvar as alterações no arquivo, SPC f s.
+</p>
+
+<p>
+¹ para alternar entre os buffers, pressione SPC tab
+</p>
+
+<p>
+Alterne para o REPL e "avalie" a função:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp"><span class="org-rainbow-delimiters-depth-1">(</span>what-secret?<span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<p>
+Para encerrar o REPL, é preciso retornar ao CL-USER namespace
+</p>
+<div class="org-src-container">
+
+<pre class="src src-lisp"><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-keyword">in-package</span> <span class="org-builtin">:cl-user</span><span class="org-rainbow-delimiters-depth-1">)</span>
+<span class="org-rainbow-delimiters-depth-1">(</span>quit<span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<p>
+SPC b d para fechar o buffer.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-01-20 sáb&gt;</span></span></p>
+<p class="author">Author: Alexandre Péret</p>
+<p class="date">Created: 2024-01-29 Mon 03:28</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.1.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
