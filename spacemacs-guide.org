@@ -3,7 +3,7 @@
 #+AUTHOR: Alexandre Péret
 #+DATE: <2024-01-20 sáb>
 #+TITLE: Guia: Spacemacs como ambiente de programação para Common Lisp
-#+LANGUAGE: bt-br
+#+LANGUAGE: pt-br
 
 * Introdução
   Configurando o Spacemacs como ambiente de programação para Common Lisp.
