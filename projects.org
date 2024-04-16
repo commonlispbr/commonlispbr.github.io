@@ -3,7 +3,7 @@
 #+AUTHOR: Manoel Vilela, Lucas Vieira
 #+DATE: <2018-02-15 Thu>
 #+TITLE: Projetos
-#+LANGUAGE: bt-br
+#+LANGUAGE: pt-br
 
 
 | projeto               | descrição                                                                             | autores                      |
