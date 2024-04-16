@@ -685,11 +685,15 @@ ol ol ol ol ol {
  * 1. Remove top margin
  * 2. Add bottom margin for better content readability
  * 3. Set default font size (in rem)
+  * 4. Justify content for better readability
+  * 5. Enable hyphenation to keep inter-word spacing consistent
  */
 p {
   margin-top: 0; /* [1] */
   margin-bottom: var(--paragraph-margin-bottom); /* [2] */
   font-size: var(--font-size); /* [3] */
+  text-align: justify; /* [4] */
+  hyphens: auto; /* [5] */
 }
 /*
  ==============================================================================
