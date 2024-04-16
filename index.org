@@ -3,7 +3,7 @@
 #+AUTHOR: Manoel Vilela, Lucas Vieira, Hélio Cordeiro
 #+DATE: <2018-02-10 Sat>
 #+TITLE: Common Lisp Brasil
-#+LANGUAGE: bt-br #isso não é um erro.
+#+LANGUAGE: pt-br
 #+LATEX_HEADER: \usepackage[]{babel}
 #+OPTIONS: toc:nil
 

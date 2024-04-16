@@ -3,7 +3,7 @@
 #+AUTHOR: Manoel Vilela, Lucas Vieira
 #+DATE: <2018-02-15 Thu>
 #+TITLE: Apêndice
-#+LANGUAGE: bt-br
+#+LANGUAGE: pt-br
 
 
 - [Inglês] Build Your Own Lisp, por Daniel Holder
