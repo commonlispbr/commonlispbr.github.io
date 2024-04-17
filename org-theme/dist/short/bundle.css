@@ -219,7 +219,7 @@ samp {
   --content-margin-bottom: 5rem;
 
   /* Container */
-  --container-max-width: 700px;
+  --container-max-width: 1000px;
   --container-padding-horizontal: 1.5rem;
 
   /* Paragraphs */
