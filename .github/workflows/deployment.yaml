@@ -28,11 +28,6 @@ jobs:
       - name: Build static assets
         shell: bash
         run: make
-      - name: Copy static assets to "static" folder
-        shell: bash
-        run: |
-          mkdir static
-          find . "(" -name "*.html" -o -name "*.css" -o -name "*.js" ")" -not -path "./static/*" -not -path "./.github/*" -exec cp {} static \;
       - name: Upload static assets
         uses: actions/upload-artifact@v4
         with:
