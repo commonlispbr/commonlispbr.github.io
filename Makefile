@@ -14,7 +14,7 @@ ATTENTION_PREFIX := "\033[1;36m[!]\033[0m "
 
 .PHONY: clean shell
 
-all: $(HTML_FILES)
+all: $(HTML_FILES) copy
 
 shell:
 	$(DOCKER_RUN) -i --entrypoint=/bin/zsh $(DOCKER_IMG)
@@ -24,8 +24,21 @@ shell:
 	@$(DOCKER_RUN) $(DOCKER_IMG) $< $(EMACS_FLAGS) -f org-html-export-to-html
 	@$(DOCKER_RUN) --entrypoint=/bin/chown $(DOCKER_IMG) $(USER) "$*.html"
 
+copy:
+	@mkdir -p static
+	@find . \
+	      "(" -name "*.html" -o -name "*.css" -o -name "*.js" ")" \
+	      -not -path "./static/*" \
+	      -not -path "./.github/*" \
+	      -exec cp {} static \;
+	@find . \
+	      -name "*.html" \
+	      -not -path "./static/*" \
+	      -not -path "./.github/*" \
+	      -exec mv {} static \;
+
 server:
-	python3 -m http.server 8000
+	python3 -m http.server 8000 --directory ./static
 
 clean:
-	rm -rf *.html
+	rm -rf ./static
