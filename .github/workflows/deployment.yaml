@@ -47,11 +47,6 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: static_assets
-      - name: ls
-        shell: bash
-        run: |
-          echo "lsing"
-          ls -la .
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
