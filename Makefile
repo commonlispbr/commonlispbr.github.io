@@ -11,6 +11,7 @@ DOCKER_RUN          := docker run  -w /tmp \
 	                               -v $(shell pwd):/tmp \
                                    --rm \
                                    -t
+MINIFY              := $(DOCKER_RUN) --entrypoint="/usr/bin/minify" $(MINIFY_IMG)
 
 STATUS_PREFIX       := "\033[1;32m[+]\033[0m "
 
@@ -30,15 +31,15 @@ setup:
 	@$(DOCKER_RUN) $(DOCKER_IMG) $< $(EMACS_FLAGS) -f org-html-export-to-html
 	@mv $*.html $(STATIC_FILES_FOLDER)/$*.html
 	@printf $(STATUS_PREFIX); echo "MINIFYING: $*.html"
-	@$(DOCKER_RUN) --entrypoint="" $(MINIFY_IMG) sh -c 'minify $(STATIC_FILES_FOLDER)/$*.html -o $(STATIC_FILES_FOLDER)/$*.html'
+	@$(MINIFY) $(STATIC_FILES_FOLDER)/$*.html -o $(STATIC_FILES_FOLDER)/$*.html
 
 minify:
 	@printf $(STATUS_PREFIX); echo "MINIFYING AND BUNDLING CSS FILES"
-	@$(DOCKER_RUN) --entrypoint="" $(MINIFY_IMG) sh -c 'minify --bundle org-theme/dist/long/bundle.css css/syntax.css -o $(STATIC_FILES_FOLDER)/long.css'
-	@$(DOCKER_RUN) --entrypoint="" $(MINIFY_IMG) sh -c 'minify --bundle org-theme/dist/short/bundle.css css/syntax.css -o $(STATIC_FILES_FOLDER)/short.css'
+	@$(MINIFY) --bundle org-theme/dist/long/bundle.css css/syntax.css -o $(STATIC_FILES_FOLDER)/long.css
+	@$(MINIFY) --bundle org-theme/dist/short/bundle.css css/syntax.css -o $(STATIC_FILES_FOLDER)/short.css
 	@printf $(STATUS_PREFIX); echo "MINIFYING JS FILES"
-	@$(DOCKER_RUN) --entrypoint="" $(MINIFY_IMG) sh -c 'minify --bundle org-theme/dist/long/bundle.js -o $(STATIC_FILES_FOLDER)/long.js'
-	@$(DOCKER_RUN) --entrypoint="" $(MINIFY_IMG) sh -c 'minify --bundle org-theme/dist/long/bundle.js -o $(STATIC_FILES_FOLDER)/short.js'
+	@$(MINIFY) --bundle org-theme/dist/long/bundle.js -o $(STATIC_FILES_FOLDER)/long.js
+	@$(MINIFY) --bundle org-theme/dist/long/bundle.js -o $(STATIC_FILES_FOLDER)/short.js
 
 server:
 	python3 -m http.server 8000 --directory $(STATIC_FILES_FOLDER)
