@@ -17,7 +17,7 @@ STATUS_PREFIX       := "\033[1;32m[+]\033[0m "
 
 .PHONY: clean shell
 
-all: setup $(HTML_FILES) minify
+all: setup $(HTML_FILES) minify copy
 
 shell:
 	$(DOCKER_RUN) -i --entrypoint=/bin/zsh $(DOCKER_IMG)
@@ -40,6 +40,10 @@ minify:
 	@printf $(STATUS_PREFIX); echo "MINIFYING JS FILES"
 	@$(MINIFY) --bundle org-theme/dist/long/bundle.js -o $(STATIC_FILES_FOLDER)/long.js
 	@$(MINIFY) --bundle org-theme/dist/long/bundle.js -o $(STATIC_FILES_FOLDER)/short.js
+
+copy:
+	@printf $(STATUS_PREFIX); echo "COPYING IMAGE FILES"
+	@cp images/logo.png $(STATIC_FILES_FOLDER)/logo.png
 
 server:
 	python3 -m http.server 8000 --directory $(STATIC_FILES_FOLDER)

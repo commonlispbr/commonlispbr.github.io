@@ -17,5 +17,7 @@
 # theme.json before building it.
 #
 #
+#+HTML_HEAD: <meta name="viewport" content="width=device-width, initial-scale=1" />
+#+HTML_HEAD: <link rel="icon" href="data:,">
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="short.css"/>
 #+HTML_HEAD: <script src="short.js" type="text/javascript" ></script>
