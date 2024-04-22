@@ -11,7 +11,7 @@
 #  "back-to-top": true,
 #  "collection": {
 #    "enabled": true,
-#    "avatar": "http://www.lisperati.com/lisplogo_flag_64.png",
+#    "avatar": "logo.png",
 #    "title": "Common Lisp Brasil",
 #    "url": "/"
 #  }
@@ -20,5 +20,7 @@
 # I recommend you to generate your own css/js files by forking, cloning and customizing the file
 # theme.json before building it.
 #
+#+HTML_HEAD: <meta name="viewport" content="width=device-width, initial-scale=1" />
+#+HTML_HEAD: <link rel="icon" href="data:,">
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="long.css"/>
 #+HTML_HEAD: <script src="long.js" type="text/javascript" ></script>
