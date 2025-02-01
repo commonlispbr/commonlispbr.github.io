@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/commonlispbr/commonlispbr.github.io.svg?branch=develop)](https://travis-ci.org/commonlispbr/commonlispbr.github.io)
+![deploy to pages](https://github.com/commonlispbr/commonlispbr.github.io/actions/workflows/deployment.yaml/badge.svg)
 
 # Common Lisp Brasil
 
